@@ -8,6 +8,7 @@ Chaque collaborateur doit configurer ses propres identifiants pour l'API d'eBay
 2. Ajoutez les lignes suivantes en remplaçant par vos identifiants personnels :
    APP_ID=your_app_id
    CERT_ID=your_cert_id
+3. Dans un terminal, tapper `pip install python-dotenv` pour pouvoir executer collect.py
 
 ## Comment faire le scraping
 ## Comment entraîner les modèles 
