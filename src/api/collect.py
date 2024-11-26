@@ -7,17 +7,17 @@ from dotenv import load_dotenv
 load_dotenv()
 
 # Vos identifiants API
-CLIENT_ID = os.getenv("APP_ID")
-CLIENT_SECRET = os.getenv("CERT_ID")
+APP_ID = os.getenv("APP_ID")
+CERT_ID = os.getenv("CERT_ID")
 
-if not APP_iD or not CERT_ID: 
+if not APP_ID or not CERT_ID: 
     raise ValueError("Les identifiants API sont manquants ! Vérifiez votre fichier .env")
 
 # Point de terminaison pour OAuth
 TOKEN_URL = "https://api.ebay.com/identity/v1/oauth2/token"
 
 # Encodage Base64 des identifiants
-auth = base64.b64encode(f"{CLIENT_ID}:{CLIENT_SECRET}".encode()).decode()
+auth = base64.b64encode(f"{APP_ID}:{CERT_ID}".encode()).decode()
 
 # Headers pour la requête
 headers = {
