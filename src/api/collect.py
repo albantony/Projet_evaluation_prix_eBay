@@ -36,12 +36,42 @@ response = requests.post(TOKEN_URL, headers=headers, data=data)
 
 if response.status_code == 200:
     access_token = response.json().get("access_token")
-    print("Récupération du token réussie")
+    print("Récupération du token réussie !")
 else:
     print("Erreur :", response.json())
 
 
-BASE_URL_BROWSE = "https://api.ebay.com/buy/browse/v1/item"
-URL_itemgroup = f"{BASE_URL_BROWSE}/{get_items_by_item_group}"
-laptops_id = 175672
+BASE_URL_BROWSE = "https://api.ebay.com/buy/browse/v1"
+ENDPOINT = "/item_summary/search"
+
+params = {
+    "category_ids": "175672",  # ID de la catégorie laptops et netbooks
+    "limit": 1      # Limiter à un résultat
+}
+
+headers_browse = {
+    "Authorization": f"Bearer {access_token}",
+    "Content-Type": "application/json",
+    "Accept": "application/json"
+}
+
+response = requests.get(BASE_URL_BROWSE + ENDPOINT, headers=headers_browse, params=params)
+
+if response.status_code == 200:
+    itemgroup_data = response.json()
+    
+    for item in itemgroup_data["itemSummaries"]:
+        title = item.get("title")
+        item_ID = item.get("itemId")
+        condition = item.get("condition")
+        date = item.get("itemCreationDate")
+        print("Titre de l'annonce :", title)
+        print("Item ID:", item_ID)
+        print("Condition:", condition)
+        print("Date de création de l'annonce: ", date[:10])
+
+else:
+    # En cas d'erreur
+    print(f"Erreur lors de la requête : {response.status_code}")
+
 

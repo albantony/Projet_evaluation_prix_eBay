@@ -24,6 +24,7 @@ response = requests.get(EBAY_API_URL, headers=HEADERS)
 if response.status_code == 200:
     # Extraire les données JSON
     item_data = response.json()
+    print(item_data)
     
     # Accéder aux `localizedAspects`
     localized_aspects = item_data.get("localizedAspects", [])
