@@ -36,48 +36,12 @@ response = requests.post(TOKEN_URL, headers=headers, data=data)
 
 if response.status_code == 200:
     access_token = response.json().get("access_token")
-    print(f"Access Token : {access_token}")
+    print("Récupération du token réussie")
 else:
     print("Erreur :", response.json())
 
 
-# Remplacez ces variables avec vos propres valeurs
-ebay_token = access_token  # Token d'accès OAuth
-item_id = "123456789012"  # Remplacez par l'ID de l'objet que vous souhaitez rechercher
+BASE_URL_BROWSE = "https://api.ebay.com/buy/browse/v1/item"
+URL_itemgroup = f"{BASE_URL_BROWSE}/{get_items_by_item_group}"
+laptops_id = 175672
 
-# URL de l'API eBay Shopping
-url = "https://api.ebay.com/ws/api.dll"
-
-# Les en-têtes nécessaires pour authentifier la requête
-headers = {
-    "X-EBAY-API-CALL-NAME": "GetSingleItem",
-    "X-EBAY-API-SITEID": "0",  # ID de site eBay (0 pour eBay US)
-    "X-EBAY-API-APP-ID": "VOTRE_APP_ID",  # Remplacez par votre propre App ID
-    "X-EBAY-API-DEV-ID": "VOTRE_DEV_ID",  # Remplacez par votre propre Dev ID
-    "X-EBAY-API-CERT-ID": "VOTRE_CERT_ID",  # Remplacez par votre propre Cert ID
-    "Content-Type": "text/xml"
-}
-
-# Corps de la requête pour l'API GetSingleItem (demander des informations sur un seul objet)
-body = f"""
-<?xml version="1.0" encoding="utf-8"?>
-<GetSingleItemRequest xmlns="urn:ebay:apis:eBLBaseComponents">
-    <ItemID>{item_id}</ItemID>
-    <DetailLevel>ItemSpecifics</DetailLevel>
-    <IncludeSelector>Details,ItemSpecifics</IncludeSelector>
-</GetSingleItemRequest>
-"""
-
-# Faire la requête à l'API eBay
-response = requests.post(url, headers=headers, data=body)
-
-# Vérifier si la requête a réussi
-if response.status_code == 200:
-    # Analysez la réponse XML
-    response_xml = response.text
-    print(response_xml)
-    
-    # Pour rechercher les spécifications de l'article (comme la RAM), vous pouvez analyser la réponse XML
-    # Exemple d'extraction d'informations (vous pouvez utiliser une bibliothèque comme xml.etree.ElementTree)
-else:
-    print(f"Erreur de requête: {response.status_code}")
