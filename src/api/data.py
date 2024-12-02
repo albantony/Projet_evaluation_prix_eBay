@@ -1,6 +1,10 @@
 
 import requests
 from collect import access_token
+import pandas as pd
+
+# On initialise une liste vide pour les données plus tard
+data = []
 
 EBAY_TOKEN = access_token
 
@@ -84,7 +88,7 @@ if response.status_code == 200:
                 elif "color" in name:
                     color = value
             
-            print(item_id)
+            """print(item_id)
             print(f"Title: {item_title}")
             print(f"Price: {price} {currency}")
             print(f"Condition: {condition}")
@@ -92,10 +96,24 @@ if response.status_code == 200:
             print(f"Storage/Capacity: {storage}")
             print(f"Brand: {brand}")
             print(f"Color: {color}")
-            print("-" * 40)
+            print("-" * 40)"""
+
+            data.append({
+                "Title": item_title,
+                "Price": price,
+                "Currency": currency,
+                "Condition": condition,
+                "RAM": ram,
+                "Storage": storage,
+                "Brand": brand,
+                "Color": color
+            })
         
-        else:
-            print(f"Erreur pour l'article {item_title} (ID: {item_id}): {item_response.status_code}")
 else:
     print(f"Erreur lors de la requête de recherche : {response.status_code}")
     print(response.json())
+
+# Conversion en DataFrame
+df = pd.DataFrame(data)
+
+print(df.head())
