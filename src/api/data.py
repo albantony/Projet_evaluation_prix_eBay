@@ -87,16 +87,6 @@ if response.status_code == 200:
                 # Couleur
                 elif "color" in name:
                     color = value
-            
-            """print(item_id)
-            print(f"Title: {item_title}")
-            print(f"Price: {price} {currency}")
-            print(f"Condition: {condition}")
-            print(f"RAM: {ram}")
-            print(f"Storage/Capacity: {storage}")
-            print(f"Brand: {brand}")
-            print(f"Color: {color}")
-            print("-" * 40)"""
 
             data.append({
                 "Title": item_title,
