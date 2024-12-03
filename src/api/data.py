@@ -11,7 +11,7 @@ EBAY_TOKEN = access_token
 # On fixe les paramètres de recherche
 
 SEARCH_QUERY = "laptop"
-NUM_ITEMS = 20  # On limite à un certain nombre
+NUM_ITEMS = 100  # On limite à un certain nombre
 
 # Lien API EBAY
 EBAY_API_URL = "https://api.ebay.com/buy/browse/v1/item_summary/search"
@@ -60,6 +60,7 @@ if response.status_code == 200:
             price = None
             condition = None
             monnaie = None
+            taille = None
             
             # On extrait les informations de prix, condition et currency
             price_info = item_details.get('price', {})
@@ -88,8 +89,11 @@ if response.status_code == 200:
                 # Couleur
                 elif "couleur" in name:
                     couleur = value
+                # Taille écran 
+                elif "écran" in name:
+                    taille = value
 
-            if all([item_id, item_title, price, monnaie, condition, ram, capacité, brand, couleur]) : 
+            if all([item_id, item_title, price, monnaie, condition, ram, capacité, brand, couleur, taille]) : 
                 # On ne garde que les ordinateurs qui ont toutes les infos 
                 data.append({
                 "ID": item_id,
@@ -100,7 +104,8 @@ if response.status_code == 200:
                 "RAM": ram,
                 "Storage": capacité,
                 "Brand": brand,
-                "Color": couleur
+                "Color": couleur,
+                "Taille de l'écran": taille
             })
         
 else:

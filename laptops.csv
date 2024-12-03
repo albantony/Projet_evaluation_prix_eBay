@@ -1,12 +1,43 @@
-ID,Title,Price,Currency,Condition,RAM,Storage,Brand,Color
-v1|275477642852|0,"✅ LENOVO THINKPAD X260 12"" ✅i5(6e) 256Go SSD 16Go DDR4 AZERTY WIN 10+OFFICE 2019",175.99,EUR,Occasion,256 Go,256 Go,Lenovo,Noir
-v1|365265648974|0,ordinateur portable gamer’ i5-7300HQ GTX 1050TI 1 ventilateur et Ecran cassé    ,120.00,EUR,Occasion,8 Go,128 Go,MSI,Noir
-v1|126799484250|0,"TOSHIBA QOSMIO 17,3 INTEL CORE i7 8 GO 480 GO SSD WINDOWS 10 W10 EXCELLENT ETAT",170.00,EUR,Occasion,4 Go,480Go,Toshiba,Noir
-v1|356321733541|0,⭐☑️⭐PC Lenovo Tkinkpad T580 15'6 FHD i5-8350U 16Go 256Go Win11⭐☑️⭐,293.50,EUR,Très bon état - Reconditionné,16 Go,256 Go,Lenovo,Noir
-v1|296853811589|0,Acer Aspire E5-575  N16Q2  PC Portable    Intel core i5-7200U  4Go Ram,59.00,EUR,Pour pièces détachées/ne fonctionne pas,4 Go,1 To,Acer,Blanc
-v1|267085474578|0,Lenovo Thinkpad T15 Gen 1,500.00,EUR,Occasion,16 Go,512 Go,Lenovo,Noir
-v1|405275570031|0,Ordinateur Portable Lenovo - Tactile tout-en-un - Ideapad MIIX 320 10ICR 80XF,120.00,EUR,Occasion,4 Go,128 Go,Lenovo,Gris
-v1|116406264349|0,LENOVO X280 Core i5 8th gen RAM 8 Go SSD 256 Go TB,210.00,EUR,Très bon état - Reconditionné,8 Go,256 Go,Lenovo,Noir
-v1|296848103901|0,"ordinateur portable asus X53U 15 pouces, 8Go, SSD 500Go, Win 11 Pro",165.00,EUR,Occasion,8 Go,500 Go,ASUS,noir/marron
-v1|167110975768|466824226216,"Ordinateur portable tactile HP Pro x2 612 G1, I5-4202Y, 8 Giga de ram ,DD 256 Go",110.00,EUR,Occasion,8 Go,256 Go,HP,Gris
-v1|205138960828|0,Tablette PC activités intérieures et extérieures W10p 64 bits écran 8' 120Gb 4Gb,55.00,EUR,Occasion,4 Go,128 Go,ATHESI,Noir
+ID,Title,Price,Currency,Condition,RAM,Storage,Brand,Color,Taille de l'écran
+v1|275477642852|0,"✅ LENOVO THINKPAD X260 12"" ✅i5(6e) 256Go SSD 16Go DDR4 AZERTY WIN 10+OFFICE 2019",175.99,EUR,Occasion,256 Go,256 Go,Lenovo,Noir,"12,5"""
+v1|365265648974|0,ordinateur portable gamer’ i5-7300HQ GTX 1050TI 1 ventilateur et Ecran cassé    ,120.00,EUR,Occasion,8 Go,128 Go,MSI,Noir,"15,6"""
+v1|126799484250|0,"TOSHIBA QOSMIO 17,3 INTEL CORE i7 8 GO 480 GO SSD WINDOWS 10 W10 EXCELLENT ETAT",170.00,EUR,Occasion,4 Go,480Go,Toshiba,Noir,"17,3"""
+v1|296853811589|0,Acer Aspire E5-575  N16Q2  PC Portable    Intel core i5-7200U  4Go Ram,59.00,EUR,Pour pièces détachées/ne fonctionne pas,4 Go,1 To,Acer,Blanc,"17,3"""
+v1|356321733541|0,⭐☑️⭐PC Lenovo Tkinkpad T580 15'6 FHD i5-8350U 16Go 256Go Win11⭐☑️⭐,293.50,EUR,Très bon état - Reconditionné,16 Go,256 Go,Lenovo,Noir,"15,6"""
+v1|205138960828|0,Tablette PC activités intérieures et extérieures W10p 64 bits écran 8' 120Gb 4Gb,55.00,EUR,Occasion,4 Go,128 Go,ATHESI,Noir,"8"""
+v1|405275570031|0,Ordinateur Portable Lenovo - Tactile tout-en-un - Ideapad MIIX 320 10ICR 80XF,120.00,EUR,Occasion,4 Go,128 Go,Lenovo,Gris,"10,1"""
+v1|116406264349|0,LENOVO X280 Core i5 8th gen RAM 8 Go SSD 256 Go TB,210.00,EUR,Très bon état - Reconditionné,8 Go,256 Go,Lenovo,Noir,"12"""
+v1|296848103901|0,"ordinateur portable asus X53U 15 pouces, 8Go, SSD 500Go, Win 11 Pro",165.00,EUR,Occasion,8 Go,500 Go,ASUS,noir/marron,"15,6"""
+v1|167110975768|466824226216,"Ordinateur portable tactile HP Pro x2 612 G1, I5-4202Y, 8 Giga de ram ,DD 256 Go",110.00,EUR,Occasion,8 Go,256 Go,HP,Gris,"12,5"""
+v1|156557832378|0,"DELL Latitude 5510 - Core i5-10210U, 8 Go RAM, 256Go NVMe, 15.6"", WIN 11 PRO #1",190.00,EUR,Occasion,8 Go,256 Go,Dell,Argenté,"15,6"""
+v1|167127962500|0,"Dell precision 3560 Intel i5 1135G7 @ 2,4 GHz 16 Go de RAM SSD NVME 512Go",650.00,EUR,Occasion,16 Go,512 Go,Dell,Gris,"13,3"""
+v1|405386368662|0,ordinateur portable 14 pouces,140.00,EUR,Ouvert (jamais utilisé),6 Go,256 Go,Amazon,Argenté,"14"""
+v1|126799426006|0,"DELL INSPIRON 13,3' INTEL CORE i7 16 GO 512 GO SSD WINDOWS 10 W10 EXCELLENT ETAT",230.00,EUR,Occasion,4 Go,512 Go,Dell,Gris,"13,3"""
+v1|126799454854|0,"PC TOSHIBA 17,3' INTEL 1005 ram 6 GO 480 GO SSD WINDOWS 10 EXCELLENT ETAT",110.00,EUR,Occasion,6 Go,480 Go,Toshiba,Noir,"17,3"""
+v1|116407304434|0,DELL 7310 i7 10th Ram 16 Go SSD 512 Go TB,380.00,EUR,Très bon état - Reconditionné,16 Go,512 Go,Lenovo,Gris,"13"""
+v1|356179633850|0,PC Portable Dell Latitude E5570 - I5 6th Gen - 16 Go - 480 Go - BATT + SSD NEUFS,249.00,EUR,Parfait état - Reconditionné,16 Go,480Go,Dell,Noir,"15,6"""
+v1|196734300513|0,Grade C Panasonic Cf XZ6 Toughbook  Core i5-7300U 256GB SSD/8GB W10 Tablette Pc,129.00,EUR,État correct - Reconditionné,8Go,HD 620,Panasonic,Noir,"12"" LED 2160 * 1440"
+v1|267085474578|0,Lenovo Thinkpad T15 Gen 1,500.00,EUR,Occasion,16 Go,512 Go,Lenovo,Noir,"15,6"""
+v1|167139771223|0,PC Portable Ultrabook Toshiba PORTEGE z30 Intel i5 2.40Ghz 8Go RAM et SSD 256 Go,279.00,EUR,Occasion,8 Go,256 Go,Toshiba,Gris,"13,3"""
+v1|205137135703|0,Hp Pavilion Dv6000,65.00,EUR,Neuf,3 Go,120 Go,HP,Noir,"15"""
+v1|116406278328|0,HP 840 G6 Core i5 8th gen RAM 16 Go SSD 512 Go TB,380.00,EUR,Très bon état - Reconditionné,16 Go,512 Go,HP,Gris,"14"""
+v1|276752960694|0,"DELL LATITUDE 5410 CORE I5-10210U 2,1GHZ/SSD 256Go/8GoRAM/",159.90,EUR,Occasion,8 Go,256 Go,Dell,Gris,"14"""
+v1|196869991138|0,Ordinateur Portable DELL Latitude 3400 I7 8565U 16 GO 256GO Tactile Geforce (1),350.00,EUR,Occasion,16 Go,256 Go,Dell,Noir,"14"""
+v1|176716280075|0,PC PORTABLE TOSHIBA 17 POUCES I5 5200U 8GO DDR3 NVIDIA GT 930M 2GB SSD 500GO,249.00,EUR,Occasion,8 Go,500 Go,Toshiba,Blanc,"17,3"""
+v1|176675399129|0,"Ordinateur Portable HP DV6 DV6-2140EF - 15.6"" Intel i5 SSD 240Go 4Go W7 Testé OK",69.00,EUR,Occasion,4 Go,240 Go,HP,Blanc,"15,6"""
+v1|205136809016|0,pc portable pour pièces Détachées,50.00,EUR,Pour pièces détachées/ne fonctionne pas,8 Go,512 Go,Lenovo,Bleu,"17,3"""
+v1|196844171946|0,"Dell Latitude 7480 14"" (Core i5, 16 Go RAM, 256 Go SSD) - AZERTY Français",149.00,EUR,État correct - Reconditionné,16 Go,256 Go,Dell,Noir,"14"""
+v1|387166489483|0,PC Lenovo Thinkpad T460s Slim i5 16 Go ram 256 Go SSD Nvme Windows 11 Pro,210.00,EUR,Occasion,16 Go,256 Go,Lenovo,Noir,"14"""
+v1|116291531997|0,PC Ordinateur PORTABLE DELL LATITUDE E 7470 i5 6300U 8Go 256 Go SSD,100.00,EUR,Occasion,8 Go,256 Go,Dell,Noir,"14"""
+v1|156557435645|0,"DELL Vostro 5568 - Core i5-7200U, 8 Go RAM, 256Go NVMe, 15,6"", WIN 11 PRO #4",150.00,EUR,Occasion,8 Go,256 Go,Dell,Argenté,"15,6"""
+v1|256684591466|0,"Ordinateur Portable Dell E6410 boosté avec un ICore I7 et 8go Ram 14,1"" DD500go",130.00,EUR,Occasion,8 Go,500 Go,Dell,Gris,"14,1"""
+v1|146235994024|0,"Ordinateur Portable ASUS F751N - 17.3"" Écran Casser",70.00,EUR,Pour pièces détachées/ne fonctionne pas,4 Go,240 Go,ASUS,Blanc,"17,3"""
+v1|235851504019|0,"Lenovo ThinkPad L380 13"" FHD i5-8250U 1.6GHz, SSD 256Go, RAM 8Go Windows11Pro",130.00,EUR,Occasion,8 Go,256 Go,Lenovo,Noir,"13,3"""
+v1|276751874117|0,"UltraBook Hp 14-ac120nf ssd M2 32Go ram 2Go 14""",49.00,EUR,Occasion,2Go,32 Go,HP,Noir,"14"""
+v1|167122246795|0,THOMSON NEO 17.3' n4020c 1.1Ghz 8Go 512Go SSD Windows 11 PRO - TBE,119.90,EUR,État correct - Reconditionné,8 Go,512 Go,Thomson,Noir,"17,3"""
+v1|126731294887|427786658694,"10.1 "" PANASONIC TOUGHPAD FZ-G1 MK2 FZ-G1FA-50BE i5-4310U 2.00GHZ 8GB 256GB LTE",102.82,EUR,Occasion,8 Go,256 Go,Panasonic,Argent,25.7cm
+v1|395959151761|0,Pc Portable Samsung IntelCore I3 Ram8Go Ssd250Go Parfait Etat,249.90,EUR,Occasion,8 Go,240 Go,Samsung,Blanc,"15,6"""
+v1|116323059680|0,"Lenovo ThinkPad X270 12"" Core i5 6Gen - SSD 256 Go - 16 Go AZERTY - Français",159.00,EUR,Occasion,16 Go,256 Go,Lenovo,Noir,"12,5"""
+v1|256668517770|0,Lot de 4 Ordinateur PORTABLE LENOVO ( voir détails ),120.00,EUR,Pour pièces détachées/ne fonctionne pas,Aucun,Aucun,Lenovo,Gris,"15"""
+v1|116409753240|0,LENOVO T480 i5 7th gen Ram 16 Go SSD 256 Go B,168.00,EUR,État correct - Reconditionné,16 Go,256 Go,Lenovo,Noir,"14"""
+v1|116409753306|0,LENOVO T480 i5 7th gen Ram 16 Go SSD 512 Go B,180.00,EUR,État correct - Reconditionné,16 Go,512 Go,Lenovo,Noir,"14"""
