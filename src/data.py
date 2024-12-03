@@ -50,8 +50,8 @@ if response.status_code == 200:
             couleur = None
             price = None
             condition = None
-            monnaie = None
             taille = None
+            resolution = None
             
             # On extrait les informations de prix, condition et currency
             price_info = item_details.get('price', {})
@@ -81,16 +81,20 @@ if response.status_code == 200:
                 # Taille écran 
                 elif "écran" in name:
                     taille = value
+                elif "résolution" in name: 
+                    resolution = value
 
+
+            if all([price, condition, ram, capacité, brand, couleur, taille, resolution]) : 
                 data.append({
                 "Prix": price,
-                "Monnaie": monnaie,
                 "Condition": condition,
                 "RAM": ram,
-                "Capacité de stockage": capacité,
+                "Stockage": capacité,
                 "Marque": brand,
                 "Couleur": couleur,
-                "Taille de l'écran": taille
+                "Taille écran": taille,
+                "Résolution": resolution
             })
         
 else:
@@ -99,8 +103,13 @@ else:
 
 # Conversion en DataFrame
 df = pd.DataFrame(data)
-df.to_parquet("data.parquet")
 
-# Chargement
+#Enregistrement du dataframe en local grâce à parquet
+df.to_parquet("data.parquet")
 df = pd.read_parquet("data.parquet")
+
+#utile pour visualisation rapide en csv
+#df.to_csv("data.csv")
+#df = pd.read_csv("data.csv")
+
 

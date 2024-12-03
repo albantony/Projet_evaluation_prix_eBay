@@ -5,40 +5,37 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-def get_access_token():
-    """
-    Récupère le token d'accès nécessaire pour manipuler l'API Browse de eBay
-    """
-    APP_ID = os.getenv("APP_ID")
-    CERT_ID = os.getenv("CERT_ID")
 
-    if not APP_ID or not CERT_ID: 
-        raise ValueError("Les identifiants API sont manquants ! Vérifiez votre fichier .env")
+APP_ID = os.getenv("APP_ID")
+CERT_ID = os.getenv("CERT_ID")
 
-    # Point de terminaison pour OAuth
-    TOKEN_URL = "https://api.ebay.com/identity/v1/oauth2/token"
+if not APP_ID or not CERT_ID: 
+    raise ValueError("Les identifiants API sont manquants ! Vérifiez votre fichier .env")
 
-    # Encodage Base64 des identifiants
-    auth = base64.b64encode(f"{APP_ID}:{CERT_ID}".encode()).decode()
+# Point de terminaison pour OAuth
+TOKEN_URL = "https://api.ebay.com/identity/v1/oauth2/token"
 
-    # Headers pour la requête
-    headers = {
-        "Authorization": f"Basic {auth}",
-        "Content-Type": "application/x-www-form-urlencoded"
-    }
+# Encodage Base64 des identifiants
+auth = base64.b64encode(f"{APP_ID}:{CERT_ID}".encode()).decode()
 
-    # Données pour obtenir un token
-    data = {
-        "grant_type": "client_credentials",
-        "scope": "https://api.ebay.com/oauth/api_scope"
-    }
+# Headers pour la requête
+headers = {
+    "Authorization": f"Basic {auth}",
+    "Content-Type": "application/x-www-form-urlencoded"
+}
 
-    # Requête pour obtenir le token
-    response = requests.post(TOKEN_URL, headers=headers, data=data)
+# Données pour obtenir un token
+data = {
+    "grant_type": "client_credentials",
+    "scope": "https://api.ebay.com/oauth/api_scope"
+}
 
-    if response.status_code == 200:
-        access_token = response.json().get("access_token")
-    else:
-        print("Erreur :", response.json())
+# Requête pour obtenir le token
+response = requests.post(TOKEN_URL, headers=headers, data=data)
+
+if response.status_code == 200:
+    access_token = response.json().get("access_token")
+else:
+    print("Récupération du token échouée:", response.json())
 
 
