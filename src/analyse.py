@@ -23,3 +23,4 @@ def plot_price_vs_ppi(df):
     plt.show()
 
 #à run avec le bon df mais là je vais dodo
+
