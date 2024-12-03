@@ -11,7 +11,7 @@ EBAY_TOKEN = access_token
 # On fixe les paramètres de recherche
 
 SEARCH_QUERY = "laptop"
-NUM_ITEMS = 5  # On limite à 5
+NUM_ITEMS = 20  # On limite à un certain nombre
 
 # Lien API EBAY
 EBAY_API_URL = "https://api.ebay.com/buy/browse/v1/item_summary/search"
@@ -27,7 +27,8 @@ params = {
 HEADERS = {
     "Authorization": f"Bearer {EBAY_TOKEN}",
     "Content-Type": "application/json",
-    "Accept": "application/json"
+    "Accept": "application/json",
+    "X-EBAY-C-MARKETPLACE-ID": "EBAY_FR"
 }
 
 # Recherche
@@ -52,19 +53,19 @@ if response.status_code == 200:
             item_details = item_response.json()
             
             # Initialisation des variables
-            ram = "N/A"
-            storage = "N/A"
-            brand = "N/A"
-            color = "N/A"
-            price = "N/A"
-            condition = "N/A"
-            currency = "N/A"
+            ram = None
+            capacité = None
+            marque = None
+            couleur = None
+            price = None
+            condition = None
+            monnaie = None
             
             # On extrait les informations de prix, condition et currency
             price_info = item_details.get('price', {})
             if price_info:
-                price = price_info.get('value', "N/A")
-                currency = price_info.get('currency', "N/A")
+                price = price_info.get('value', None)
+                monnaie = price_info.get('currency', None)
             
             condition = item.get('condition')
             
@@ -79,24 +80,27 @@ if response.status_code == 200:
                 if "ram" in name:
                     ram = value
                 # Info sur capacité de stockage
-                elif "capacity" in name:
-                    storage = value
+                elif "capacité" in name:
+                    capacité = value
                 # Marque
-                elif "brand" in name:
+                elif "marque" in name:
                     brand = value
                 # Couleur
-                elif "color" in name:
-                    color = value
+                elif "couleur" in name:
+                    couleur = value
 
-            data.append({
+            if all([item_id, item_title, price, monnaie, condition, ram, capacité, brand, couleur]) : 
+                # On ne garde que les ordinateurs qui ont toutes les infos 
+                data.append({
+                "ID": item_id,
                 "Title": item_title,
                 "Price": price,
-                "Currency": currency,
+                "Currency": monnaie,
                 "Condition": condition,
                 "RAM": ram,
-                "Storage": storage,
+                "Storage": capacité,
                 "Brand": brand,
-                "Color": color
+                "Color": couleur
             })
         
 else:
@@ -106,4 +110,5 @@ else:
 # Conversion en DataFrame
 df = pd.DataFrame(data)
 
-print(df.head())
+df.to_csv("laptops.csv", index=False)
+print("\nDonnées exportées dans 'laptops.csv'")

@@ -4,7 +4,7 @@ from collect import access_token
 EBAY_TOKEN = access_token
 
 # On spécifie l'ID
-ITEM_ID = "204866566114"
+ITEM_ID = "326323962677"
 ITEM_ID_FORMATED = f"v1|{ITEM_ID}|0"
 
 # Lien de l'API
