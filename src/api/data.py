@@ -11,7 +11,7 @@ EBAY_TOKEN = access_token
 # On fixe les paramètres de recherche
 
 SEARCH_QUERY = "laptop"
-NUM_ITEMS = 100  # On limite à un certain nombre
+NUM_ITEMS = 5  # On limite à un certain nombre
 
 # Lien API EBAY
 EBAY_API_URL = "https://api.ebay.com/buy/browse/v1/item_summary/search"
@@ -115,5 +115,4 @@ else:
 # Conversion en DataFrame
 df = pd.DataFrame(data)
 
-df.to_csv("laptops.csv", index=False)
-print("\nDonnées exportées dans 'laptops.csv'")
+print(df.head(3))
