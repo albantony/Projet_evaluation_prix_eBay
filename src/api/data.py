@@ -28,7 +28,7 @@ HEADERS = {
     "Authorization": f"Bearer {EBAY_TOKEN}",
     "Content-Type": "application/json",
     "Accept": "application/json",
-    "X-EBAY-C-MARKETPLACE-ID": "EBAY_FR"
+    "X-EBAY-C-MARKETPLACE-ID": "EBAY_FR" # On limite au marché français
 }
 
 # Recherche
