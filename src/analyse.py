@@ -22,5 +22,5 @@ def plot_price_vs_ppi(df):
     plt.grid(True)
     plt.show()
 
-# Exemple d'utilisation avec ton DataFrame df
-# plot_price_vs_ppi(df)
+#à run avec le bon df mais là je vais dodo
+
