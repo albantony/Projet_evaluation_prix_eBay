@@ -10,15 +10,14 @@ EBAY_TOKEN = access_token
 
 # On fixe les paramètres de recherche
 
-SEARCH_QUERY = "laptop"
-NUM_ITEMS = 5  # On limite à un certain nombre
+NUM_ITEMS = 25  # On limite à un certain nombre
 
 # Lien API EBAY
 EBAY_API_URL = "https://api.ebay.com/buy/browse/v1/item_summary/search"
 
 # Paramètres requête
 params = {
-    "q": SEARCH_QUERY,  # Recherche pour "laptop"
+    "category_ids": "175672", # Recherche pour ordinateurs portables/netbooks
     "limit": NUM_ITEMS,  
     "filter": "listingType: FIXED_PRICE" #On veut seulement les achats immédiats
 }
@@ -98,13 +97,13 @@ if response.status_code == 200:
                 data.append({
                 "ID": item_id,
                 "Title": item_title,
-                "Price": price,
-                "Currency": monnaie,
+                "Prix": price,
+                "Monnaie": monnaie,
                 "Condition": condition,
                 "RAM": ram,
-                "Storage": capacité,
-                "Brand": brand,
-                "Color": couleur,
+                "Capacité de stockage": capacité,
+                "Marque": brand,
+                "Couleur": couleur,
                 "Taille de l'écran": taille
             })
         
