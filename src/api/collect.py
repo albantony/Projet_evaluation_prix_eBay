@@ -36,10 +36,9 @@ response = requests.post(TOKEN_URL, headers=headers, data=data)
 
 if response.status_code == 200:
     access_token = response.json().get("access_token")
-    print("Récupération du token réussie !")
+    print("Token obtenu avec succès")
 else:
     print("Erreur :", response.json())
-
 
 BASE_URL_BROWSE = "https://api.ebay.com/buy/browse/v1"
 ENDPOINT = "/item_summary/search"
