@@ -1,4 +1,3 @@
-#collecte des données via l'API d'eBay
 import requests
 import base64
 import os
@@ -6,7 +5,7 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-# Vos identifiants API
+
 APP_ID = os.getenv("APP_ID")
 CERT_ID = os.getenv("CERT_ID")
 
@@ -36,8 +35,7 @@ response = requests.post(TOKEN_URL, headers=headers, data=data)
 
 if response.status_code == 200:
     access_token = response.json().get("access_token")
-    print("Token obtenu avec succès")
 else:
-    print("Erreur :", response.json())
+    print("Récupération du token échouée:", response.json())
 
 
