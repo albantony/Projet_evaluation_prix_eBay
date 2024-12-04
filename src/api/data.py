@@ -60,6 +60,7 @@ if response.status_code == 200:
             condition = None
             monnaie = None
             taille = None
+            resolution = None
             
             # On extrait les informations de prix, condition et currency
             price_info = item_details.get('price', {})
@@ -91,12 +92,15 @@ if response.status_code == 200:
                 # Taille écran 
                 elif "écran" in name:
                     taille = value
+                # Résolution
+                elif "résolution" in name:
+                    resolution = value
+         
 
-            if all([item_id, item_title, price, monnaie, condition, ram, capacité, brand, couleur, taille]) : 
-                # On ne garde que les ordinateurs qui ont toutes les infos 
-                data.append({
+            """if all([item_id, item_title, price, monnaie, condition, ram, capacité, brand, couleur, taille]) : 
+                # On ne garde que les ordinateurs qui ont toutes les infos """
+            data.append({
                 "ID": item_id,
-                "Title": item_title,
                 "Prix": price,
                 "Monnaie": monnaie,
                 "Condition": condition,
@@ -104,7 +108,9 @@ if response.status_code == 200:
                 "Capacité de stockage": capacité,
                 "Marque": brand,
                 "Couleur": couleur,
-                "Taille de l'écran": taille
+                "Taille de l'écran": taille,
+                "Résolution": resolution
+
             })
         
 else:
