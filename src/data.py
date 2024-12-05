@@ -85,8 +85,10 @@ if response.status_code == 200:
                     resolution = value
 
 
-            if all([price, condition, ram, capacité, brand, couleur, taille, resolution]) : 
-                data.append({
+            """if all([price, condition, ram, capacité, brand, couleur, taille, resolution]) : """
+            
+            data.append({
+                "ID": item_id,
                 "Prix": price,
                 "Condition": condition,
                 "RAM": ram,
@@ -104,12 +106,8 @@ else:
 # Conversion en DataFrame
 df = pd.DataFrame(data)
 
-#Enregistrement du dataframe en local grâce à parquet
-df.to_parquet("data.parquet")
-df = pd.read_parquet("data.parquet")
-
 #utile pour visualisation rapide en csv
-#df.to_csv("data.csv")
-#df = pd.read_csv("data.csv")
+df.to_csv("data.csv")
+df = pd.read_csv("data.csv")
 
 

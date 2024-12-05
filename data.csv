@@ -1,18 +1,101 @@
-,Prix,Condition,RAM,Capacité de stockage,Marque,Couleur,Taille de l'écran,Résolution
-0,165.00,Occasion,8 Go,500 Go,ASUS,noir/marron,"15,6""",1366 x 768
-1,120.00,Occasion,8 Go,128 Go,MSI,Noir,"15,6""",1920 x 1080
-2,175.99,Occasion,256 Go,256 Go,Lenovo,Noir,"12,5""",1366 x 768
-3,162.24,Occasion,8 Go,256 Go,Apple,Argent,"13,3 Zoll",1440 x 900
-4,170.00,Occasion,4 Go,480Go,Toshiba,Noir,"17,3""",1920 x 1080
-5,55.00,Occasion,4 Go,128 Go,ATHESI,Noir,"8""",1280 x 800
-6,230.00,Occasion,4 Go,512 Go,Dell,Gris,"13,3""",1920 x 1080
-7,65.00,Neuf,3 Go,120 Go,HP,Noir,"15""",1366 x 768
-8,149.00,Occasion,4 Go,512 Go,Dell,Noir,"12,5""",1366 x 768
-9,293.50,Très bon état - Reconditionné,16 Go,256 Go,Lenovo,Noir,"15,6""",1920 x 1080
-10,129.00,État correct - Reconditionné,8Go,HD 620,Panasonic,Noir,"12"" LED 2160 * 1440",titre
-11,269.00,Occasion,8 Go,256 Go,Dell,Gris,"13,3""",1920 x 1080
-12,250.00,Occasion,8Go,256 Go,Apple,Space Grey,"13""",2560x1600
-13,110.00,Occasion,6 Go,480 Go,Toshiba,Noir,"17,3""",1600 x 900
-14,149.00,État correct - Reconditionné,16 Go,256 Go,Dell,Noir,"14""",1920x1080
-15,338.47,Occasion,16 Go,512 Go,Apple,Argenté,"15,4""",2880 x 1800
-16,1050.00,Occasion,32 Go,1 To,MSI,Noir,"17,3""",1920 x 1080
+,ID,Prix,Condition,RAM,Stockage,Marque,Couleur,Taille écran,Résolution
+0,v1|356327736063|0,180.00,Occasion,,,Lenovo,,"14""",
+1,v1|387680411053|0,162.24,Occasion,,256 Go,Lenovo,Noir,1920 x 1080 (pleine HD),1920 x 1080
+2,v1|296848103901|0,165.00,Occasion,8 Go,500 Go,ASUS,noir/marron,"15,6""",1366 x 768
+3,v1|296856378691|0,79.00,Pour pièces détachées/ne fonctionne pas,,,HP,Gris,"17,3""",
+4,v1|365265648974|0,120.00,Occasion,8 Go,128 Go,MSI,Noir,"15,6""",1920 x 1080
+5,v1|365266529697|0,89.99,Pour pièces détachées/ne fonctionne pas,,,HP,,"15,6",
+6,v1|235855989305|0,200.00,Occasion,,,ASUS,,"17""",
+7,v1|365266853754|0,109.99,Pour pièces détachées/ne fonctionne pas,,,Dell,,"15,6",
+8,v1|267086729288|0,64.00,Occasion,,1 To,Lenovo,,"15,6""",
+9,v1|365266953264|0,79.99,Pour pièces détachées/ne fonctionne pas,,,Lenovo,,"13""",
+10,v1|296854206726|0,49.00,Pour pièces détachées/ne fonctionne pas,4 Go,,Acer,,"14""",
+11,v1|296832392776|0,90.00,Neuf,,,Acer,,"14""",
+12,v1|387676473497|0,162.24,Occasion,8 Go,256 Go,Apple,Argent,"13,3 Zoll",1440 x 900
+13,v1|275477642852|0,175.99,Occasion,256 Go,256 Go,Lenovo,Noir,"12,5""",1366 x 768
+14,v1|126696500103|0,230.00,Occasion,,,HP,,"14""",
+15,v1|205137135703|0,65.00,Neuf,3 Go,120 Go,HP,Noir,"15""",1366 x 768
+16,v1|156561480524|0,59.99,Pour pièces détachées/ne fonctionne pas,,,Lenovo,,"15""",
+17,v1|135403154823|0,170.00,Pour pièces détachées/ne fonctionne pas,256 Go,256 Go,Apple,Argenté,"13,3""",
+18,v1|356333922441|0,1599.99,Neuf,512 Go,512 Go,Apple,,"14""",
+19,v1|365266861411|0,89.99,Pour pièces détachées/ne fonctionne pas,,,Dell,,"15,6",
+20,v1|155973642985|0,149.00,Occasion,,,HP,,"14""",
+21,v1|365266840014|0,109.99,Pour pièces détachées/ne fonctionne pas,,,Dell,,14,
+22,v1|375830303308|0,570.00,Occasion,,8 Go,Dell,,,
+23,v1|365268738636|0,1795.00,Pour pièces détachées/ne fonctionne pas,4,,HP,Gris,14,1366 x 768
+24,v1|405275570031|0,120.00,Occasion,4 Go,128 Go,Lenovo,Gris,"10,1""",
+25,v1|365261545160|0,350.00,Occasion,8 Go,8 Go,Lenovo,,,
+26,v1|156559505432|0,39.99,Pour pièces détachées/ne fonctionne pas,,1 To,ASUS,,"15,6""",
+27,v1|135400461095|0,79.00,Occasion,,,Dell,,"14""",
+28,v1|387680410907|0,143.04,Occasion,,256 Go,Lenovo,Noir,1920 x 1080 (pleine HD),1920 x 1080
+29,v1|135414517651|0,139.00,Occasion,8 Go,500 Go,Panasonic,,"10,1""",
+30,v1|116399808595|0,220.00,Très bon état - Reconditionné,16 Go,256 Go,Lenovo,Noir,"14""",
+31,v1|315788748155|614232976406,192.00,Parfait état - Reconditionné,8 Go,256 Go,Dell,,"14""",1920 x 1080
+32,v1|267084799545|0,140.00,Occasion,16 Go,16 Go,Lenovo,Noir,"15,6""",
+33,v1|365258870436|0,55.00,Occasion,,256 Go,Apple,,"13,3""",
+34,v1|167147678795|0,65.00,Pour pièces détachées/ne fonctionne pas,4 Go,,ASUS,,"17,3""",
+35,v1|326359033033|0,100.00,Pour pièces détachées/ne fonctionne pas,,,ASUS,Noir,"17,3""",1920 x 1080
+36,v1|256737813337|0,1200.00,Occasion,,,Apple,,"14""",
+37,v1|326360080429|0,280.00,Occasion,,256 Go,Microsoft,,"13,5""",
+38,v1|387679022649|0,177.60,Occasion,,256 Go,Lenovo,Noir,1920 x 1080 (pleine HD),1920 x 1080
+39,v1|135339490080|0,200.00,Occasion,3 Go,16 Go,Lenovo,,"15,6""",
+40,v1|135400448279|0,39.00,Occasion,,,HP,,"13,3""",
+41,v1|356252876299|0,380.00,Neuf,,,- Sans marque/Générique -,Gris,"6,1""",
+42,v1|296823155327|0,39.00,Pour pièces détachées/ne fonctionne pas,4 Go,,ASUS,Noir,"15,6""",
+43,v1|365266739118|0,119.99,Pour pièces détachées/ne fonctionne pas,,,HP,,"15,6",
+44,v1|167110975768|466824226217,90.00,Occasion,8 Go,256 Go,HP,Gris,"12,5""",
+45,v1|196692157133|0,45.00,Occasion,,,HP,,"15,6""",
+46,v1|276766900330|0,159.90,Occasion,8 Go,256 Go,Dell,Gris,"14""",
+47,v1|296858159418|0,39.00,Pour pièces détachées/ne fonctionne pas,8 Go,256 Go,Lenovo,Noir,"12,5""",1920 x 1080
+48,v1|395921012306|0,699.99,Occasion,,256 Go,Samsung,,"15,6""",
+49,v1|387683796140|0,50.00,Occasion,,,Compaq,,Autre,
+50,v1|296854275751|0,89.00,Pour pièces détachées/ne fonctionne pas,8 Go,,ASUS,,"15,6""",
+51,v1|305864758823|0,350.00,Occasion,,8 Go,HP,,"13""",
+52,v1|387692713270|0,250.00,Occasion,8 Go,128 Go,Apple,Argenté,"13""",
+53,v1|326142989524|0,49.00,Pour pièces détachées/ne fonctionne pas,,,Apple,,"12""",
+54,v1|276767026355|0,110.00,Occasion,,,HP,,"15""",
+55,v1|176679990173|0,349.00,Occasion,16 Go,500 Go,Microsoft,Argenté,"15""",
+56,v1|186788628870|0,180.00,Pour pièces détachées/ne fonctionne pas,,,ASUS,,"15,6""",
+57,v1|205138960828|0,55.00,Occasion,4 Go,128 Go,ATHESI,Noir,"8""",1280 x 800
+58,v1|135395558351|0,49.00,Occasion,8 Go,480 Go,Dell,,"13,3""",1366 x 768
+59,v1|167141907414|0,319.00,Occasion,16 Go,16 Go,ASUS,,"14""",1920 x 1080
+60,v1|286147942692|0,100.00,Occasion,4 Go,128 Go,Panasonic,,"10,1""",
+61,v1|196734300513|0,129.00,État correct - Reconditionné,8Go,HD 620,Panasonic,Noir,"12"" LED 2160 * 1440",titre
+62,v1|196798783161|0,250.00,Ouvert (jamais utilisé),,,ASUS,,"17,3""",
+63,v1|186810647295|0,29.00,Pour pièces détachées/ne fonctionne pas,,,Thomson,,"17,3""",
+64,v1|365266951529|0,79.99,Pour pièces détachées/ne fonctionne pas,,,Lenovo,,"13""",
+65,v1|405392275128|0,600.00,Occasion,,512 Go,Acer,,"15,6""",
+66,v1|116407304434|0,380.00,Très bon état - Reconditionné,16 Go,512 Go,Lenovo,Gris,"13""",
+67,v1|186819445099|0,150.00,Occasion,3 Go,6 Go,ASUS,,"17,3""",
+68,v1|126813199112|0,230.00,Occasion,4 Go,512 Go,Dell,Gris,"13,3""",1920 x 1080
+69,v1|387689554233|0,950.00,Ouvert (jamais utilisé),16 Go,512 Go,Lenovo,,"14""",
+70,v1|126732116433|0,250.00,Occasion,8Go,256 Go,Apple,Space Grey,"13""",2560x1600
+71,v1|305939118528|0,70.00,Occasion,,,HP,,"14""",
+72,v1|387590914005|0,29.99,Occasion,8 Go,700 Go,HP,,"14""",
+73,v1|286198348923|0,59.90,Pour pièces détachées/ne fonctionne pas,,,Dell,,"14""",
+74,v1|176698561737|0,135.00,Occasion,4 Go,256 Go,HP,,"12""",
+75,v1|126809748748|0,1475.77,Occasion,16 GB,1 To,ASUS,Blanc,35.6cm,2880 x 1800
+76,v1|186823971555|0,180.00,Occasion,,,ASUS,,"15,6""",
+77,v1|126801229388|0,90.00,Pour pièces détachées/ne fonctionne pas,4 Go,480Go,ASUS,Noir,"17,3""",1600 x 900
+78,v1|176565384877|0,125.00,Occasion,4 Go,256 Go,Lenovo,,"15,6""",
+79,v1|405397383186|0,39.00,Pour pièces détachées/ne fonctionne pas,4 Go,16 Go,Dell,,"11,6""",
+80,v1|135403131475|0,59.00,Occasion,,,Dell,,"12,5""",
+81,v1|356321733541|0,293.50,Très bon état - Reconditionné,16 Go,256 Go,Lenovo,Noir,"15,6""",1920 x 1080
+82,v1|156559463699|0,109.99,Occasion,10 Go,500 Go,Apple,,"13""",
+83,v1|387687564852|0,258.00,Occasion,16 Go,512 Go,Lenovo,Noir,"14""",1366 x 768
+84,v1|126802992998|0,350.00,Occasion,8 Go,128 Go,Apple,,"13,3""",2560 x 1600
+85,v1|365193027538|0,390.00,Occasion,16 Go,256 Go,Dell,Noir,"13""",1920 x 1080
+86,v1|326358269959|0,59.00,Occasion,,750 Go,MEDION,Bleu,"17,3""",
+87,v1|167147903919|0,650.00,Occasion,16 Go,512 Go,Dell,Gris,"13,3""",1920 x 1080
+88,v1|296856322514|0,59.00,Pour pièces détachées/ne fonctionne pas,4 Go,absent,HP,Argenté,"14""",1366 x 768
+89,v1|365266685881|0,59.99,Pour pièces détachées/ne fonctionne pas,,,HP,,"15,6",
+90,v1|267079492308|0,48.00,Occasion,,116,HP,,"10""",
+91,v1|176716180846|0,550.00,Occasion,8 Go,5 Go,Dell,Gris,"13,3""",1920 x 1200
+92,v1|135422326713|0,290.00,Occasion,512 Go,512 Go,Lenovo,,"15,6""",
+93,v1|276746220430|0,303.00,Très bon état - Reconditionné,,128 Go,Lenovo,,,
+94,v1|405395856779|0,1699.99,Neuf,,,Apple,,14,
+95,v1|226477383589|0,35.00,Occasion,2 Go,120 Go,Toshiba,Gris,"15,4""",
+96,v1|167122246795|0,119.90,État correct - Reconditionné,8 Go,512 Go,Thomson,Noir,"17,3""",
+97,v1|176703474288|0,195.00,Occasion,8 Go,256 Go,HP,,"14""",
+98,v1|126745328601|0,49.90,Pour pièces détachées/ne fonctionne pas,,,Acer,Noir,"14""",
+99,v1|235772297898|0,649.00,Occasion,32 Go,512 Go,Apple,Gris,"16""",
