@@ -1,7 +1,8 @@
 import pandas as pd
 import numpy as np
 from utils import extract_float_from_string  
-from data import df 
+
+df = pd.read_csv('data.csv')
 
 # Transformation de la RAM en int (suppression de 'Go' et conversion en numérique)
 df['RAM'] = df['RAM'].str.replace('Go', '', regex=False)  # Supprimer 'Go' de chaque valeur
