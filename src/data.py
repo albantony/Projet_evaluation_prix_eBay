@@ -57,7 +57,7 @@ while ITEMS_VALIDES < NUM_ITEMS:
                 taille = None
                 resolution = None
             
-            # On extrait les informations de prix, condition et currency
+            # On extrait les informations de prix, condition
                 price_info = item_details.get('price', {})
                 if price_info:
                     price = price_info.get('value', None)            

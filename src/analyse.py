@@ -1,5 +1,6 @@
 import matplotlib.pyplot as plt
 import pandas as pd
+from cleaning import df
 
 def plot_price_vs_ppi(df):
     # S'assurer que les colonnes sont bien numériques
@@ -22,5 +23,4 @@ def plot_price_vs_ppi(df):
     plt.grid(True)
     plt.show()
 
-#à run avec le bon df mais là je vais dodo
-
+plot_price_vs_ppi(df)
