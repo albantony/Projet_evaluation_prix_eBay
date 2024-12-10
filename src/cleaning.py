@@ -28,5 +28,5 @@ df['Densité pixels'] = df.apply(
     axis=1
 )
 
-# Affichage des résultats
-print(df[['Taille écran', 'Largeur', 'Hauteur', 'Densité pixels']])
+"""# Affichage des résultats
+print(df[['Taille écran', 'RAM', 'Largeur', 'Hauteur', 'Densité pixels']])"""
