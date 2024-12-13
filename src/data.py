@@ -62,6 +62,9 @@ while ITEMS_VALIDES < NUM_ITEMS:
                 if price_info:
                     price = price_info.get('value', None)            
                 condition = item.get('condition')
+
+                if condition and "pièces" in condition.lower():
+                    continue  # Passer au prochain item
             
             # Extraire les infos précises du produit
                 localized_aspects = item_details.get("localizedAspects", [])
