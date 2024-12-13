@@ -16,7 +16,7 @@ while ITEMS_VALIDES < NUM_ITEMS:
     params = {
     "category_ids": "175672", # Recherche pour ordinateurs portables/netbooks
     "offset" : OFFSET,
-    "limit": NUM_ITEMS,  
+    "limit": 100,  
     "filter": "listingType: FIXED_PRICE" #On veut seulement les achats immédiats (pas d'enchères)
 }
 
@@ -81,7 +81,7 @@ while ITEMS_VALIDES < NUM_ITEMS:
                         capacité = value
                 # Marque
                     elif "marque" in name:
-                        brand = value
+                        marque = value
                 # Couleur
                     elif "couleur" in name:
                         couleur = value
@@ -92,14 +92,14 @@ while ITEMS_VALIDES < NUM_ITEMS:
                         resolution = value
 
 
-                if all([price, condition, ram, capacité, brand, couleur, taille, resolution]) :
+                if all([price, condition, ram, capacité, marque, couleur, taille, resolution]) :
                     data.append({
                 "ID": item_id,
                 "Prix": price,
                 "Condition": condition,
                 "RAM": ram,
                 "Stockage": capacité,
-                "Marque": brand,
+                "Marque": marque,
                 "Couleur": couleur,
                 "Taille écran": taille,
                 "Résolution": resolution
@@ -113,7 +113,7 @@ while ITEMS_VALIDES < NUM_ITEMS:
         print(f"Erreur lors de la requête de recherche : {response.status_code}")
         print(response.json())
 
-    OFFSET += NUM_ITEMS
+    OFFSET += 100
 
 # Conversion en DataFrame
 df = pd.DataFrame(data)
