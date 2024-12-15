@@ -1,6 +1,616 @@
 ,ID,Prix,Condition,RAM,Stockage,Marque,Couleur,Taille écran,Résolution
-0,v1|135439514016|0,399.00,Occasion,16 Go,0,Microsoft,Noir,"13""",2880 x 1920
-1,v1|296878513291|0,20.00,Occasion,2 Go,80 Go,Acer,Gris,"15,4",1024 x 768
-2,v1|316046921868|0,370.00,Neuf,16 Go,512 Go,Dell,Noir,"15""",1920 x 1080
-3,v1|405416689885|0,104.75,Occasion,8 Go,500 Go,ASUS,"Argenté, Noir","15,6""",1366 x 768
-4,v1|395895523237|0,250.00,Occasion,8 Go,128 Go,Lenovo,Noir,"14""",1920 x 1080
+0,v1|276779927734|0,230.00,Occasion,8 Go,5 Go,Huawei,Gris,"14""",1920 x 1080
+1,v1|356347252884|0,250.00,Occasion,8 Go,512 Go,MSI,Noir,"15""",1920 x 1080
+2,v1|226496713925|0,330.00,Occasion,24 Go,1 To,Lenovo,Noir,"14""",1920 x 1080
+3,v1|395895523237|0,250.00,Occasion,8 Go,128 Go,Lenovo,Noir,"14""",1920 x 1080
+4,v1|387684699352|0,340.00,Ouvert (jamais utilisé),16 Mo,512 Go,HP,Gris,"17,3""",1920 x 1080
+5,v1|356376878312|0,120.00,Occasion,6 Go,500 Go,MSI,Noir,"17,3""",1920 x 1080
+6,v1|196734278702|0,169.00,Très bon état - Reconditionné,8Go,HD 620,Panasonic,Noir,"12"" LED 2160 * 1440",titre
+7,v1|176732198029|0,1600.00,Ouvert (jamais utilisé),32 Go,1 To,Dell,Argenté,"17""",1920 x 1080
+8,v1|286214085403|0,80.00,Occasion,8 Go,256 Go,Lenovo,Noir,"14""",nn
+9,v1|167178612324|0,649.00,Occasion,512 Go,512 Go,Dell,Noir graphite,"13,4""",3840 x 2400
+10,v1|176725687531|0,338.47,Occasion,16 Go,512 Go,Apple,Argenté,"15,4""",2880 x 1800
+11,v1|356365144398|0,220.00,Occasion,16 Go,512 Go,HP,Gris,"14""",1920 x 1080
+12,v1|126732116433|0,240.00,Occasion,8Go,256 Go,Apple,Space Grey,"13""",2560x1600
+13,v1|126732116433|0,240.00,Occasion,8Go,256 Go,Apple,Space Grey,"13""",2560x1600
+14,v1|276770564272|0,165.00,Occasion,16 Go,16 Go,Dell,Marron,"14""",1920 x 1080
+15,v1|235869979752|0,90.00,Occasion,6 Go,240Go,Sony,Noir,"15,6""",1366 x 786
+16,v1|395427398249|0,329.00,Occasion,16 Go,500 Go,Lenovo,Noir,"15,6""",1920 x 1080
+17,v1|235859799458|0,45.00,Ouvert (jamais utilisé),2 Go,32 Go,Danew,Argenté,"10,1""",1280 x 800
+18,v1|126828727112|0,290.00,Occasion,16 Go,512 Go,Dell,Gris,"13,3""",1920 x 1080
+19,v1|186690219384|0,450.00,Occasion,8 Go,512 Go,ASUS,Noir,"15,6""",1920 x 1080
+20,v1|176729111408|0,159.99,Occasion,8 Go,128 Go,Apple,Argenté,"13""",2560 x 1600
+21,v1|296882818273|0,199.99,Occasion,16 Go,256Go SSD,Dell,Noir,"14""",1366 x 768
+22,v1|126731294887|427786658693,128.54,Occasion,8 Go,256 Go,Panasonic,Argent,25.7cm,1920 x 1080
+23,v1|395937180861|0,205.00,Occasion,8 Go,256 Go,Intel,Argenté,"14""",1920 x 1080
+24,v1|365285586839|0,189.99,Occasion,8 Go,256 Go,Lenovo,Noir,"13,3""",1920 x 1080
+25,v1|395961012072|0,250.00,Occasion,16 Go,1 To,HP,Noir,ecran de 24 pouces possible,1920 x 1080
+26,v1|276757263022|0,57.00,Occasion,6 Go,500 Go,HP,Noir,"15,6""",1366 x 768
+27,v1|167177044347|0,600.00,Occasion,16 Go,100 Go,Acer,Noir,"17,3""",1920 x 1080
+28,v1|326365399320|0,499.00,Occasion,32 Go,1 To,Dell,Gris,"15,6""",1920 x 1080
+29,v1|126775700704|0,230.00,Occasion,16 Go,256 Go,HP,Argenté,"13,3""",1920 x 1080
+30,v1|316044931910|0,197.63,Parfait état - Reconditionné,8 Go,256 Go,Dell,Noir,"14""",1920 x 1080
+31,v1|167177044347|0,600.00,Occasion,16 Go,100 Go,Acer,Noir,"17,3""",1920 x 1080
+32,v1|276757263022|0,57.00,Occasion,6 Go,500 Go,HP,Noir,"15,6""",1366 x 768
+33,v1|387727899261|0,1000.00,Occasion,16 Go,512 Go,MSI,Noir,"15,6""",1920 x 1080
+34,v1|365249211566|0,318.34,Occasion,16 Go,512 Go,MSI,Noir,"15,6""",1920 x 1080
+35,v1|387722064432|0,99.99,Occasion,4 Go,500 Go,Lenovo,Noir,"13,5""",1920 x 1080
+36,v1|196885994848|0,150.00,Occasion,8 Go,256 Go,Dell,Gris,"14""",1920 x 1080
+37,v1|296848103901|0,160.00,Occasion,8 Go,500 Go,ASUS,noir/marron,"15,6""",1366 x 768
+38,v1|365285576785|0,169.99,Occasion,8 Go,512 Go,Lenovo,Noir,"13,3""",1366 x 768
+39,v1|395961012072|0,250.00,Occasion,16 Go,1 To,HP,Noir,ecran de 24 pouces possible,1920 x 1080
+40,v1|316043079926|0,450.00,Occasion,8 Go,8 Go,ASUS,noire,"17,3""",1600 x 900
+41,v1|226437631840|0,335.00,Occasion,20 Go,500 Go,Dell,Noir,"15,6""",1920 x 1080
+42,v1|356359937928|0,185.00,Occasion,16 Go,500 Go,HP,Gris,"14""",1366 x 768
+43,v1|186745547730|0,270.00,Occasion,8 Go,256 Go,Dell,Noir,"15,6""",1920 x 1080
+44,v1|316052346457|0,180.00,Occasion,8Go,256 Go,Apple,Space Grey,"13""",2560x1600
+45,v1|186823838781|0,100.00,Occasion,8 Go,8 Go,Acer,Noir,"14""",1920 x 1080
+46,v1|355882036974|0,720.00,Occasion,16 Go,1 To,ASUS,Noir,"14""",1920 x 1080
+47,v1|365261546008|0,620.00,Occasion,8 Go,256 Go,Microsoft,Noir,"13""",2880 x 1920
+48,v1|395783010411|0,105.00,Occasion,6 gb,1 To,ASUS,Gris,"15,6""",1366 x 768
+49,v1|186731309791|0,119.00,Occasion,8 Go,0,Lenovo,Noir,"13""",1920x1080
+50,v1|387176794155|0,340.00,Occasion,8 Go,256 Go,HP,Argent,"13""",1920x1080
+51,v1|355882036974|0,720.00,Occasion,16 Go,1 To,ASUS,Noir,"14""",1920 x 1080
+52,v1|186792204272|0,420.00,Ouvert (jamais utilisé),16 Go,512 Go,Lenovo,Gris,"15,6""",1920 x 1080
+53,v1|387436170733|0,365.00,Occasion,16 Go,256 Go,HP,Argenté,"14""",1920 x 1080
+54,v1|356359950100|0,235.00,Occasion,16 Go,500 Go,HP,Gris,"14""",1920 * 1080
+55,v1|185744264478|0,75.00,Occasion,4 Go,00,Lenovo,Noir,NN,3840 x 2400
+56,v1|186844443667|0,129.99,Occasion,512 Mo,20 Go,Dell,Noir,"14""",1400 x 1050
+57,v1|296880948762|0,130.00,Occasion,8 Go,480 Go,Acer,Noir,"15,6""",1366 x 768
+58,v1|387485442493|0,160.00,Occasion,8 Go,128 Go,Apple,Argenté,"13""",1440 x 900
+59,v1|365261546008|0,620.00,Occasion,8 Go,256 Go,Microsoft,Noir,"13""",2880 x 1920
+60,v1|296824872457|0,110.00,Occasion,4 Go,32 Go,Lenovo,Bleu,"11,6""",1366 x 768
+61,v1|387720513747|0,510.00,Occasion,16 Go,256 Go,Apple,Gris,"15""",3072 x 1920
+62,v1|135387501286|0,429.00,Très bon état - Reconditionné,16 Go,500 Go,Lenovo,Noir,"15,6""",1920 x 1080
+63,v1|116420676534|0,345.00,Occasion,32 Go,256 Go,Dell,Gris,"15,6""",1920 x 1080
+64,v1|335670272737|0,345.00,Occasion,16 Go,512 Go,Apple,Gris entracite,"15,4",2880 x 1800
+65,v1|286211338380|0,399.90,Occasion,16 Go,256 Go,Lenovo,Noir,"14""",1366 x 768
+66,v1|267098051081|0,250.00,Occasion,8 Go,1 To,Acer,Noir,"11,6""",1366 x 768
+67,v1|135384012047|0,469.00,Occasion,16 Go,512 Go,Lenovo,Noir,"15,6""",1920 x 1080
+68,v1|396001362640|0,900.00,Occasion,16 Go,512 Go,ASUS,Noir,"17,3""",1920 x 1080
+69,v1|167053812685|0,300.00,Occasion,16 Go,1 To,ASUS,Multicouleur,"15,6""",1920 x 1080
+70,v1|135387501286|0,429.00,Très bon état - Reconditionné,16 Go,500 Go,Lenovo,Noir,"15,6""",1920 x 1080
+71,v1|335731133904|0,52.00,Occasion,4 Go,500 Go,Dell,Noir,"14""",1366×768
+72,v1|405397479844|0,330.00,Ouvert (jamais utilisé),16 Go,512 Go,Acer,Gris,"15,6""",1920 x 1080
+73,v1|296868755313|0,75.00,Neuf,2 Go,32 Go,Danew,Argenté,"10,1""",1280 x 800
+74,v1|365181445413|0,225.00,Occasion,8 Go,256 Go,HP,Argenté,"14""",1920 x 1080
+75,v1|167099833171|0,149.00,Occasion,8 Go,240 Go,Lenovo,Noir,"12,5""",1366 x 768
+76,v1|395753876712|0,269.00,Occasion,16 Go,256 Go,Dell,Noir,"13""",1366 x 768
+77,v1|196738091165|0,90.00,Occasion,8 Go,500 Go,ASUS,Noir,"15,6""",1366 x 768
+78,v1|356121570771|0,500.00,Neuf,16 Go,8 Go,Microsoft,Rose,"12,4""",1536 x 1024
+79,v1|116318280810|0,890.00,Occasion,32 Go,1 To,Lenovo,Noir,"15,6""",1920 x 1080
+80,v1|356121570771|0,500.00,Neuf,16 Go,8 Go,Microsoft,Rose,"12,4""",1536 x 1024
+81,v1|116318280810|0,890.00,Occasion,32 Go,1 To,Lenovo,Noir,"15,6""",1920 x 1080
+82,v1|256749617949|0,159.00,Occasion,256MB,20GB,Acer,Noir,"15""",1024 x 768 (XGA)
+83,v1|405340086755|0,40.00,Occasion,4 Go,120 Go,Acer,Violet,"15,6""",1366 x 768
+84,v1|186839851214|0,69.00,Occasion,6 Go,256 Go,Lenovo,Noir,"15,6""",1366 x 768
+85,v1|286183763944|0,360.00,Occasion,4 Go,150 Go,HP,Noir,"20,1""",1680 x 1050
+86,v1|116419408101|0,250.00,Occasion,8 Go,256 Go,Dell,Gris,"15,6""",1920 x 1080
+87,v1|196877247760|0,129.00,Très bon état - Reconditionné,8Go,256Go SSD,Lenovo,Noir,"14""",1920 x 1080
+88,v1|267097883053|0,219.00,Occasion,8 Go,128 Go,Dell,Noir,"14""",1920 x 1080
+89,v1|315727979749|0,1590.00,Ouvert (jamais utilisé),16 Go,512 Go,ASUS,Gris,"14""",3k
+90,v1|375860026581|0,510.00,Occasion,64 Go,1 To,Lenovo,Noir,"15,6""",1920 x 1080
+91,v1|116408029216|0,229.00,Occasion,8 Go,256 Go,Dell,Gris,"13,3""",1920 x 1080
+92,v1|316046921868|0,370.00,Neuf,16 Go,512 Go,Dell,Noir,"15""",1920 x 1080
+93,v1|126820079947|0,110.00,Occasion,8 Go,750 Go,HP,Gris,"17,3""",1600 x 900
+94,v1|186830952578|0,35.00,Occasion,4 Go,160 Go,ASUS,Noir,"15,6""",1366 x 768
+95,v1|267094469273|0,219.00,Occasion,16 Go,500 Go,HP,Gris,"15,6""",1920 x 1080
+96,v1|186732251956|0,119.00,Occasion,8 Go,0,Lenovo,Noir,Nn,nn
+97,v1|296712094082|0,335.00,Occasion,8 Go,256 Go,Lenovo,Gris,"15,6""",1920 x 1080
+98,v1|316046921868|0,370.00,Neuf,16 Go,512 Go,Dell,Noir,"15""",1920 x 1080
+99,v1|267094469273|0,219.00,Occasion,16 Go,500 Go,HP,Gris,"15,6""",1920 x 1080
+100,v1|126486913953|0,199.00,Occasion,8 Go,700 Go,Acer,Noir,"17,3""",1600 x 900
+101,v1|186732251956|0,119.00,Occasion,8 Go,0,Lenovo,Noir,Nn,nn
+102,v1|267065487537|0,199.00,Occasion,4 Go,128 Go,Panasonic,Argenté,"10,8""",1024 x 768
+103,v1|186661859695|0,195.00,Neuf,16 Go,256 Go,- Sans marque/Générique -,Argenté,"14,1""",1920 x 1080
+104,v1|156583698926|0,550.00,Occasion,16 Go,512 Go,Dell,Noir,"15,6""",1920 x 1080
+105,v1|395855150825|0,69.90,Occasion,4 Go,500 Go,Toshiba,Blanc,"15,6""",1366 x 768
+106,v1|326312216656|0,450.00,Occasion,16 Go,512 Go,Microsoft,Argenté,"13""",3000 x 2000
+107,v1|396011748594|0,1400.00,Occasion,32 Go,512 Go,CLEVO,Argenté,"17""",1920 x 1080
+108,v1|205081605632|0,110.00,Occasion,256 Mo,"18,1 Go",Apple,Noir,"14,1""",1024 x 768
+109,v1|326372797904|0,150.00,Occasion,2Go,64GBGo,Apple,Silver,"11""",2560x1600
+110,v1|116405645432|0,350.00,Occasion,32 Go,256 Go,Dell,Gris,"15,6""",1920 x 1080
+111,v1|126798727973|0,700.00,Occasion,8 Go,1To,Dell,Shadow Grey,"15,6""",1920 x 1080
+112,v1|315859658447|0,400.00,Ouvert (jamais utilisé),32 Go,512 Go,Dell,Gris,"14""",1920 x 1080
+113,v1|365107332513|0,320.00,Occasion,8 Go,240 Go,Lenovo,Noir,"14""",1920 x 1080
+114,v1|365168137615|0,399.00,Occasion,16 Go,240 Go,ASUS,Bleu,"13,3""",3840 x 2160
+115,v1|116329552687|0,349.00,Occasion,8192,256 Go,Dell,Noir,14 Zoll,1920 x 1080
+116,v1|186843134425|0,189.00,Occasion,4 Go,0,HP,Gris,"15,6""",Nn
+117,v1|176524700087|0,150.00,Occasion,32 Mo,2 Go,Fujitsu,Noir,"12""",800 x 600
+118,v1|355619702479|0,170.00,Occasion,4 Go,300 Go,Unowhy,Noir,"13,3""",1920 x 1200
+119,v1|405084031979|0,299.00,Occasion,16 Go,512 Go,Dell,Noir,"14""",1366 x 768
+120,v1|226432817174|0,3650.00,Occasion,64 Go,1 To,Apple,Noir,"16""",3456 x 2234
+121,v1|126830878650|0,1819.85,Occasion,64 Go,2 To,Lenovo,Noir,40.6cm,2560 x 1600
+122,v1|226305269660|0,275.00,Occasion,8 Go,256 Go,Lenovo,Noir,"14""",1920 x 1080
+123,v1|126712500731|0,378.00,Occasion,8 Go,1 To,Acer Nitro 5,Noir,"15,6""",1920 x 1080
+124,v1|355983731689|0,650.00,Occasion,16 Go,512 Go,HP,Noir,"16,1""",1920 x 1080
+125,v1|305973397638|0,249.00,Occasion,8 Go,256 Go,Lenovo,Noir,"14""",1920 x 1080
+126,v1|116291531997|0,100.00,Occasion,8 Go,256 Go,Dell,Noir,"14""",1366 x 768
+127,v1|186661859695|0,195.00,Neuf,16 Go,256 Go,- Sans marque/Générique -,Argenté,"14,1""",1920 x 1080
+128,v1|405386368662|0,160.00,Ouvert (jamais utilisé),6 Go,256 Go,Amazon,Argenté,"14""",1920 x 1080
+129,v1|176727269009|0,99.99,Occasion,4 Go,128 Go,Apple,Argent,"13""",1280 x 800
+130,v1|186840595661|0,140.00,Occasion,16 Go,256 Go,HP,Argenté,"12,5""",1920 x 1080
+131,v1|286180796858|0,139.00,Occasion,4 Go,64 Go,Thomson,Gris,"14""",1920 x 1080
+132,v1|286146414825|0,155.00,Occasion,4 Go,256 Go,Dell,Noir,"14,1""",1920 x 1080
+133,v1|176727269009|0,99.99,Occasion,4 Go,128 Go,Apple,Argent,"13""",1280 x 800
+134,v1|186840595661|0,140.00,Occasion,16 Go,256 Go,HP,Argenté,"12,5""",1920 x 1080
+135,v1|387528423722|0,190.00,Occasion,6 Go,512 Go,Dell,Noir,"14""",1920 x 1080
+136,v1|375458359652|644401656127,339.95,Neuf,8 Go,256 Go,- Sans marque/Générique -,Noir,"15,6""",1920 x 1080
+137,v1|296712094082|0,335.00,Occasion,8 Go,256 Go,Lenovo,Gris,"15,6""",1920 x 1080
+138,v1|267092393138|0,47.91,Ouvert (jamais utilisé),2 Go,16 Go,KLIPAD,Gris,"10,1""",1280 x 800
+139,v1|395963936615|0,500.00,Occasion,16 Go,512 Go,MSI,Noir,"15,6""",1920 x 1080
+140,v1|365277616067|0,360.00,Occasion,8 Go,250 Go,Lenovo,Noir,"14""",1920 x 1080
+141,v1|196575461741|0,189.00,Très bon état - Reconditionné,16go,256Go SSD,Dell,Noir,"12""5",titre
+142,v1|395821410829|0,50.00,Occasion,512 MB,60 GB,Fujitsu,Gris /M noir,"15,4 pouces",1280*800
+143,v1|145790928646|0,900.00,Occasion,8 Go,256 Go,Apple,Argenté,"13,6""",2560 x 1664
+144,v1|126825281182|0,100.00,Occasion,8 Go,250 Go,Lenovo,Noir,"15,6""",1366 x 768
+145,v1|365279619501|0,270.00,Occasion,8 Go,256 Go,Dell,Noir,"13,3""",1920 x 1080
+146,v1|267094675688|0,229.00,Occasion,16 Go,240Go,Dell,Gris,"17,3""",1600 x 900
+147,v1|196668562476|0,399.00,Très bon état - Reconditionné,16 Go,500Go SSD,ASUS,Noir,17.3,titre
+148,v1|146268220371|0,200.00,Occasion,8 Go,1050 Go,Samsung,Noir,"15,6""",1366 x 768
+149,v1|356079530565|0,479.00,Occasion,16 Go,500 Go,Dell,Gris,"15,6""",1920 x 1080
+150,v1|167174961514|0,178.40,Occasion,8 Go,512 Go,Lenovo,Noir,"14""",‎1366 x 768
+151,v1|186319660495|0,119.00,Occasion,sans ram,sans ssd,Dell,Noir,"14""",1920 x 1080
+152,v1|116420536471|0,275.00,Occasion,8 Go,256 Go,HP,Gris,"14,2""",1920 x 1080
+153,v1|256713077171|0,189.00,Occasion,8 Go,320 Go,Lenovo,Noir,"15,6""",1366 x 768
+154,v1|395821410829|0,50.00,Occasion,512 MB,60 GB,Fujitsu,Gris /M noir,"15,4 pouces",1280*800
+155,v1|196295442340|0,159.00,État correct - Reconditionné,8 Go,256Go SSD,Lenovo,Noir,"15.6""",1920x1080
+156,v1|196760271337|0,350.00,Occasion,16 Go,256 Go,Lenovo,Noir,"14""",1920 x 1080
+157,v1|135356390803|0,700.00,Occasion,512 Go,512 Go,Acer,Noir,"17,3""",1920 x 1080
+158,v1|286195561118|0,190.00,Occasion,8 Go,"1,5 To = 500 Go SSD + 1 To HD",Apple,Gris,"15,4""",1440 x 900
+159,v1|326368928894|0,250.00,Occasion,16 Go,512 Go,Lenovo,Noir,"14""",1920 x 1200
+160,v1|286170984209|0,580.00,Neuf,16 Go,1 To,HP,Argenté,"15,6",1920 x 1080
+161,v1|315934099814|0,89.99,Occasion,4 Go,256 Go,Acer,Gris,"17,3""",1600 x 900
+162,v1|135384012047|0,469.00,Occasion,16 Go,512 Go,Lenovo,Noir,"15,6""",1920 x 1080
+163,v1|296643148760|0,550.00,Occasion,8 Go,1 To,ASUS,Royal Blue,"13,3""",1920 x 1080
+164,v1|205138785440|0,620.00,Occasion,16 Go,512 Go,HP,Argenté,15.6,intel turbo boost
+165,v1|375458359652|644401656127,339.95,Neuf,8 Go,256 Go,- Sans marque/Générique -,Noir,"15,6""",1920 x 1080
+166,v1|196861218713|0,270.00,Occasion,8 Go,256 Go,Dell,Gris,"14""",1920 x 1080
+167,v1|186844484504|0,119.99,Occasion,2 Go,60 Go,IBM,Noir,"14,1""",1024 x 768
+168,v1|156064442352|0,109.00,Occasion,256 Go,256 Go,Lenovo,Noir,"15.6""",1366 x 768
+169,v1|387659909797|0,420.00,Occasion,8Go,512 Go,Apple,Space Grey,"13""",2560x1600
+170,v1|364136656924|0,225.00,Occasion,8 Go,256 Go,HP,Argenté,"14""",1920 x 1080
+171,v1|186810736851|0,179.00,Occasion,8 Go,0,Lenovo,Noir,"14""",nn
+172,v1|186810736851|0,179.00,Occasion,8 Go,0,Lenovo,Noir,"14""",nn
+173,v1|396011748594|0,1400.00,Occasion,32 Go,512 Go,CLEVO,Argenté,"17""",1920 x 1080
+174,v1|286210787356|0,229.00,Très bon état - Reconditionné,8 Go,500 Go,Dell,Noir,"15,6""",1366 x 768
+175,v1|256713077171|0,189.00,Occasion,8 Go,320 Go,Lenovo,Noir,"15,6""",1366 x 768
+176,v1|365252691741|0,175.00,Occasion,8 Go,256 Go,HP,Argenté,"15""",1920 x 1080
+177,v1|286170984209|0,580.00,Neuf,16 Go,1 To,HP,Argenté,"15,6",1920 x 1080
+178,v1|286211696943|0,139.00,Occasion,8 Go,320 Go,HP,Noir,"15,6""",1366 x 768
+179,v1|305972784813|0,450.00,Occasion,16 Go,16 Go,Lenovo,Noir,"14""",2560 x 1440
+180,v1|365279619501|0,270.00,Occasion,8 Go,256 Go,Dell,Noir,"13,3""",1920 x 1080
+181,v1|267062740370|0,79.00,Occasion,4 Go,250 Go,Lenovo,Noir,"14""",1366 x 768
+182,v1|387700611820|0,189.99,Occasion,16 Go,1 To,Intel,Argenté,"15""",1920 x 1080
+183,v1|196876945940|0,209.00,Très bon état - Reconditionné,16Go,256Go SSD,Lenovo,Noir,"14""",titre
+184,v1|196852683529|0,320.00,Occasion,8 Go,512 Go,ASUS,Gris,"15""",1920 x 1080
+185,v1|156448079195|0,190.00,Occasion,8 Go,256 Go,Dell,Argenté,"13,3""",1920 x 1080
+186,v1|305751736477|0,60.00,Occasion,3 Go,60 Go,IBM,Noir,"15,6""",1366 x 768
+187,v1|196882327062|0,165.00,Occasion,16 Go,256 Go,Dell,Noir,"14""",1360 x 768
+188,v1|387502740656|0,164.00,Occasion,8 Go,256 Go,Lenovo,Noir,"12""",1366 x 768
+189,v1|375864158077|0,400.00,Occasion,16 Go,1 To,MSI,Gris,"15,6""",1920 x 1080
+190,v1|196295470063|0,369.00,Très bon état - Reconditionné,8Go,256Go SSD,HP,Silver,"14"" Tactile",titre
+191,v1|256707771741|0,550.00,Occasion,16 Go,256 Go,Apple,Gris,"15,4""",2880 x 1800
+192,v1|267070392665|0,229.00,Occasion,16 Go,256 Go,Dell,Noir,"14""",1920 x 1080
+193,v1|256562925706|0,99.90,Occasion,4 Go,250 Go,Intel,Noir,"15,3""",1366 x 768
+194,v1|235798825360|0,149.00,Occasion,4 Go,128 Go,Apple,Argenté,"11""",1366 x 768
+195,v1|267070392665|0,229.00,Occasion,16 Go,256 Go,Dell,Noir,"14""",1920 x 1080
+196,v1|176728057992|0,399.00,Occasion,8 Go,256 Go,Apple,Gris,"13""",2560 x 1600
+197,v1|365231274077|0,220.00,Occasion,8 Go,256 Go,HP,Gris,"13,3",1920 x 1080
+198,v1|256747791338|0,229.00,Très bon état - Reconditionné,8 Go,500 Go,Dell,Noir,"15,6""",1366 x 768
+199,v1|393671404225|0,239.00,Occasion,8 Go,256 Go,Dell,Noir,"14""",1366 x 768
+200,v1|375836205767|0,499.99,Neuf,8 Go,256 Go,Samsung,Argenté,"15,6""",1920 x 1080
+201,v1|176720651513|0,119.99,Occasion,4 Go,1 To,Dell,Noir,"15,6""",1366 x 768
+202,v1|186776571430|0,199.00,Occasion,8 Go,0,Lenovo,Noir,"15,6""",nn
+203,v1|186752029276|0,54.00,Occasion,4 Go,32 Go,Dell,Noir,"11,6""",1366 x 768
+204,v1|186655309736|0,60.00,Occasion,4 Go,32 Go,Dell,Noir,"11,6""",1366 x 768
+205,v1|365277616067|0,360.00,Occasion,8 Go,250 Go,Lenovo,Noir,"14""",1920 x 1080
+206,v1|126827211100|0,140.00,Occasion,8 Go,128 Go,Apple,Argenté,"13,3""",1440 x 900
+207,v1|116419421703|0,350.00,Occasion,32 Go,256 Go,Dell,Gris,"15,6""",1920 x 1080
+208,v1|156575496078|0,300.00,Occasion,8 Go,256 Go,Apple,Gris antrasite,"13""",2560 x 1600
+209,v1|186844550498|0,75.00,Occasion,6 Go,320 Go,Lenovo,Noir,"14""",1366 x 768
+210,v1|186676730202|0,68.00,Occasion,4 Go,320 Go,Toshiba,Noir,"15,6""",1366 x 768
+211,v1|186844489187|0,75.00,Occasion,6 Go,500 Go,Dell,Noir/Argent,"15,6""",1920 x 1080
+212,v1|186748481325|0,55.00,Occasion,4 Go,Sans,Packard Bell,Noir,"17,3""",1600 x 900
+213,v1|176614850658|0,1099.00,Ouvert (jamais utilisé),16Go de RAM LPDDR5X,1 To,ASUS,Noir,"13,3""","3K (2880x1800), 16:10, 60 Hz"
+214,v1|186706568840|0,51.00,Occasion,4 Go,250 Go,Dell,Noir,"14,1""",1366×768
+215,v1|186706551717|0,40.00,Occasion,3 Go,250 Go,HP,Noir,"15,4""",1366 x 768
+216,v1|126825657594|0,250.00,Occasion,8 Go,256 Go,HP,Gris,"15,6""",1920 x 1080
+217,v1|156448079195|0,190.00,Occasion,8 Go,256 Go,Dell,Argenté,"13,3""",1920 x 1080
+218,v1|186844523794|0,125.00,Occasion,8 Go,500 Go,HP,Noir,"15,6""",1366 x 768
+219,v1|186705334195|0,70.00,Occasion,4 Go,320 Go,Apple,Gris,"13""",1280 x 800
+220,v1|335593784213|0,240.00,Occasion,16 Go,256 Go,Dell,Argenté,"13.3""",titre
+221,v1|196893767549|0,240.00,Occasion,8 Go,256 Go,Dell,Noir,"14""",1920 x 1080
+222,v1|126802696486|0,300.00,Occasion,16 Go,256 Go,Apple,Gris,"13,3""",2560 x 1600
+223,v1|186748481022|0,45.00,Occasion,3 Go,160 Go,Acer,Noir,"17""",1440 x 900
+224,v1|235742500783|0,130.00,Occasion,6 Gb,300,Dell,Argenté,"14""",1920 x 1080
+225,v1|126682825080|0,139.00,Occasion,8 Go,256 Go,Dell,Noir/Gris,"14""",1920 x 1080
+226,v1|335640108479|0,490.00,Neuf,8 Go,256 Go,Dell,Gris,"13,3 Zoll",1920 x 1080
+227,v1|126802713936|0,350.00,Occasion,16 Go,256 Go,Apple,Gris,"15,4""",2880 x 1800
+228,v1|126682825038|0,175.00,Occasion,16 Go,256 Go,Dell,Gris,"15,6""",1920 x 1080
+229,v1|186677162146|0,67.00,Occasion,4 Go,500 Go,HP,Marron,"13,3""",1366 x 768
+230,v1|126682825106|0,205.00,Occasion,8 Go,256 Go,Lenovo,Noir,"13,3""",1920 x 1080
+231,v1|365237979885|0,1099.00,Occasion,32 Go,1 To,Alienware,Blanc,"14""",1920 x 1080
+232,v1|126682825097|0,299.00,Occasion,24 Go,256 Go,Lenovo,Noir,"15,6""",1920 x 1080
+233,v1|335705735102|0,549.00,Neuf,256 Go,512 Go,Dell,silver,"14""",1920 x 1080
+234,v1|196893767549|0,240.00,Occasion,8 Go,256 Go,Dell,Noir,"14""",1920 x 1080
+235,v1|335705735102|0,549.00,Neuf,256 Go,512 Go,Dell,silver,"14""",1920 x 1080
+236,v1|235742500783|0,130.00,Occasion,6 Gb,300,Dell,Argenté,"14""",1920 x 1080
+237,v1|126821773583|0,130.00,Occasion,8 Go,256 Go,Apple,Argenté,"13,3""",1440 x 900
+238,v1|116419039097|0,115.00,Occasion,4 Go,240Go,ASUS,Noir,"15""",1366 x 768
+239,v1|146268220636|0,300.00,Occasion,16 Go,1 To,Acer,Noir,"17,3""",1920 x 1080
+240,v1|196890364887|0,140.00,Occasion,8 Go,256 Go,HP,Noir,"14""",1366 x 768
+241,v1|196795522494|0,250.00,Occasion,8 Go,256 Go,Dell,Gris,"13""",1920 x 1080
+242,v1|326151294892|0,175.00,Occasion,16 Go,256 Go,HP,Gris,"15""",1366 x 768
+243,v1|196873216440|0,390.00,Occasion,16 Go,512 Go,Microsoft,Bleu,"13,5""",2256 x 1504
+244,v1|196866477277|0,200.00,Occasion,8 Go,256 Go,Fujitsu,Noir,"12""",1366 x 768
+245,v1|196825097353|0,150.00,Occasion,8 Go,256 Go,HP,Gris,"14""",1366 x 768
+246,v1|196874747160|0,300.00,Occasion,8 Go,256 Go,Acer,Noir,"15""",1920 x 1080
+247,v1|196795288085|0,390.00,Occasion,16 Go,256 Go,HP,Gris,"15""",1920 x 1080
+248,v1|365254556094|0,329.90,Neuf,128 Go,8 Go,Lenovo,Gris,"15""",2160 x 1350
+249,v1|135420803541|0,399.00,Très bon état - Reconditionné,16 Go,256 Go,Lenovo,Noir,"15,6""",1920 x 1080
+250,v1|196853006939|0,300.00,Occasion,16 Go,512 Go,Lenovo,Noir,"14""",1920 x 1080
+251,v1|196885994844|0,150.00,Occasion,8 Go,256 Go,Lenovo,Noir,"14""",1366 x 768
+252,v1|365252655106|0,175.00,Occasion,8 Go,256 Go,HP,Argenté,"14""",1366 x 768
+253,v1|356079108561|0,149.00,Très bon état - Reconditionné,8 Go,240 Go,HP,Argenté,"14""",1366 x 768
+254,v1|196885994847|0,200.00,Occasion,16 Go,256 Go,Dell,Noir,"14""",1366 x 768
+255,v1|146268220457|0,750.00,Occasion,16 Go,512 Go,MSI,Noir,"17,3""",1920 x 1080
+256,v1|276762475676|0,59.00,Occasion,4 Go,500 Go,ASUS,Noir,"14""",1366 x 768
+257,v1|196760271339|0,200.00,Occasion,8 Go,256 Go,Dell,Noir,"15,6""",1366 x 768
+258,v1|146268220304|0,200.00,Occasion,8 Go,256 Go,Acer,Noir,"15,6""",1366 x 768
+259,v1|196855177923|0,390.00,Occasion,8 Go,256 Go,HP,Gris,"15""",1366 x 768
+260,v1|196873216441|0,240.00,Occasion,8 Go,256 Go,Lenovo,Noir,"12""",1366 x 768
+261,v1|196873216443|0,230.00,Occasion,8 Go,256 Go,Lenovo,Noir,"12""",1366 x 768
+262,v1|256727312993|0,399.00,Occasion,4 Go,256 Go,Panasonic,Argenté,"13,3""",1024 x 768
+263,v1|356059112639|0,179.00,Très bon état - Reconditionné,8 Go,480 Go,HP,Gris,"12""",1366 x 768
+264,v1|196890364889|0,290.00,Occasion,8 Go,256 Go,HP,Gris,"15""",1920 x 1080
+265,v1|196881889326|0,605.00,Occasion,256 Go,256 Go,Apple,Gris,"13,3""",2560 x 1600
+266,v1|196876772806|0,200.00,Occasion,8 Go,256 Go,Dell,Noir,"15,6""",1366 x 768
+267,v1|266358481931|0,429.00,Occasion,4 Go,256 Go,Panasonic,Argenté,"10,8""",1920 x 1200
+268,v1|196848867959|0,150.00,Occasion,8 Go,500 Go,Lenovo,Noir,"14""",1920 x 1080
+269,v1|196890364885|0,790.00,Occasion,24 Go,1 To,Razer,Noir,"15""",1920 x 1080
+270,v1|196861621307|0,230.00,Occasion,8 Go,256 Go,Dell,Gris,"15""",1920 x 1080
+271,v1|196814431759|0,220.00,Occasion,8 Go,256 Go,Dell,Noir,"14""",1920 x 1080
+272,v1|135030798683|0,299.00,Très bon état - Reconditionné,16 Go,256 Go,Dell,Noir,"14""",1366 x 768
+273,v1|196861316553|0,270.00,Occasion,8 Go,256 Go,Dell,Gris,"14""",1920 x 1080
+274,v1|356364826187|0,150.00,Occasion,6 Go,1 To,Intel,Gris,"15,6""",1920 x 1080
+275,v1|256563870924|0,190.00,Occasion,4 Go,250 Go,ASUS,Noir,"17,3""",1600 x 900
+276,v1|356059112606|0,179.00,Très bon état - Reconditionné,8 Go,256 Go,Lenovo,Noir,"13,3""",1920 x 1080
+277,v1|196766738912|0,350.00,Occasion,8 Go,256 Go,Lenovo,Noir,"13""",1920 x 1080
+278,v1|326365218361|0,60.00,Ouvert (jamais utilisé),2 Go,16 Go,KLIPAD,Noir,"7""",1024 x 600
+279,v1|196879404448|0,270.00,Occasion,16 Go,256 Go,Dell,Gris,"14""",1920 x 1080
+280,v1|186688725003|0,189.00,Occasion,8 Go,500 Go,HP,Noir,12.5,1366 x 768
+281,v1|196747836351|0,140.00,Occasion,8 Go,128 Go,Fujitsu,Noir,"14""",1366 x 768
+282,v1|186734769141|0,135.00,Ouvert (jamais utilisé),4 Go,500 Go,Sony,Noir,"17,3""",1600 x 900
+283,v1|267015734445|0,195.00,Occasion,4 Go,250 Go,HP,Gris,"15,6""",1366 x 768
+284,v1|356179638256|0,219.00,Parfait état - Reconditionné,8 Go,480Go,Dell,Noir,"15,6""",1366 x 768
+285,v1|135297195019|0,309.00,Très bon état - Reconditionné,16 Go,256 Go,Dell,Noir,"14""",1920 x 1080
+286,v1|305750093474|0,80.00,Occasion,4 Go,4 Go,HP,Rouge,"11,6""",1366 x 768
+287,v1|196832128951|0,270.00,Occasion,8 Go,256 Go,Dell,Gris,"14""",1920 x 1080
+288,v1|196794615349|0,240.00,Occasion,8 Go,256 Go,Dell,Noir,"14""",1920 x 1080
+289,v1|196736353884|0,130.00,Occasion,8 Go,128 Go,Toshiba,Noir,"15,6""",1360 x 768
+290,v1|185855631818|0,169.00,Occasion,8 Go,0,HP,Gris,14,Nn
+291,v1|186734747228|0,145.00,Occasion,4 Go,1 To,ASUS,Blanc,"15,6""",1366 x 768
+292,v1|196861302352|0,260.00,Occasion,8 Go,256 Go,Dell,Gris,"14""",1920 x 1080
+293,v1|196874720301|0,290.00,Occasion,8 Go,256 Go,HP,Gris,"15""",1920 x 1080
+294,v1|364827257115|0,290.00,Occasion,16 Go,16 Go,HP,Gris,"14""",1920 x 1080
+295,v1|196795984334|0,370.00,Occasion,8 Go,256 Go,Dell,Noir,"15""",1920 x 1080
+296,v1|196861621306|0,270.00,Occasion,8 Go,256 Go,Dell,Noir,"14""",1920 x 1080
+297,v1|235822077019|0,309.00,Occasion,8 Go,256 Go,Dell,Noir,"15""",1920 x 1080
+298,v1|326174688875|0,100.00,Occasion,4 Go,120 Go,Dell,Bleu,"14,1""",1280 x 800
+299,v1|365045612476|0,2400.00,Occasion,8 Go,256 Go,Lenovo,Noir,"12,5""",1920 x 1080
+300,v1|365172159855|0,1900.00,Occasion,16 Go,256 Go,Dell,Noir,"13""",1920 x 1080
+301,v1|196870388398|0,370.00,Occasion,16 Go,256 Go,Dell,Gris,"15""",1920 x 1080
+302,v1|196873216439|0,290.00,Occasion,8 Go,256 Go,Lenovo,Noir,"13""",1920 x 1080
+303,v1|135101278030|0,240.00,Très bon état - Reconditionné,16 Go,256 Go,Dell,Noir,"14""",1366 x 768
+304,v1|186125741922|0,118.00,Occasion,4 Go,1 To,Toshiba,Noir,"17,1""",1366 x 768
+305,v1|255566160494|0,369.00,Occasion,4 Go,1000 Go 1To,Panasonic,Argenté,"13,3""",1024 x 768
+306,v1|186627852261|0,124.00,Occasion,5 Go,500 Go,HP,Argenté,"15,6""",1366 x 768
+307,v1|365116706900|0,160.00,Occasion,8 Go,256 Go,HP,Noir,"15,6""",1366 x 768
+308,v1|196853006929|0,240.00,Occasion,8 Go,256 Go,Dell,Noir,"14""",1366 x 768
+309,v1|286212358144|0,209.90,Occasion,8 Go,256 Go,Lenovo,Noir,"14""",2560 x 1440
+310,v1|196795984347|0,180.00,Occasion,8 Go,256 Go,Lenovo,Noir,"14""",1920 x 1080
+311,v1|196861150804|0,600.00,Occasion,16 Go,256 Go,HP,Gris,"17""",1920 x 1080
+312,v1|296824850205|0,159.00,Occasion,8 Go,500 Go,HP,Noir,"14""",1366 x 768
+313,v1|196892064245|0,190.00,Occasion,8 Go,256 Go,Dell,Noir,"14""",1920 x 1080
+314,v1|135150375444|0,219.00,Occasion,8 Go,256 Go,Microsoft,Noir,"13,5""",2256 x 1504
+315,v1|315783171086|0,189.00,Occasion,8 Go,256 Go,Dell,Noir,"12,5""",1366 x 768
+316,v1|256563870924|0,190.00,Occasion,4 Go,250 Go,ASUS,Noir,"17,3""",1600 x 900
+317,v1|387459113679|0,152.64,Occasion,DDR4 SDRAM SO-DIMM,512 Go,Dell,Noir,"13,3 Zoll (33,8 cm)",1920x1080
+318,v1|196885994845|0,200.00,Occasion,8 Go,256 Go,Lenovo,Noir,"14""",1366 x 768
+319,v1|335431152821|0,409.00,Occasion,8 Go,1 To,Lenovo,Noir,"15,6""",1920 x 1080
+320,v1|196822637628|0,140.00,Occasion,4 Go,128 Go,Toshiba,Noir,"13,3""",1920 x 1080
+321,v1|185855631818|0,169.00,Occasion,8 Go,0,HP,Gris,14,Nn
+322,v1|196855343887|0,450.00,Occasion,16 Go,256 Go,HP,Gris,"15""",1920 x 1080
+323,v1|266236708109|0,169.00,Occasion,2 Go,64 Go,Dell,Noir,"10,8""",1920 x 1080
+324,v1|285912635945|0,209.90,Occasion,8 Go,256 Go,Panasonic,Noir/Gris,"10""",1920 x 1080
+325,v1|296824850205|0,159.00,Occasion,8 Go,500 Go,HP,Noir,"14""",1366 x 768
+326,v1|196861621310|0,250.00,Occasion,8 Go,256 Go,Dell,Noir,"14""",1920 x 1080
+327,v1|196825097354|0,260.00,Occasion,8 Go,256 Go,Lenovo,Noir,"12""",1920 x 1080
+328,v1|196841294343|0,140.00,Occasion,8 Go,128 Go,Fujitsu,Noir,"14""",1366 x 768
+329,v1|196866477281|0,210.00,Occasion,16 Go,256 Go,HP,Gris,"14""",1366 x 768
+330,v1|196814431757|0,220.00,Occasion,8 Go,256 Go,Dell,Noir,"14""",1920 x 1080
+331,v1|256702212983|0,229.00,Occasion,8 Go,256 Go,Apple,Argenté,"13""",2560 x 1600
+332,v1|196870388393|0,180.00,Occasion,8 Go,512 Go,Dell,Noir,"14""",1366 x 768
+333,v1|196795984342|0,180.00,Occasion,8 Go,256 Go,Lenovo,Noir,"12""",1366 x 768
+334,v1|204845746904|0,129.99,Occasion,8 Go,240Go,Dell,Noir,"14""",1366 x 768
+335,v1|267083089079|0,420.00,Occasion,16 Go,15 Go,Apple,Gris,"15""",2880 x 1800
+336,v1|196841294339|0,150.00,Occasion,8 Go,128 Go,Fujitsu,Noir,"14""",1366 x 768
+337,v1|196794615324|0,330.00,Occasion,8 Go,500 Go,Dell,Argenté,"14""",1920 x 1080
+338,v1|196736353885|0,140.00,Occasion,8 Go,128 Go,Dell,Noir,"15""",1366 x 768
+339,v1|196870388397|0,180.00,Occasion,8 Go,512 Go,Dell,Noir,"14""",1366 x 768
+340,v1|296824848133|0,199.00,Occasion,8 Go,1 To,ASUS,Noir,"17,3""",1600 x 900
+341,v1|196795190395|0,240.00,Occasion,8 Go,256 Go,Lenovo,Noir,"15""",1920 x 1080
+342,v1|196869991138|0,350.00,Occasion,16 Go,256 Go,Dell,Noir,"14""",1920 x 1080
+343,v1|205083701709|0,199.99,Très bon état - Reconditionné,8 Go,256 Go,Dell,Noir,"14""",1920 x 1080
+344,v1|355826760157|0,219.00,Occasion,16 Go,256 Go,Dell,Gris,"14""",1366 x 768
+345,v1|126486913953|0,199.00,Occasion,8 Go,700 Go,Acer,Noir,"17,3""",1600 x 900
+346,v1|186766253296|0,135.00,Occasion,4 Go,500 Go,HP,Noir,"15,6""",1366 x 768
+347,v1|196841294346|0,170.00,Occasion,8 Go,256 Go,Fujitsu,Noir,"14""",1366 x 768
+348,v1|364355831997|0,160.00,Occasion,8 Go,256 Go,Lenovo,Noir,"14""",1920 x 1080
+349,v1|267075561533|0,369.00,Occasion,4 Go,240Go,Panasonic,Argenté,"13,3""",1024 x 768
+350,v1|196879404447|0,390.00,Occasion,8 Go,256 Go,Lenovo,Gris,"15""",1366 x 768
+351,v1|266219125056|0,129.99,Occasion,8 Go,128 Go,Dell,Argenté,"12,5""",1366 x 768
+352,v1|196814431753|0,260.00,Occasion,8 Go,256 Go,Dell,Noir,"15,6""",1366 x 768
+353,v1|354831949311|0,210.00,Occasion,8 Go,256 Go,HP,Gris,"14""",1920 x 1080
+354,v1|256746291891|0,112.00,Occasion,10 Go,500 Go,Apple,Argenté,"13""",1280 x 800
+355,v1|256648360977|0,369.00,Occasion,8 Go,250 Go,Panasonic,Argenté,"13,3""",1024 x 768
+356,v1|186588819921|0,189.00,Occasion,8 Go,0,HP,Noir,"14""",1366 x 768
+357,v1|186737846919|0,159.00,Occasion,8 Go,0,HP,Argenté,"13,3""",nn
+358,v1|256648360977|0,369.00,Occasion,8 Go,250 Go,Panasonic,Argenté,"13,3""",1024 x 768
+359,v1|186080670188|0,199.00,Occasion,8 Go,512 Go,Lenovo,Noir,12,1920x1080
+360,v1|364355831997|0,160.00,Occasion,8 Go,256 Go,Lenovo,Noir,"14""",1920 x 1080
+361,v1|267083089079|0,420.00,Occasion,16 Go,15 Go,Apple,Gris,"15""",2880 x 1800
+362,v1|196861200605|0,250.00,Occasion,8 Go,256 Go,Dell,Gris,"14""",1920 x 1080
+363,v1|354831949311|0,210.00,Occasion,8 Go,256 Go,HP,Gris,"14""",1920 x 1080
+364,v1|267088829244|0,125.00,Occasion,4 Go,NA,HP,Noir,"15,6""",1366 x 768
+365,v1|276018079058|0,349.99,Occasion,8 Go,256 Go,Lenovo,Noir,"13,3""",1920 x 1080
+366,v1|186742516901|0,159.00,Occasion,8 Go,0,HP,Gris,13.3,nn
+367,v1|196861245620|0,260.00,Occasion,8 Go,256 Go,Dell,Gris,"14""",1920 x 1080
+368,v1|186822218127|0,899.99,Occasion,16 Go,512 Go,Acer,Noir,"15,6""",1920 x 1080
+369,v1|196825194942|0,290.00,Occasion,16 Go,256 Go,Dell,Gris,"14""",1920 x 1080
+370,v1|196794615348|0,200.00,Occasion,8 Go,256 Go,Fujitsu,Gris,"13""",1366 x 768
+371,v1|196848867952|0,130.00,Occasion,8 Go,128 Go,Dell,Noir,"14""",1366 x 768
+372,v1|186766253296|0,135.00,Occasion,4 Go,500 Go,HP,Noir,"15,6""",1366 x 768
+373,v1|196760498715|0,320.00,Occasion,8 Go,256 Go,Acer,Bleu,"13""",2256 X 1504
+374,v1|356059112601|0,449.00,Très bon état - Reconditionné,16 Go,256 Go,HP,Argenté,"15,6""",1366 x 768
+375,v1|196861621309|0,270.00,Occasion,8 Go,256 Go,Dell,Noir,"14""",1920 x 1080
+376,v1|146158592186|0,379.00,Occasion,32 Go,512 Go,Dell,Gris,"15,6""",1920 x 1080
+377,v1|196873216438|0,240.00,Occasion,8 Go,256 Go,Lenovo,Noir,"12""",1366 x 768
+378,v1|196873216445|0,240.00,Occasion,8 Go,256 Go,Lenovo,Noir,"12""",1366 x 768
+379,v1|235792333106|0,100.00,Occasion,4 Go,500 Go,Dell,Noir,"15,6""",1366 x 768
+380,v1|196876772801|0,250.00,Occasion,8 Go,256 Go,Dell,Noir,"14""",1920 x 1080
+381,v1|196853006928|0,240.00,Occasion,8 Go,1 To,Acer,Noir,"14""",1920 x 1080
+382,v1|186683802432|0,140.00,Occasion,4 Go,750 Go,HP,Noir,"17,3""",1600 x 900
+383,v1|326234201109|0,219.00,Occasion,8Go,256Go SSD,HP,Silver,"13.3"" Tactile",titre
+384,v1|285102336522|0,299.00,État correct - Reconditionné,8 Go,256 Go,Lenovo,Noir,"12,5""",1366 x 768
+385,v1|156569654767|0,279.00,Occasion,8 Go,Aucun,HP,Argenté,"17,3""",1920 x 1080
+386,v1|196794615341|0,270.00,Occasion,8 Go,256 Go,Dell,Gris,"14""",1920 x 1080
+387,v1|196861621311|0,250.00,Occasion,8 Go,256 Go,Dell,Noir,"14""",1920 x 1080
+388,v1|196817994505|0,190.00,Occasion,8 Go,256 Go,Dell,Noir,"14""",1920 x 1080
+389,v1|196795984456|0,300.00,Occasion,16 Go,512 Go,Lenovo,Noir,"14""",1920 x 1080
+390,v1|267084558539|0,358.76,Occasion,8 Go,500 Go,HP,Noir,"15,6""",1920 x 1080
+391,v1|296169993413|0,239.52,Occasion,8 Go,256 Go,Dell,Noir,39.6cm,1920 x 1080
+392,v1|186734825333|0,135.00,Occasion,4 Go,500 Go,Dell,Noir,"17,3""",1600 x 900
+393,v1|196873216442|0,240.00,Occasion,8 Go,256 Go,Lenovo,Noir,"12""",1366 x 768
+394,v1|196874768930|0,300.00,Occasion,8 Go,256 Go,Acer,Noir,"15""",1920 x 1080
+395,v1|186742516901|0,159.00,Occasion,8 Go,0,HP,Gris,13.3,nn
+396,v1|196877225722|0,500.00,Occasion,16 Go,1 To,Dell,Gris,"15""",1920 x 1080
+397,v1|196866477285|0,250.00,Occasion,8 Go,256 Go,Lenovo,Noir,"14""",1366 x 768
+398,v1|364906768214|0,280.00,Occasion,8 Go,256 Go,HP,Argenté,"15,6""",1920 x 1080
+399,v1|186068738821|0,219.00,Occasion,8 Go,0,Lenovo,Noir,12,1920x1080
+400,v1|235730227738|0,95.00,Occasion,6 Go,256 Go,HP,Noir,"15,6""",1366 x 786
+401,v1|196876772797|0,200.00,Occasion,8 Go,256 Go,Dell,Noir,"15,6""",1366 x 768
+402,v1|196853006919|0,190.00,Occasion,8 Go,256 Go,HP,Gris,"14""",1366 x 768
+403,v1|326202700678|0,105.00,Occasion,4 Go,5 Go,Toshiba,Noir,"13""",1366 x 768
+404,v1|356179106433|0,399.00,Parfait état - Reconditionné,32 Go,256 Go,Dell,Noir,"15,6""",1920 x 1080
+405,v1|356059112601|0,449.00,Très bon état - Reconditionné,16 Go,256 Go,HP,Argenté,"15,6""",1366 x 768
+406,v1|286150334703|0,199.90,Occasion,8 Go,256 Go,Panasonic,Noir,"12,5""",1920 x 1080
+407,v1|196795984325|0,270.00,Occasion,16 Go,256 Go,Lenovo,Noir,"14""",1920 x 1080
+408,v1|267013466442|0,220.00,Occasion,8Go,256 Go,Dell,Silver,"13.3""",1366 * 768
+409,v1|116398346189|416677263529,128.95,Occasion,4 Go,256 Go,Panasonic,Argent,25.7cm,1920 x 1080
+410,v1|116414433110|0,180.00,Occasion,8 Go,1 To,Lenovo,Gris,"17,3""",1600 x 900
+411,v1|266852096206|0,399.00,Occasion,8 Go,256 Go,Panasonic,Argenté,"10,1""",1920 x 1200
+412,v1|285102336522|0,299.00,État correct - Reconditionné,8 Go,256 Go,Lenovo,Noir,"12,5""",1366 x 768
+413,v1|305815340121|0,75.00,Occasion,3 Go,250 Go,Lenovo,Noir,"15""",1024 x 768
+414,v1|116170027248|0,599.00,Occasion,16 Go,16 Go,Apple,Gris Sidéral,"15,4""",2880 x 1800
+415,v1|186811492293|0,310.00,Occasion,16 Go,512 Go,Lenovo,Gris,"15,6""",1920 x 1080
+416,v1|296824850392|0,159.00,Occasion,8 Go,500 Go,Toshiba,Noir,"17,3""",1600 x 900
+417,v1|326306395912|0,290.00,Occasion,16 Go,256 Go,HP,Gris,"15,6""",1920 x 1080
+418,v1|196870388399|0,250.00,Occasion,16 Go,500 Go,HP,Gris,"13""",1366 x 768
+419,v1|335381796703|0,119.90,Occasion,4 Go,0,Lenovo,Noir,"14,1""",nn
+420,v1|196834562545|0,280.00,Occasion,8 Go,256 Go,Acer,Bleu,"14""",1920 x 1080
+421,v1|365107141349|0,490.00,Occasion,16 Go,256 Go,Dell,Noir,"12""",1920 x 1080
+422,v1|186403522186|0,135.00,Occasion,6 Go,6 Go,Toshiba,Argenté,"17,3""",1440 x 900
+423,v1|266609136395|0,599.00,Occasion,4 Go,500 Go,Panasonic,Argenté,"13,3""",1024 x 768
+424,v1|276348412950|0,689.99,Occasion,32 Go,1 To,Lenovo,Noir,"14""",1920 x 1080
+425,v1|196795984322|0,350.00,Occasion,8 Go,256 Go,Dell,Noir,"15""",1920 x 1080
+426,v1|285665028710|0,299.90,Occasion,8 Go,1000 go,Lenovo,Noir,"13,3""",1920 x 1080
+427,v1|335605348465|0,500.00,Occasion,16 Go,1 To,HP,Noir,"17,3""",1920 x 1080
+428,v1|296824846742|0,169.00,Occasion,8 Go,1 To,ASUS,Marron,"17,3""",1600 x 900
+429,v1|365141375131|0,550.00,Occasion,16 Go,512 Go,HP,Argenté,"14""",1920 x 1280
+430,v1|356179106433|0,399.00,Parfait état - Reconditionné,32 Go,256 Go,Dell,Noir,"15,6""",1920 x 1080
+431,v1|266903981950|0,349.00,Occasion,16 Go,256 Go,Dell,Gris,"14""",1920 x 1080
+432,v1|196879404449|0,270.00,Occasion,8 Go,256 Go,Lenovo,Noir,"14""",1920 x 1080
+433,v1|196848867962|0,250.00,Occasion,8 Go,256 Go,Dell,Noir,"14""",1920 x 1080
+434,v1|196763296580|0,387.23,Occasion,4 Go,NA,Sony,NA,NA,NA
+435,v1|266756929289|0,659.00,Neuf,8 Go,128 Go,Panasonic,Argenté,"7""",1280 x 800
+436,v1|296799792037|0,295.00,Occasion,16 Go,256 Go,Lenovo,Noir,14,1920x1080
+437,v1|196838040590|0,299.00,Occasion,8 Go,512 Go,Dell,Gris,"14""",1366 x 768
+438,v1|286212139171|0,249.99,Occasion,16 Go,256 Go,Lenovo,Noir,"14""",1920 x 1080
+439,v1|196827764437|0,350.00,Occasion,16 Go,512 Go,Dell,Gris,"14""",1920 x 1080
+440,v1|285653552248|0,269.90,Occasion,16 Go,256 Go,Lenovo,Noir,"14""",1366 x 768
+441,v1|196838014030|0,299.00,Occasion,8 Go,512 Go,Dell,Gris,"14""",1366 x 768
+442,v1|196855124780|0,390.00,Occasion,8 Go,256 Go,HP,Gris,"15""",1920 x 1080
+443,v1|285792490848|0,769.90,Occasion,32 Go,512 Go,Lenovo,Noir,"15,6""",1920 x 1080
+444,v1|365141375131|0,550.00,Occasion,16 Go,512 Go,HP,Argenté,"14""",1920 x 1280
+445,v1|196827764437|0,350.00,Occasion,16 Go,512 Go,Dell,Gris,"14""",1920 x 1080
+446,v1|285653552248|0,269.90,Occasion,16 Go,256 Go,Lenovo,Noir,"14""",1366 x 768
+447,v1|286212139171|0,249.99,Occasion,16 Go,256 Go,Lenovo,Noir,"14""",1920 x 1080
+448,v1|196838014030|0,299.00,Occasion,8 Go,512 Go,Dell,Gris,"14""",1366 x 768
+449,v1|326202700678|0,105.00,Occasion,4 Go,5 Go,Toshiba,Noir,"13""",1366 x 768
+450,v1|196855124780|0,390.00,Occasion,8 Go,256 Go,HP,Gris,"15""",1920 x 1080
+451,v1|285792490848|0,769.90,Occasion,32 Go,512 Go,Lenovo,Noir,"15,6""",1920 x 1080
+452,v1|335381796703|0,119.90,Occasion,4 Go,0,Lenovo,Noir,"14,1""",nn
+453,v1|196814431756|0,250.00,Occasion,8 Go,256 Go,Lenovo,Noir,"12,5""",1920 x 1080
+454,v1|186692572562|0,189.00,Occasion,8,0,Dell,Noir,Nn,nn
+455,v1|356179378194|0,529.00,Parfait état - Reconditionné,16 Go,256 Go,Dell,Noir,"15,6""",1920 x 1080
+456,v1|256719186346|0,800.00,Occasion,16 Go,1 To,Apple,Gris,"13""",2560 x 1600
+457,v1|196866477289|0,290.00,Occasion,16 Go,256 Go,Dell,Noir,"15""",1920 x 1080
+458,v1|196866477307|0,290.00,Occasion,16 Go,256 Go,Dell,Noir,"15""",1920 x 1080
+459,v1|276348412950|0,689.99,Occasion,32 Go,1 To,Lenovo,Noir,"14""",1920 x 1080
+460,v1|196853006940|0,170.00,Occasion,8 Go,256 Go,HP,Gris,"14""",1366 x 768
+461,v1|196763299419|0,348.40,Occasion,4 Go,128 Go,Sony,NA,11.6 in,NA
+462,v1|364896073486|0,220.00,Occasion,8 Go,240 Go,Dell,Noir,"12,5""",1920 x 1080
+463,v1|285665028710|0,299.90,Occasion,8 Go,1000 go,Lenovo,Noir,"13,3""",1920 x 1080
+464,v1|266532436336|0,589.00,Occasion,8 Go,512 Go,Panasonic,Argenté,"10,8""",1024 x 768
+465,v1|266756929289|0,659.00,Neuf,8 Go,128 Go,Panasonic,Argenté,"7""",1280 x 800
+466,v1|196866477282|0,180.00,Occasion,8 Go,256 Go,HP,Gris,"14""",1366 x 768
+467,v1|355947914959|0,225.00,Occasion,8 Go,256 Go,HP,Gris,"14""",1920 x 1080
+468,v1|205010258491|0,199.99,Parfait état - Reconditionné,8 Go,256 Go,Dell,Noir,"14""",1920 x 1080
+469,v1|285607701942|0,189.90,Occasion,8 Go,256 Go,Lenovo,Noir,"12,2""",1920 x 1200
+470,v1|116384561694|0,480.00,Occasion,32 Go,512 Go,Dell,Argenté,"15,6""",1920 x 1080
+471,v1|276609573577|0,689.99,Occasion,16 Go,512 Go,Lenovo,Beige,"14""",1920 x 1080
+472,v1|296824851167|0,159.00,Occasion,8 Go,1 To,MSI,Noir,"15,6""",1366 x 768
+473,v1|186702062347|0,169.00,Occasion,8 Go,0,Lenovo,Noir,15.6,NN
+474,v1|256563901411|0,115.00,Occasion,3 Go,320 Go,HP,Noir,"11,6""",1366 x 768
+475,v1|126802586682|0,765.89,Occasion,16 GB,512 Go,Microsoft,Noir,38.1cm,2496 x 1664
+476,v1|196848867957|0,350.00,Occasion,8 Go,256 Go,Lenovo,Gris,"15""",1920 x 1080
+477,v1|286180609257|0,75.00,Occasion,10 Go,10 Go,HP,Gris,"15,6""",1366 x 768
+478,v1|196814431763|0,220.00,Occasion,8 Go,64 Go,HP,Argenté,"14""",1920 x 1080
+479,v1|135230181676|0,99.95,Occasion,"1,5 Go",40 Go,Apple,Blanc,"12,1""",1024 x 768
+480,v1|266682522601|0,179.99,Très bon état - Reconditionné,8 Go,250 Go,HP,Argenté,"12,5""",1366 x 768
+481,v1|135387147197|0,549.00,Occasion,16 Go,512 Go,Microsoft,Gris,"13""",2496 x 1664
+482,v1|186689798824|0,159.00,Occasion,8 Go,0,Lenovo,Noir,"14""",nn
+483,v1|116400417452|416679322425,186.42,Occasion,4 Go,256 Go,Panasonic,Argent,25.7cm,1920 x 1080
+484,v1|356059112680|0,299.00,Très bon état - Reconditionné,8 Go,256 Go,HP,Argenté,"15,6""",1366 x 768
+485,v1|196794615320|0,220.00,Occasion,16 Go,256 Go,Dell,Noir,"14""",1920 x 1080
+486,v1|296824851167|0,159.00,Occasion,8 Go,1 To,MSI,Noir,"15,6""",1366 x 768
+487,v1|356010494096|0,449.00,Occasion,8 Go,256 Go,Dell,Gris,"15,6""",1920 x 1080
+488,v1|196866477279|0,270.00,Occasion,8 Go,256 Go,Dell,Gris,"13,3""",1920 x 1080
+489,v1|267015734445|0,195.00,Occasion,4 Go,250 Go,HP,Gris,"15,6""",1366 x 768
+490,v1|186657989697|0,89.00,Occasion,2 Go,98Go,Dell,Gris,"15,4""",1024 x 768
+491,v1|116419427010|0,270.00,Occasion,16 Go,256 Go,Dell,Argenté,"15,6""",1920 x 1080
+492,v1|405420037745|0,820.00,Occasion,15 Go,475,ASUS,Noir,"17,3"" - 1920X1080",1920 x 1080
+493,v1|196795984327|0,300.00,Occasion,16 Go,512 Go,Lenovo,Noir,"14""",1920 x 1080
+494,v1|286152884026|0,749.00,Occasion,16 Go,1 To,MSI,Noir,"15,6""",1920 x 1080
+495,v1|196870391020|0,199.00,Très bon état - Reconditionné,8 Go,8 Go,HP,Noir,"15.6""",1366 * 768
+496,v1|196795984319|0,300.00,Occasion,16 Go,512 Go,Lenovo,Noir,"14""",1920 x 1080
+497,v1|116419419703|0,215.00,Occasion,8 Go,256 Go,Dell,Gris,"13,3""",1920 x 1080
+498,v1|126808995497|0,1217.28,Occasion,16 GB,512 Go,Dell,Argent,38.1cm,1920 x 1200
+499,v1|404796566290|0,399.00,Occasion,8 Go,256 Go,Panasonic,Argenté,"10,1""",1920 x 1200
+500,v1|196763506304|0,199.00,État correct - Reconditionné,8Go,256Go SSD,Dell,Noir,"14""",1366 x 768
+501,v1|296824848831|0,169.00,Occasion,8 Go,640 Go,Sony,Blanc,"15,6""",1366 x 768
+502,v1|326126340520|0,110.00,Occasion,6 Go,10 Go,Acer,Noir,"15,6""",1366 x 768
+503,v1|196853006933|0,200.00,Occasion,8 Go,256 Go,Lenovo,Noir,"14""",1366 x 768
+504,v1|116419413933|0,250.00,Occasion,16 Go,512 Go,Dell,Gris,"15,6""",1920 x 1080
+505,v1|186766301901|0,147.00,Occasion,4 Go,500 Go,ASUS,Noir,"17,3""",1600 x 900
+506,v1|285665029202|0,249.90,Occasion,8 Go,512 Go,Lenovo,Noir,"14""",1920 x 1080
+507,v1|185523397541|0,99.00,Occasion,sans ram,sans ssd,Dell,Noir,"14""",1920 x 1080
+508,v1|186657989697|0,89.00,Occasion,2 Go,98Go,Dell,Gris,"15,4""",1024 x 768
+509,v1|285316315583|0,129.90,Occasion,4 Go,256 Go,HP,Argenté,"12,5""",1366 x 768
+510,v1|116419419703|0,215.00,Occasion,8 Go,256 Go,Dell,Gris,"13,3""",1920 x 1080
+511,v1|196707159359|0,249.99,Très bon état - Reconditionné,16Go,512Go SSD,Lenovo,Noir,"14""",titre
+512,v1|256563857468|0,135.00,Occasion,2 Go,250 Go,Acer,Noir,"15,3""",1366 x 768
+513,v1|286175037294|0,129.90,Occasion,8 Go,500 Go,Lenovo,Noir,"12,5""",1366 x 768
+514,v1|356288695859|0,249.00,Parfait état - Reconditionné,8 Go,1 To,Dell,Gris,"14""",1366 x 768
+515,v1|186709443743|0,189.00,Occasion,8 Go,0,Dell,Noir,Nn,no
+516,v1|256162782958|0,349.00,Occasion,4 Go,256 Go,Panasonic,Argenté,"10,1""",1920 x 1200
+517,v1|186688710485|0,179.00,Occasion,8,0,elitebook 840 g1,Noir,Nn,nn
+518,v1|196747836352|0,250.00,Occasion,8 Go,256 Go,Lenovo,Noir,"14""",1366 x 768
+519,v1|126752057533|0,469.00,Occasion,8 Go,750 Go,Acer Nitro 5,Noir,"15,6""",1920 x 1080
+520,v1|276609573577|0,689.99,Occasion,16 Go,512 Go,Lenovo,Beige,"14""",1920 x 1080
+521,v1|196855212134|0,320.00,Occasion,8 Go,256 Go,HP,Gris,"15""",1920 x 1080
+522,v1|356339839116|0,1190.00,Occasion,16 Go,256 Go,Dell,Gris,"15,6""",1920 x 1080
+523,v1|335442082089|0,922.96,Ouvert (jamais utilisé),16GB,2 To,Sony,Blanc,39.6cm,1366 x 786
+524,v1|196794615332|0,300.00,Occasion,16 Go,1 To,HP,Gris,"15""",1920 x 1080
+525,v1|176677796847|0,119.00,Occasion,6 Go,6 Go,HP,Gris,"17,3""",1600 x 900
+526,v1|176734479371|0,249.00,Occasion,8 Go,500 Go,Toshiba,Blanc,"17,3""",1600 x 900
+527,v1|135229927290|0,349.00,Parfait état - Reconditionné,16 Go,500 Gb,HP,Noir,"14""",1920 * 1080
+528,v1|335602226099|0,100.00,Occasion,8 Go,500 Go,Dell,Gris/Noir,"14""",1600 x 900
+529,v1|296824847441|0,179.00,Occasion,8 Go,500 Go,Acer,Rouge,"15,6""",1366 x 768
+530,v1|285792490848|0,769.90,Occasion,32 Go,512 Go,Lenovo,Noir,"15,6""",1920 x 1080
+531,v1|116419413934|0,375.00,Occasion,32 Go,512 Go,Dell,Argenté,"15,6""",1920 x 1280
+532,v1|196747836357|0,250.00,Occasion,8 Go,256 Go,Lenovo,Noir,"14""",1366 x 768
+533,v1|226447273537|0,600.00,Occasion,8 Go,256 Go,Panasonic,Noir/Gris,"10""",1920 x 1080
+534,v1|267078528297|0,79.00,Occasion,1 Go,80 Go,IBM,Noir,"14""",1024 x 768
+535,v1|326126340520|0,110.00,Occasion,6 Go,10 Go,Acer,Noir,"15,6""",1366 x 768
+536,v1|126802586434|0,1297.52,Occasion,16 GB,512 Go,Apple,Argent,35.6cm,3024 x 1964
+537,v1|186692572562|0,189.00,Occasion,8,0,Dell,Noir,Nn,nn
+538,v1|186694480701|0,200.00,Occasion,4 Go,160 Go,Panasonic,Noir,12.1,nn
+539,v1|267078528297|0,79.00,Occasion,1 Go,80 Go,IBM,Noir,"14""",1024 x 768
+540,v1|126802586434|0,1297.52,Occasion,16 GB,512 Go,Apple,Argent,35.6cm,3024 x 1964
+541,v1|356336905509|0,1390.00,Occasion,16 Go,500 Go,Dell,Gris,"15,6""",1920 x 1080
+542,v1|364874180739|0,230.00,Occasion,8 Go,8 Go,Dell,Noir,"15,6""",1920 x 1080
+543,v1|196870415480|0,199.00,État correct - Reconditionné,8GO,240 Go,Lenovo,Noir,"12""5",1366 x 768
+544,v1|285688650227|0,349.90,Occasion,16 Go,256 Go,Lenovo,Noir,"15""",1920 x 1080
+545,v1|267004136668|0,199.99,Parfait état - Reconditionné,8 Go,256 Go,Dell,Noir,"14""",1920 x 1080
+546,v1|365107321134|0,250.00,Occasion,8 Go,256 Go,HP,Argenté,"15""",1366 x 768
+547,v1|156405694186|0,193.70,Occasion,4 Go,256 Go,HP,Grey,"14""",1366 x 768
+548,v1|116419427006|0,175.00,Occasion,16 Go,256 Go,Dell,Noir,"13,3""",1920 x 1080
+549,v1|387459255508|0,62.40,Occasion,DDR3 SDRAM SO-DIMM,256 Go,Dell,Noir,"14 Zoll (35,6 cm)",1920 x 1080
+550,v1|316045750727|0,1600.00,Occasion,16 Go,1 To,Alienware,Blanc,"15,6""",1920 x 1080
+551,v1|196876944909|0,189.00,Très bon état - Reconditionné,8Go,256Go SSD,Lenovo,Noir,"14""",titre
+552,v1|196736353886|0,180.00,Occasion,8 Go,256 Go,HP,Noir,"15""",1920 x 1080
+553,v1|235846030813|0,120.00,Occasion,4 Go,128 Go,ASUS,Bleu,"11,6""",1366 x 768
+554,v1|176677796847|0,119.00,Occasion,6 Go,6 Go,HP,Gris,"17,3""",1600 x 900
+555,v1|365107092113|0,189.00,Occasion,4 Go,240 Go,HP,Noir,"13,3""",1366 x 768
+556,v1|285834160829|0,279.90,Occasion,8 Go,256 Go,Lenovo,Noir,"14""",2560 x 1440
+557,v1|196795984339|0,300.00,Occasion,16 Go,512 Go,Lenovo,Noir,"14""",1920 x 1080
+558,v1|365156922880|0,320.00,Occasion,8 Go,256 Go,HP,Argenté,"15""",1920 x 1080
+559,v1|196827764444|0,290.00,Occasion,16 Go,256 Go,Dell,Noir,"15""",1920 x 1080
+560,v1|285784211452|0,199.90,Occasion,8 Go,512 Go,Lenovo,Noir,"12,5""",1920 x 1080
+561,v1|176720651513|0,119.99,Occasion,4 Go,1 To,Dell,Noir,"15,6""",1366 x 768
+562,v1|135232204946|0,349.00,Très bon état - Reconditionné,16 Go,512 Go,HP,Argenté,"13,3""",1920 x 1080
+563,v1|387639598240|0,650.00,Ouvert (jamais utilisé),16 Go,512 Go,Acer,Noir,"17,3""",1920 x 1080
+564,v1|196629526934|0,189.00,Très bon état - Reconditionné,16go,256Go SSD,Dell,Noir,"14""",1366 x 768
+565,v1|146040700026|0,540.32,Occasion,8 Go,1 TB,Sony,Noir,15.5 in,1920 x 1080
+566,v1|285668453373|0,369.90,Occasion,16 Go,256 Go,Lenovo,Noir,"15""",1920 x 1080
+567,v1|167031810757|0,89.00,Occasion,4 Go,NA,HP,Noir,"17,3""",1600 x 900
+568,v1|196837568160|0,240.00,Occasion,8 Go,256 Go,Dell,Noir,"15""",1920 x 1080
+569,v1|335589305295|0,5.99,Neuf,Type Régulier,Type Régulier,- Sans marque/Générique -,Type régulier,Type régulier,Regular
+570,v1|196837568160|0,240.00,Occasion,8 Go,256 Go,Dell,Noir,"15""",1920 x 1080
+571,v1|196827764435|0,300.00,Occasion,16 Go,256 Go,Dell,Noir,"15""",1920 x 1080
+572,v1|186454433305|0,179.00,Occasion,8 Go,500 Go,HP,Argenté,"15,6""",nn
+573,v1|185523397541|0,99.00,Occasion,sans ram,sans ssd,Dell,Noir,"14""",1920 x 1080
+574,v1|196853006924|0,180.00,Occasion,8 Go,256 Go,HP,Gris,"14""",1366 x 768
+575,v1|176709996735|0,249.00,Occasion,8 Go,512 Go,HP,Gris,"13""",1920 x 1080
+576,v1|196855142652|0,390.00,Occasion,8 Go,256 Go,HP,Gris,"15""",1920 x 1080
+577,v1|316045750727|0,1600.00,Occasion,16 Go,1 To,Alienware,Blanc,"15,6""",1920 x 1080
+578,v1|285834160829|0,279.90,Occasion,8 Go,256 Go,Lenovo,Noir,"14""",2560 x 1440
+579,v1|166987338734|0,2500.00,Neuf,32 Go,2x DDR5 SO-DIMM slots 2x M.2 PCIe,ASUS,Noir,"18,4""",2560 x 1600
+580,v1|196853006921|0,190.00,Occasion,8 Go,256 Go,HP,Gris,"14""",1366 x 768
+581,v1|196873216444|0,250.00,Occasion,8 Go,256 Go,Lenovo,Noir,"14""",1920 x 1080
+582,v1|185889939710|0,120.00,Occasion,4 Go,500 Go,Toshiba,Noir,"17,3""",1600 x 900
+583,v1|356079148470|0,289.00,Occasion,8 Go,256 Go,Dell,Gris,"14""",1920 x 1080
+584,v1|126802586434|0,1297.52,Occasion,16 GB,512 Go,Apple,Argent,35.6cm,3024 x 1964
+585,v1|395971001725|0,449.90,Occasion,16 Go,1 To,Acer,Noir,"15,6""",1920 x 1080
+586,v1|356336905509|0,1390.00,Occasion,16 Go,500 Go,Dell,Gris,"15,6""",1920 x 1080
+587,v1|285784211452|0,199.90,Occasion,8 Go,512 Go,Lenovo,Noir,"12,5""",1920 x 1080
+588,v1|196841294349|0,180.00,Occasion,8 Go,256 Go,Fujitsu,Noir,"14""",1366 x 768
+589,v1|356059112640|0,199.00,Parfait état - Reconditionné,256 Go,256 Go,Dell,Noir,"14""",1366 x 768
+590,v1|196848867961|0,240.00,Occasion,8 Go,256 Go,Lenovo,Noir,"12""",1366 x 768
+591,v1|356086420604|0,249.00,Occasion,8 Go,256 Go,HP,Gris,"14""",1920 x 1080
+592,v1|135232204946|0,349.00,Très bon état - Reconditionné,16 Go,512 Go,HP,Argenté,"13,3""",1920 x 1080
+593,v1|276552907634|0,339.99,Occasion,16 Go,512 Go,Lenovo,Noir,"14""",1920 x 1080
+594,v1|285668453373|0,369.90,Occasion,16 Go,256 Go,Lenovo,Noir,"15""",1920 x 1080
+595,v1|196843660533|0,145.00,Occasion,8 Go,128 Go,Fujitsu,Noir,"14""",1366 x 768
+596,v1|196841294340|0,150.00,Occasion,8 Go,128 Go,Fujitsu,Noir,"14""",1366 x 768
+597,v1|196843660533|0,145.00,Occasion,8 Go,128 Go,Fujitsu,Noir,"14""",1366 x 768
+598,v1|196841294340|0,150.00,Occasion,8 Go,128 Go,Fujitsu,Noir,"14""",1366 x 768
+599,v1|285613593640|0,399.90,Occasion,32 Go,256 Go,Lenovo,Noir,"15,6""",1366 x 768
+600,v1|196795489434|0,250.00,Occasion,8 Go,256 Go,Dell,Gris,"13""",1920 x 1080
+601,v1|285240198775|0,249.90,Occasion,8 Go,256 Go,HP,Argenté,"14""",1366 x 768
+602,v1|186617445642|0,127.00,Occasion,4 Go,500 Go,HP,Noir,"17,3""",1600 x 900
+603,v1|355947906642|0,210.00,Occasion,8 Go,256 Go,HP,Multicouleur,"14""",1920 x 1080
+604,v1|196841294342|0,240.00,Occasion,8 Go,256 Go,Fujitsu,Argenté,"13""",1366 x 768
+605,v1|285652242444|0,249.90,Occasion,16 Go,256 Go,Dell,Noir,"13,3""",1920 x 1080
+606,v1|286200710043|0,289.90,Occasion,16 Go,256 Go,HP,Argenté,"13,3""",1920 x 1080
+607,v1|196817994502|0,220.00,Occasion,8 Go,256 Go,Dell,Noir,"15,6""",1920 x 1080
+608,v1|196817994498|0,180.00,Occasion,8 Go,256 Go,HP,Gris,"14""",1366 x 768
+609,v1|326217032182|0,70.00,Occasion,2 Go,250 Go,Apple,Blanc,"13""",1280 x 800
+610,v1|167094569764|0,43.43,Occasion,4 Go,120 Go,HP,Noir,43.9cm,1600 x 900
+611,v1|387364708725|0,629.19,Ouvert (jamais utilisé),8 Go,512 Go,Acer,Argent,"17,3 Zoll",1920 x 1080
+612,v1|196877250027|0,429.00,Très bon état - Reconditionné,32Go,512Go SSD M2,Lenovo,Noir,"14""",1920x1080
+613,v1|196747836355|0,210.00,Occasion,8 Go,256 Go,Dell,Noir,"14""",1366 x 768
+614,v1|196877282657|0,319.00,Très bon état - Reconditionné,16Go,512Go SSD,Lenovo,Noir,13.3,1920 * 1080

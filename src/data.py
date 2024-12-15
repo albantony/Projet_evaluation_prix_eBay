@@ -1,18 +1,21 @@
 import requests
 from collect import access_token
 import pandas as pd
+import time
 
 # On initialise une liste vide pour les données plus tard
 data = []
 
 ### Paramètre de la recherche ###
 
-NUM_ITEMS = 25  # On limite à un certain nombre
+NUM_ITEMS = 5000  # On limite à un certain nombre
 ITEMS_VALIDES = 0 # On va comptabiliser les items ayant toutes les informations valides
 OFFSET = 0 # On initialise un compteur offset pour relancer la requête si nous n'avons pas le bon nombre d'items 
+NBCALL = 0
+MAXCALL = 2500
 EBAY_API_URL = "https://api.ebay.com/buy/browse/v1/item_summary/search"
 
-while ITEMS_VALIDES < NUM_ITEMS:
+while ITEMS_VALIDES < NUM_ITEMS and NBCALL < MAXCALL :
     params = {
     "category_ids": "175672", # Recherche pour ordinateurs portables/netbooks
     "offset" : OFFSET,
@@ -29,6 +32,7 @@ while ITEMS_VALIDES < NUM_ITEMS:
 
 # Recherche
     response = requests.get(EBAY_API_URL, headers=HEADERS, params=params)
+    NBCALL += 1
 
 # Verif réponse
     if response.status_code == 200:
@@ -37,12 +41,17 @@ while ITEMS_VALIDES < NUM_ITEMS:
     
     # Tri des données
         for item in items_data:
+            if NBCALL >= MAXCALL or ITEMS_VALIDES >= NUM_ITEMS:
+                break 
+
+
             item_id = item['itemId']
                 
         # URL API pour avoir les détails d'un item
             item_detail_url = f"https://api.ebay.com/buy/browse/v1/item/{item_id}"
         
             item_response = requests.get(item_detail_url, headers=HEADERS)
+            NBCALL +=1
         
             if item_response.status_code == 200:
                 item_details = item_response.json()
@@ -62,6 +71,8 @@ while ITEMS_VALIDES < NUM_ITEMS:
                 if price_info:
                     price = price_info.get('value', None)            
                 condition = item.get('condition')
+
+            #On enlève les ordinateurs en pièces détachées 
 
                 if condition and "pièces" in condition.lower():
                     continue  # Passer au prochain item
@@ -105,9 +116,8 @@ while ITEMS_VALIDES < NUM_ITEMS:
                 "Résolution": resolution
                 })
                     ITEMS_VALIDES += 1
-                    if ITEMS_VALIDES >= NUM_ITEMS:
-                        break
-                
+                    
+            time.sleep(0.2)
         
     else:
         print(f"Erreur lors de la requête de recherche : {response.status_code}")
@@ -121,5 +131,6 @@ df = pd.DataFrame(data)
 #utile pour visualisation rapide en csv
 df.to_csv("data.csv")
 df = pd.read_csv("data.csv")
+print(f"Terminé : {ITEMS_VALIDES} articles valides obtenus et {NBCALL} appels effectués.")
 
 
