@@ -3,16 +3,26 @@ from collect import access_token
 import pandas as pd
 import time
 
+# Charger les données existantes
+try:
+    df_exist = pd.read_csv("data.csv")
+    existing_ids = set(df_exist["ID"])  # Extraire les IDs existants
+    print(f"{len(existing_ids)} articles déjà présents dans le fichier CSV.")
+
+except FileNotFoundError:
+    print("Aucun fichier précédent trouvé, démarrage depuis le début.")
+    existing_ids = set()
+
 # On initialise une liste vide pour les données plus tard
 data = []
 
 ### Paramètre de la recherche ###
 
-NUM_ITEMS = 5000  # On limite à un certain nombre
+NUM_ITEMS = 1000  # On limite à un certain nombre
 ITEMS_VALIDES = 0 # On va comptabiliser les items ayant toutes les informations valides
-OFFSET = 0 # On initialise un compteur offset pour relancer la requête si nous n'avons pas le bon nombre d'items 
+OFFSET = 9000 # On initialise un compteur offset pour relancer la requête si nous n'avons pas le bon nombre d'items 
 NBCALL = 0
-MAXCALL = 2500
+MAXCALL = 50
 EBAY_API_URL = "https://api.ebay.com/buy/browse/v1/item_summary/search"
 
 while ITEMS_VALIDES < NUM_ITEMS and NBCALL < MAXCALL :
@@ -46,6 +56,12 @@ while ITEMS_VALIDES < NUM_ITEMS and NBCALL < MAXCALL :
 
 
             item_id = item['itemId']
+
+            if item_id in existing_ids:
+                continue 
+            
+            # On ajoute l'ID à la liste des ID connus 
+            existing_ids.add(item_id)
                 
         # URL API pour avoir les détails d'un item
             item_detail_url = f"https://api.ebay.com/buy/browse/v1/item/{item_id}"
@@ -125,12 +141,16 @@ while ITEMS_VALIDES < NUM_ITEMS and NBCALL < MAXCALL :
 
     OFFSET += 100
 
-# Conversion en DataFrame
-df = pd.DataFrame(data)
+# Conversion data frame 
 
-#utile pour visualisation rapide en csv
-df.to_csv("data.csv")
-df = pd.read_csv("data.csv")
-print(f"Terminé : {ITEMS_VALIDES} articles valides obtenus et {NBCALL} appels effectués.")
+df_new = pd.DataFrame(data)
+if not df_new.empty:
+    try:
+        df_combined = pd.concat([df_exist, df_new]).drop_duplicates(subset="ID", keep="first")
+    except NameError:
+        df_combined = df_new
 
-
+    df_combined.to_csv("data.csv", index=False)
+    print(f"Fichier mis à jour avec {len(df_combined)} articles uniques.")
+else:
+    print("Aucun nouvel article à ajouter.")
