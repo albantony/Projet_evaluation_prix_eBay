@@ -5,7 +5,7 @@ import time
 
 # Charger les données existantes
 try:
-    df_exist = pd.read_csv("data2.csv")
+    df_exist = pd.read_csv("data3.csv")
     existing_ids = set(df_exist["ID"])  # Extraire les IDs existants
     print(f"{len(existing_ids)} articles déjà présents dans le fichier CSV.")
 
@@ -129,7 +129,9 @@ while ITEMS_VALIDES < NUM_ITEMS and NBCALL < MAXCALL :
                 if ram and "Régulier" in ram.lower():
                     continue
 
-                if all([price, condition, ram, capacité, marque, couleur, taille, resolution, date]) :
+                # On garde les lignes contenant obligatoirement ces 4 variables 
+
+                if all([price, ram, capacité, marque]) :
                     data.append({
                 "ID": item_id,
                 "Prix": price,
@@ -162,7 +164,7 @@ if not df_new.empty:
     except NameError:
         df_combined = df_new
 
-    df_combined.to_csv("data2.csv", index=False)
+    df_combined.to_csv("data3.csv", index=False)
     print(f"Fichier mis à jour avec {len(df_combined)} articles uniques.")
 else:
     print("Aucun nouvel article à ajouter.")
