@@ -1,8 +1,10 @@
 import matplotlib.pyplot as plt
 import pandas as pd
 import seaborn as sns
+from utils import load_data
 
-df = load_data('data2.csv')
+df = load_data('data_cleaned')
+
 #plot price
 
 def plot_price(df):
