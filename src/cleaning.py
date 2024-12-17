@@ -77,15 +77,6 @@ def clean_condition(df):
     df['Condition'] = df['Condition'].apply(convertir_condition)
     return df
 
-    
-# Appliquer la fonction sur la colonne "Condition"
-df['Condition_Num'] = df['Condition'].apply(convertir_condition)
-
-# Sauvegarder le résultat dans un nouveau fichier CSV
-df.to_csv(fichier_sortie, index=False)
-
-print("Fichier modifié sauvegardé avec succès :", fichier_sortie)
-
 def main():
     df = load_data('data.csv')
     df = clean_giga_columns(df)
