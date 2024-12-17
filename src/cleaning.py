@@ -1,6 +1,6 @@
 import pandas as pd
 import numpy as np
-from utils import extract_float_from_string,extract_numeric_value, convert_screen_size
+from utils import extract_float_from_object
 
 def load_data(file_path):
     try:
@@ -11,7 +11,7 @@ def load_data(file_path):
 
 def convert_giga_to_numeric(ram_value):
     if isinstance(ram_value, str):
-        numeric_value = extract_numeric_value(ram_value)
+        numeric_value = extract_float_from_object(ram_value)
         if 'Go' in ram_value:
             return numeric_value
         elif 'To' in ram_value:
@@ -19,8 +19,8 @@ def convert_giga_to_numeric(ram_value):
     return np.nan
 
 def clean_giga_columns(df):
-    df['RAM'] = df['RAM'].apply(convert_giga_to_numeric)
-    df['Stockage'] = df['Stockage'].apply(convert_giga_to_numeric)
+    df['RAM'] = df['RAM'].apply(extract_float_from_object)
+    df['Stockage'] = df['Stockage'].apply(extract_float_from_object)
     return df
 
 def normalize_color(color):
@@ -52,29 +52,22 @@ def clean_color_column(df):
     df['Couleur'] = df['Couleur'].apply(normalize_color)
     return df
 
-def clean_screen_size_column(df):
-    df['Taille écran'] = (df['Taille écran']
-                          .str.replace(r'\"', '', regex=True)
-                          .apply(extract_float_from_string))
-    return df
-
 def extract_resolution(df):
     df[['Largeur', 'Hauteur']] = df['Résolution'].str.extract(r'(\d+)[\s]*[xX][\s]*(\d+)', expand=True)
     df[['Largeur', 'Hauteur']] = df[['Largeur', 'Hauteur']].apply(pd.to_numeric, errors='coerce')
     return df
 
 def extract_taille_ecran(df):
-    df['Taille écran'] = df['Taille écran'].apply(convert_screen_size)
+    df['Taille écran'] = df['Taille écran'].apply(extract_float_from_object)
     return df
 
 def main():
     df = load_data('data.csv')
     df = clean_giga_columns(df)
-    df = clean_screen_size_column(df)
     df = clean_color_column(df)
     df = extract_resolution(df)
     df = extract_taille_ecran(df)
-    print(df["Taille écran"].head(10))
+    print(df["Stockage"].head(10))
 
 if __name__ == "__main__":
     main()
