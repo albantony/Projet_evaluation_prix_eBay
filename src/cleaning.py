@@ -61,13 +61,38 @@ def extract_taille_ecran(df):
     df['Taille écran'] = df['Taille écran'].apply(extract_float_from_object)
     return df
 
+def convertir_condition(condition):
+    if "Neuf" in condition or "Ouvert (jamais utilisé)" in condition:
+        return int(0)
+    elif 'Occasion' in condition: 
+        return int(1)
+    elif 'Parfait état - Reconditionné' in condition: 
+        return int(2)
+    elif 'Très bon état - Reconditionné' in condition:
+        return int(3)
+    elif 'État correct - Reconditionné' in condition:
+        return int(4)
+
+def clean_condition(df):
+    df['Condition'] = df['Condition'].apply(convertir_condition)
+    return df
+
+    
+# Appliquer la fonction sur la colonne "Condition"
+df['Condition_Num'] = df['Condition'].apply(convertir_condition)
+
+# Sauvegarder le résultat dans un nouveau fichier CSV
+df.to_csv(fichier_sortie, index=False)
+
+print("Fichier modifié sauvegardé avec succès :", fichier_sortie)
+
 def main():
     df = load_data('data.csv')
     df = clean_giga_columns(df)
     df = clean_color_column(df)
     df = extract_resolution(df)
     df = extract_taille_ecran(df)
-    print(df.head(10))
+    print(df["Taille écran"].head(10))
 
 if __name__ == "__main__":
     main()
