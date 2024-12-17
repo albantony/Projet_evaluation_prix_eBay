@@ -8,16 +8,12 @@ df = load_data('data_cleaned.csv')
 #plot price
 
 def plot_price(df):
-    # S'assurer que les colonnes sont bien numériques
-    df['Prix'] = pd.to_numeric(df['Prix'], errors='coerce')
-    df['Densité pixels'] = pd.to_numeric(df['Densité pixels'], errors='coerce')
-
     # Supprimer les lignes avec des valeurs NaN dans 'Prix' ou 'Densité pixels'
-    df_clean = df.dropna(subset=['Prix', 'Densité pixels'])
+    df_clean = df.dropna(subset=['Prix', 'PPI'])
 
     # Création du graphique
     plt.figure(figsize=(10, 6))
-    plt.scatter(df_clean['Densité pixels'], df_clean['Prix'], c='blue', alpha=0.5)
+    plt.scatter(df_clean['PPI'], df_clean['Prix'], c='blue', alpha=0.5)
     
     # Ajout des labels et du titre
     plt.title("Prix en fonction de la densité de pixels")
