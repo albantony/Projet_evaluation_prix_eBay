@@ -3,7 +3,7 @@ import pandas as pd
 import seaborn as sns
 from utils import load_data
 
-df = load_data('data_cleaned')
+df = load_data('data_cleaned.csv')
 
 #plot price
 
