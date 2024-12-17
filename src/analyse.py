@@ -1,8 +1,8 @@
 import matplotlib.pyplot as plt
 import pandas as pd
-from cleaning import df
 import seaborn as sns
 
+df = load_data('data2.csv')
 #plot price
 
 def plot_price(df):
@@ -26,7 +26,7 @@ def plot_price(df):
     plt.grid(True)
     plt.show()
 
-"""plot_price(df)"""
+plot_price(df)
 
 #Histogramme condition
 
