@@ -67,7 +67,7 @@ def main():
     df = clean_color_column(df)
     df = extract_resolution(df)
     df = extract_taille_ecran(df)
-    print(df["Stockage"].head(10))
+    print(df.head(10))
 
 if __name__ == "__main__":
     main()
