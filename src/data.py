@@ -5,7 +5,7 @@ import time
 
 # Charger les données existantes
 try:
-    df_exist = pd.read_csv("data.csv")
+    df_exist = pd.read_csv("data2.csv")
     existing_ids = set(df_exist["ID"])  # Extraire les IDs existants
     print(f"{len(existing_ids)} articles déjà présents dans le fichier CSV.")
 
@@ -19,10 +19,16 @@ data = []
 ### Paramètre de la recherche ###
 
 NUM_ITEMS = 1000  # On limite à un certain nombre
-ITEMS_VALIDES = 0 # On va comptabiliser les items ayant toutes les informations valides
-OFFSET = 9000 # On initialise un compteur offset pour relancer la requête si nous n'avons pas le bon nombre d'items 
+
+# On va comptabiliser les items ayant toutes les informations valides
+ITEMS_VALIDES = len(existing_ids)  
+
+OFFSET = 0 # On initialise un compteur offset pour relancer la requête si nous n'avons pas le bon nombre d'items 
+
 NBCALL = 0
-MAXCALL = 50
+
+MAXCALL = 4500
+
 EBAY_API_URL = "https://api.ebay.com/buy/browse/v1/item_summary/search"
 
 while ITEMS_VALIDES < NUM_ITEMS and NBCALL < MAXCALL :
@@ -81,6 +87,7 @@ while ITEMS_VALIDES < NUM_ITEMS and NBCALL < MAXCALL :
                 condition = None
                 taille = None
                 resolution = None
+                date = None
             
             # On extrait les informations de prix, condition
                 price_info = item_details.get('price', {})
@@ -95,6 +102,7 @@ while ITEMS_VALIDES < NUM_ITEMS and NBCALL < MAXCALL :
             
             # Extraire les infos précises du produit
                 localized_aspects = item_details.get("localizedAspects", [])
+                date = item_details.get("itemCreationDate")
             
                 for aspect in localized_aspects:
                     name = aspect.get("name", "").lower()
@@ -121,7 +129,7 @@ while ITEMS_VALIDES < NUM_ITEMS and NBCALL < MAXCALL :
                 if ram and "Régulier" in ram.lower():
                     continue
 
-                if all([price, condition, ram, capacité, marque, couleur, taille, resolution]) :
+                if all([price, condition, ram, capacité, marque, couleur, taille, resolution, date]) :
                     data.append({
                 "ID": item_id,
                 "Prix": price,
@@ -131,11 +139,12 @@ while ITEMS_VALIDES < NUM_ITEMS and NBCALL < MAXCALL :
                 "Marque": marque,
                 "Couleur": couleur,
                 "Taille écran": taille,
-                "Résolution": resolution
+                "Résolution": resolution,
+                "Date de publication": date
                 })
                     ITEMS_VALIDES += 1
                     
-            time.sleep(0.2)
+            time.sleep(0.1)
         
     else:
         print(f"Erreur lors de la requête de recherche : {response.status_code}")
@@ -146,13 +155,14 @@ while ITEMS_VALIDES < NUM_ITEMS and NBCALL < MAXCALL :
 # Conversion data frame 
 
 df_new = pd.DataFrame(data)
+
 if not df_new.empty:
     try:
         df_combined = pd.concat([df_exist, df_new]).drop_duplicates(subset="ID", keep="first")
     except NameError:
         df_combined = df_new
 
-    df_combined.to_csv("data.csv", index=False)
+    df_combined.to_csv("data2.csv", index=False)
     print(f"Fichier mis à jour avec {len(df_combined)} articles uniques.")
 else:
     print("Aucun nouvel article à ajouter.")
