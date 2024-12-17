@@ -5,7 +5,7 @@ import time
 
 # Charger les données existantes
 try:
-    df_exist = pd.read_csv("data.csv2")
+    df_exist = pd.read_csv("data2.csv")
     existing_ids = set(df_exist["ID"])  # Extraire les IDs existants
     print(f"{len(existing_ids)} articles déjà présents dans le fichier CSV.")
 
@@ -162,7 +162,7 @@ if not df_new.empty:
     except NameError:
         df_combined = df_new
 
-    df_combined.to_csv("data.csv2", index=False)
+    df_combined.to_csv("data2.csv", index=False)
     print(f"Fichier mis à jour avec {len(df_combined)} articles uniques.")
 else:
     print("Aucun nouvel article à ajouter.")
