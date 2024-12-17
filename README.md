@@ -1,4 +1,4 @@
-Documentation du projet 
+Documentation du projet de Python
 
 ## Comment se connecter pour accéder à l'API d'Ebay
 Chaque collaborateur doit configurer ses propres identifiants pour l'API d'eBay
