@@ -118,6 +118,8 @@ while ITEMS_VALIDES < NUM_ITEMS and NBCALL < MAXCALL :
                     elif "résolution" in name: 
                         resolution = value
 
+                if ram and "Régulier" in ram.lower():
+                    continue
 
                 if all([price, condition, ram, capacité, marque, couleur, taille, resolution]) :
                     data.append({
