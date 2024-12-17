@@ -1,13 +1,6 @@
 import pandas as pd
 import numpy as np
-from utils import extract_float_from_object
-
-def load_data(file_path):
-    try:
-        df = pd.read_csv(file_path)
-        return df
-    except Exception as e:
-        raise RuntimeError(f"Error loading data: {e}")
+from utils import extract_float_from_object, load_data
 
 def clean_giga_columns(df):
     df['RAM'] = df['RAM'].apply(extract_float_from_object)
