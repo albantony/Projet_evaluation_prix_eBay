@@ -65,6 +65,7 @@ def code_couleur(color):
 
 def clean_color_column(df):
     df['Couleur'] = df['Couleur'].apply(normalize_color)
+    df['Code Couleur'] = df['Couleur'].apply(code_couleur)
     return df
 
 def extract_resolution(df):
@@ -74,6 +75,10 @@ def extract_resolution(df):
 
 def extract_taille_ecran(df):
     df['Taille écran'] = df['Taille écran'].apply(extract_float_from_object)
+    return df
+
+def format_date(df):
+    df['Date de publication'] = pd.to_datetime(df['Date de publication'], errors='coerce')
     return df
 
 def calculate_ppi(df):
@@ -105,18 +110,24 @@ def clean_condition(df):
     df['Code Condition'] = df['Condition'].apply(convertir_condition)
     return df
 
+def drop_columns(df, columns):
+    return df.drop(columns=columns)
+
 def main():
-    df = load_data('data.csv')
+    df = load_data('data2.csv')
     df = clean_giga_columns(df)
     df = clean_color_column(df)
     df = extract_resolution(df)
     df = extract_taille_ecran(df)
     df = clean_condition(df)
     df = calculate_ppi(df)
-    print(df["PPI"].head(10))
-    column_counts = df["Couleur"].value_counts()
-    #print(column_counts)
-
+    df = format_date(df)
+    df = drop_columns(df, ['ID'])
+    #print(df["Date de publication"].head(10))
+    column_counts = df["Condition"].value_counts()
+    print(column_counts)
+    #génération d'un nouveau csv pour les données nettoyées
+    df.to_csv('data_cleaned.csv', index=False)
 
 if __name__ == "__main__":
     main()
