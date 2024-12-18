@@ -18,7 +18,7 @@ data = []
 
 ### Paramètre de la recherche ###
 
-NUM_ITEMS = 1000  # On limite à un certain nombre
+NUM_ITEMS = 10000  # On limite à un certain nombre
 
 # On va comptabiliser les items ayant toutes les informations valides
 ITEMS_VALIDES = len(existing_ids)  
@@ -126,9 +126,6 @@ while ITEMS_VALIDES < NUM_ITEMS and NBCALL < MAXCALL :
                     elif "résolution" in name: 
                         resolution = value
 
-                if ram and "Régulier" in ram.lower():
-                    continue
-
                 # On garde les lignes contenant obligatoirement ces 4 variables 
 
                 if all([price, ram, capacité, marque]) :
@@ -146,7 +143,7 @@ while ITEMS_VALIDES < NUM_ITEMS and NBCALL < MAXCALL :
                 })
                     ITEMS_VALIDES += 1
                     
-            time.sleep(0.1)
+            time.sleep(0.2)
         
     else:
         print(f"Erreur lors de la requête de recherche : {response.status_code}")
