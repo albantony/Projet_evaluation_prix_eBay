@@ -20,6 +20,24 @@ def extract_float_from_object(obj):
         return float(obj)
     return np.nan  # Si l'objet est invalide ou vide, retourner np.nan
 
+#test rapide de la fonction extract_float_from_object
+extract_float_from_object('on a mangé 4 pommes') # 256.0
+
+
+def extract_storage(obj):
+    """
+    return the storage size in GB, or NaN if the input is invalid.
+    """
+    storage = str(obj)
+    if 'TO' in storage.upper():
+        return extract_float_from_object(obj) * 1024
+    else:
+        return extract_float_from_object(obj)
+
+#test rapide de la fonction extract_storage
+extract_storage('256Go')  # 256.0
+extract_storage('1to')  # 1024.0
+
 def load_data(file_path):
     try:
         df = pd.read_csv(file_path)
