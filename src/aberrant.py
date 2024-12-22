@@ -43,7 +43,7 @@ def generate_boxplot(df, column_name):
 #valeurs > 300 et < 80 sont des valeurs aberrantes => on les supprime
 df.loc[(df['PPI'] > 300) | (df['PPI'] < 80), 'PPI'] = np.nan
 
-df.loc[(df['Prix'] < 50) | (df['Prix'] > 5000), 'Prix'] = np.nan  # Limiter les prix
+df = df[(df['Prix'] >= 50) & (df['Prix'] <= 5000)]  # Supprimer les lignes avec des prix en dehors de la plage (on remplace par NaN car c'est la variable que l'on veut estimer)
 
 # énormément de gens se trompent en mettant la même valeur pour la RAM et le stockage
 df.loc[(df['RAM'] < 2) | (df['RAM'] > 64), 'RAM'] = np.nan  # On limite la RAM entre 2 et 64 Go

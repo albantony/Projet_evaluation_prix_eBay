@@ -7,7 +7,6 @@ Prix,Condition,RAM,Stockage,Marque,Couleur,Taille écran,PPI
 75.0,Occasion,4.0,64.0,HP,blanc,14.1,111.0
 230.0,Occasion,8.0,128.0,Asus,autre,14.0,
 340.0,Ouvert (jamais utilisé),16.0,256.0,Dell,gris,14.0,157.0
-,Occasion,4.0,160.0,Toshiba,blanc,15.6,100.0
 169.0,Très bon état - Reconditionné,8.0,620.0,Panasonic,noir,12.0,
 80.0,Occasion,8.0,256.0,Lenovo,noir,14.0,
 240.0,Très bon état - Reconditionné,16.0,512.0,Dell,noir,12.0,
@@ -21,10 +20,8 @@ Prix,Condition,RAM,Stockage,Marque,Couleur,Taille écran,PPI
 155.0,Occasion,6.0,256.0,HP,autre,17.3,
 990.0,Occasion,64.0,1024.0,Razer,autre,17.0,
 190.0,Occasion,8.0,,Huawei,gris,14.0,157.0
-,Occasion,4.0,600.0,HP,autre,13.0,
 1280.0,Occasion,16.0,512.0,Apple,autre,16.0,
 125.0,Occasion,4.0,256.0,Lenovo,autre,15.6,
-,Occasion,2.0,32.0,HP,noir,14.0,
 129.0,État correct - Reconditionné,8.0,620.0,Panasonic,noir,12.0,
 279.0,Occasion,16.0,512.0,Dell,autre,15.6,
 495.0,Occasion,32.0,512.0,HP,autre,14.0,
@@ -46,7 +43,6 @@ Prix,Condition,RAM,Stockage,Marque,Couleur,Taille écran,PPI
 159.0,Occasion,,,Acer,noir,15.0,85.0
 135.0,Occasion,4.0,256.0,Lenovo,autre,15.6,
 125.0,Occasion,4.0,64.0,Asus,noir,14.0,112.0
-,Occasion,8.0,700.0,HP,autre,14.0,
 325.0,Occasion,8.0,256.0,Apple,gris,13.3,
 135.0,Occasion,4.0,256.0,Asus,autre,15.6,
 220.0,État correct - Reconditionné,16.0,512.0,Dell,noir,12.0,
@@ -64,7 +60,6 @@ Prix,Condition,RAM,Stockage,Marque,Couleur,Taille écran,PPI
 1850.0,Occasion,32.0,1024.0,Apple,autre,16.0,
 550.0,Occasion,16.0,512.0,Microsoft,noir,15.0,
 99.0,Neuf,4.0,240.0,Lenovo,noir,12.1,130.0
-,Occasion,4.0,500.0,Lenovo,autre,14.1,
 105.0,Occasion,6.0,1024.0,Asus,gris,15.6,100.0
 89.0,Occasion,4.0,32.0,Acer,autre,14.0,
 169.0,Occasion,8.0,,Lenovo,noir,12.1,
@@ -182,12 +177,10 @@ Prix,Condition,RAM,Stockage,Marque,Couleur,Taille écran,PPI
 720.0,Occasion,16.0,1024.0,Asus,noir,14.0,157.0
 99.0,Occasion,,,Dell,noir,14.0,157.0
 175.0,Occasion,4.0,256.0,Asus,autre,17.3,
-,Occasion,,120.0,Dell,autre,15.6,
 550.0,Occasion,16.0,1024.0,Lenovo,noir,15.6,
 55.0,Occasion,4.0,250.0,Dell,autre,13.3,118.0
 160.0,Occasion,4.0,256.0,Dell,gris,13.3,166.0
 750.0,Neuf,,512.0,Acer,noir,15.6,
-,Occasion,4.0,120.0,Acer,violet,15.6,100.0
 279.0,Occasion,16.0,256.0,Dell,autre,13.0,169.0
 395.0,Occasion,8.0,512.0,Asus,autre,15.6,
 150.0,Occasion,3.0,250.0,Acer,noir,16.0,98.0
@@ -216,7 +209,6 @@ Prix,Condition,RAM,Stockage,Marque,Couleur,Taille écran,PPI
 375.0,Occasion,32.0,512.0,Dell,gris,15.6,148.0
 50.0,Occasion,,60.0,Fujitsu,gris,15.4,
 340.0,Occasion,8.0,256.0,HP,gris,13.0,169.0
-,Occasion,,250.0,Sony,autre,10.1,
 139.0,Occasion,8.0,128.0,Fujitsu,autre,14.0,112.0
 175.0,Occasion,4.0,256.0,HP,autre,14.0,
 160.69,Occasion,8.0,256.0,Panasonic,gris,,88.0
@@ -285,7 +277,6 @@ Prix,Condition,RAM,Stockage,Marque,Couleur,Taille écran,PPI
 119.0,Occasion,,,Dell,noir,14.0,157.0
 109.99,Occasion,4.0,500.0,Dell,noir,14.0,112.0
 250.0,Occasion,8.0,256.0,Dell,gris,15.6,141.0
-,Occasion,4.0,160.0,Asus,noir,15.6,100.0
 1799.0,Occasion,32.0,1024.0,Apple,gris,16.0,
 510.0,Occasion,16.0,256.0,Apple,gris,15.0,242.0
 175.0,Occasion,4.0,256.0,Samsung,autre,17.3,
@@ -417,7 +408,6 @@ Prix,Condition,RAM,Stockage,Marque,Couleur,Taille écran,PPI
 220.0,Très bon état - Reconditionné,8.0,512.0,Dell,noir,12.0,
 179.0,Occasion,8.0,,Lenovo,noir,14.0,
 500.0,Occasion,16.0,256.0,Apple,gris,13.3,227.0
-,Occasion,,,Dell,autre,15.4,
 320.0,Occasion,16.0,1024.0,Asus,noir,17.3,127.0
 189.0,Occasion,8.0,256.0,HP,gris,13.0,
 220.0,Très bon état - Reconditionné,16.0,256.0,Dell,noir,12.0,
@@ -525,7 +515,6 @@ Prix,Condition,RAM,Stockage,Marque,Couleur,Taille écran,PPI
 60.0,Occasion,4.0,500.0,Dell,noir,15.6,
 700.0,Occasion,8.0,245.0,Apple,gris,13.0,232.0
 300.0,Occasion,8.0,256.0,Apple,gris,13.0,
-,Occasion,3.0,250.0,HP,noir,15.4,102.0
 271.0,Occasion,8.0,480.0,Apple,gris,,112.0
 239.0,Occasion,8.0,256.0,Dell,autre,12.0,131.0
 199.0,Occasion,8.0,,HP,gris,14.0,
@@ -539,7 +528,6 @@ Prix,Condition,RAM,Stockage,Marque,Couleur,Taille écran,PPI
 178.4,Occasion,8.0,512.0,Lenovo,noir,14.0,112.0
 350.0,Occasion,16.0,256.0,Apple,gris,15.4,221.0
 349.0,Occasion,8.0,256.0,HP,gris,15.0,
-,Occasion,3.0,160.0,Acer,noir,17.0,100.0
 380.0,Occasion,8.0,256.0,Apple,gris,13.3,
 199.0,Occasion,8.0,240.0,Lenovo,autre,14.1,
 425.95,Occasion,16.0,512.0,Dell,gris,15.6,
@@ -864,7 +852,6 @@ Prix,Condition,RAM,Stockage,Marque,Couleur,Taille écran,PPI
 350.0,Occasion,16.0,512.0,Dell,gris,14.0,157.0
 135.0,Occasion,4.0,256.0,Dell,autre,15.6,
 150.0,Occasion,8.0,120.0,Dell,noir,14.0,
-,Occasion,,,Lenovo,autre,,
 140.0,Occasion,4.0,750.0,HP,noir,17.3,106.0
 220.0,Occasion,8.0,256.0,Dell,gris,13.0,
 75.0,Occasion,3.0,250.0,Lenovo,noir,15.0,85.0
@@ -892,7 +879,6 @@ Prix,Condition,RAM,Stockage,Marque,Couleur,Taille écran,PPI
 170.0,Occasion,8.0,256.0,HP,gris,14.0,112.0
 650.0,Occasion,16.0,512.0,HP,gris,15.6,141.0
 269.9,Occasion,16.0,256.0,Lenovo,noir,14.0,112.0
-,Occasion,4.0,250.0,Dell,autre,14.1,
 1500.0,Ouvert (jamais utilisé),16.0,512.0,Lenovo,noir,13.0,196.0
 390.0,Occasion,8.0,256.0,HP,gris,15.0,147.0
 200.0,Occasion,8.0,512.0,Dell,autre,14.0,
@@ -1297,12 +1283,10 @@ Prix,Condition,RAM,Stockage,Marque,Couleur,Taille écran,PPI
 180.0,Occasion,8.0,256.0,HP,autre,13.0,169.0
 200.0,Occasion,8.0,256.0,Acer,autre,14.0,157.0
 300.0,Neuf,8.0,256.0,Panasonic,gris,10.1,224.0
-,Occasion,3.0,120.0,Sony,gris,15.4,
 250.0,Occasion,8.0,256.0,Lenovo,noir,14.0,157.0
 600.0,Neuf,16.0,1024.0,Lenovo,autre,17.3,
 320.0,Très bon état - Reconditionné,8.0,256.0,Lenovo,gris,14.0,
 229.0,Occasion,8.0,,HP,gris,12.0,
-,Occasion,8.0,,Asus,noir,,
 199.9,Occasion,8.0,256.0,Dell,autre,15.6,
 200.0,Occasion,8.0,500.0,HP,autre,15.6,
 260.0,Occasion,16.0,256.0,Dell,gris,15.6,141.0
@@ -1364,7 +1348,6 @@ Prix,Condition,RAM,Stockage,Marque,Couleur,Taille écran,PPI
 130.0,Occasion,3.0,,Dell,autre,15.6,
 96.8,Occasion,4.0,750.0,Asus,autre,15.0,104.0
 500.0,Occasion,16.0,512.0,MSI,noir,15.6,141.0
-,Occasion,,40.0,Samsung,gris,,
 140.0,Occasion,8.0,,Dell,autre,13.3,
 1279.99,Occasion,16.0,1024.0,Lenovo,autre,14.0,157.0
 450.0,Occasion,8.0,256.0,HP,gris,14.0,157.0
@@ -1377,7 +1360,6 @@ Prix,Condition,RAM,Stockage,Marque,Couleur,Taille écran,PPI
 170.0,Occasion,8.0,240.0,HP,gris,15.6,141.0
 780.0,Occasion,15.0,475.0,Asus,noir,17.3,127.0
 328.57,Occasion,,60.0,HP,autre,15.0,
-,Occasion,10.0,,Asus,autre,14.0,
 97.0,Occasion,4.0,320.0,Asus,noir,15.6,100.0
 359.0,Occasion,16.0,256.0,HP,autre,14.0,157.0
 280.0,Occasion,8.0,256.0,Dell,autre,14.0,
@@ -1389,7 +1371,6 @@ Prix,Condition,RAM,Stockage,Marque,Couleur,Taille écran,PPI
 180.0,Occasion,4.0,320.0,Samsung,autre,15.6,
 75.0,Occasion,10.0,,HP,gris,15.6,100.0
 260.0,Très bon état - Reconditionné,8.0,512.0,HP,gris,14.0,
-,Occasion,2.0,160.0,HP,noir,15.6,100.0
 490.0,Occasion,8.0,256.0,Apple,autre,13.0,
 129.9,Occasion,16.0,,Samsung,gris,17.3,96.0
 718.87,Occasion,16.0,256.0,Lenovo,noir,14.0,157.0
@@ -1410,7 +1391,6 @@ Prix,Condition,RAM,Stockage,Marque,Couleur,Taille écran,PPI
 240.0,Occasion,8.0,,Dell,gris,13.3,
 179.0,Très bon état - Reconditionné,8.0,256.0,Dell,noir,14.0,112.0
 319.9,Occasion,8.0,480.0,Acer,noir,17.3,
-,Occasion,,,Lenovo,noir,14.0,
 560.0,Occasion,16.0,512.0,Lenovo,gris,14.0,
 386.25,Occasion,4.0,500.0,Lenovo,autre,15.0,
 431.57,Occasion,2.0,60.0,Dell,autre,14.0,
@@ -1605,7 +1585,6 @@ Prix,Condition,RAM,Stockage,Marque,Couleur,Taille écran,PPI
 479.99,Occasion,16.0,1024.0,Lenovo,noir,14.0,157.0
 219.0,Parfait état - Reconditionné,8.0,480.0,Dell,noir,15.6,100.0
 250.0,Occasion,8.0,256.0,Dell,noir,14.0,157.0
-,Occasion,8.0,256.0,HP,gris,14.0,
 100.0,Occasion,4.0,120.0,Dell,bleu,14.1,107.0
 190.0,Occasion,8.0,256.0,Dell,noir,14.0,157.0
 235.0,Occasion,24.0,512.0,Lenovo,noir,14.0,157.0
@@ -1664,7 +1643,6 @@ Prix,Condition,RAM,Stockage,Marque,Couleur,Taille écran,PPI
 330.0,Occasion,8.0,256.0,Dell,autre,14.0,
 1330.0,Neuf,16.0,1024.0,HP,gris,15.6,141.0
 429.99,Occasion,16.0,512.0,Lenovo,noir,14.0,
-,Occasion,3.0,160.0,Acer,gris,15.4,
 439.99,Occasion,16.0,512.0,HP,gris,13.0,169.0
 210.0,Occasion,16.0,500.0,HP,autre,13.0,169.0
 169.0,Occasion,,256.0,Lenovo,autre,13.0,
@@ -1673,7 +1651,6 @@ Prix,Condition,RAM,Stockage,Marque,Couleur,Taille écran,PPI
 60.0,Occasion,3.0,128.0,Acer,autre,15.4,
 389.99,Occasion,16.0,256.0,Lenovo,noir,15.6,141.0
 299.0,Occasion,16.0,512.0,Apple,autre,13.0,
-,Occasion,4.0,120.0,HP,noir,,
 693.5,Occasion,16.0,512.0,LG,noir,16.0,189.0
 349.9,Occasion,8.0,256.0,Lenovo,noir,14.0,157.0
 250.0,Très bon état - Reconditionné,8.0,256.0,Lenovo,noir,13.0,
@@ -1775,7 +1752,6 @@ Prix,Condition,RAM,Stockage,Marque,Couleur,Taille écran,PPI
 130.0,Occasion,4.0,121.0,Apple,autre,13.0,
 114.9,État correct - Reconditionné,10.0,256.0,Toshiba,gris,13.3,
 704.52,Occasion,32.0,1000.0,HP,autre,15.0,147.0
-,Occasion,2.0,,Acer,noir,15.4,
 230.0,Occasion,20.0,512.0,Lenovo,noir,14.0,157.0
 193.79,Occasion,4.0,32.0,Acer,autre,14.0,157.0
 150.0,Occasion,8.0,256.0,Lenovo,noir,12.5,125.0
@@ -1826,7 +1802,6 @@ Prix,Condition,RAM,Stockage,Marque,Couleur,Taille écran,PPI
 265.0,Occasion,16.0,512.0,Dell,gris,15.6,148.0
 150.0,Occasion,8.0,256.0,Dell,noir,12.0,
 119.9,Occasion,8.0,640.0,Asus,autre,17.3,
-,Occasion,8.0,512.0,Apple,gris,15.4,196.0
 551.05,Occasion,8.0,240.0,Dell,autre,17.0,133.0
 399.0,Parfait état - Reconditionné,16.0,500.0,Dell,autre,14.0,157.0
 350.0,Très bon état - Reconditionné,16.0,512.0,HP,gris,13.0,
@@ -1945,7 +1920,6 @@ Prix,Condition,RAM,Stockage,Marque,Couleur,Taille écran,PPI
 179.9,Très bon état - Reconditionné,8.0,512.0,Dell,noir,12.5,
 159.0,Occasion,16.0,256.0,Apple,blanc,15.0,231.0
 599.0,Très bon état - Reconditionné,16.0,250.0,Apple,gris,13.0,232.0
-,Occasion,2.0,,Lenovo,autre,15.0,85.0
 419.99,Occasion,8.0,512.0,Acer,noir,15.6,141.0
 550.0,Occasion,8.0,256.0,Apple,gris,13.0,232.0
 369.9,Occasion,8.0,1024.0,Acer,noir,15.6,141.0
@@ -2061,7 +2035,6 @@ Prix,Condition,RAM,Stockage,Marque,Couleur,Taille écran,PPI
 169.99,Occasion,8.0,256.0,Dell,noir,14.0,
 326.3,Occasion,8.0,512.0,Lenovo,noir,13.0,169.0
 279.0,Occasion,4.0,256.0,Lenovo,noir,12.5,125.0
-,Occasion,,,Lenovo,noir,15.6,
 450.0,Occasion,32.0,128.0,Acer,noir,15.6,141.0
 185.0,Occasion,,256.0,Apple,autre,13.0,
 499.0,Occasion,8.0,256.0,HP,gris,14.1,
@@ -2070,7 +2043,6 @@ Prix,Condition,RAM,Stockage,Marque,Couleur,Taille écran,PPI
 399.0,Occasion,8.0,256.0,Asus,autre,14.0,157.0
 170.0,Occasion,4.0,1024.0,Dell,noir,15.6,100.0
 200.0,Occasion,4.0,250.0,HP,blanc,17.0,
-,Occasion,8.0,300.0,Dell,noir,,
 350.0,Occasion,3.0,128.0,Microsoft,autre,12.3,
 446.0,Occasion,16.0,512.0,Lenovo,autre,14.0,
 300.0,Occasion,8.0,128.0,HP,gris,14.1,156.0
@@ -2134,7 +2106,6 @@ Prix,Condition,RAM,Stockage,Marque,Couleur,Taille écran,PPI
 279.0,Occasion,8.0,,HP,gris,17.3,127.0
 490.0,Occasion,16.0,,Apple,autre,15.4,129.0
 912.0,État correct - Reconditionné,16.0,256.0,Apple,autre,13.0,232.0
-,Occasion,4.0,500.0,Lenovo,noir,,
 250.0,Occasion,8.0,250.0,Dell,autre,15.6,
 349.9,Occasion,8.0,500.0,Asus,blanc,17.3,
 225.0,État correct - Reconditionné,8.0,240.0,HP,gris,14.0,112.0
@@ -2170,7 +2141,6 @@ Prix,Condition,RAM,Stockage,Marque,Couleur,Taille écran,PPI
 445.0,Occasion,8.0,500.0,HP,gris,15.0,
 549.9,Occasion,16.0,1024.0,Acer,noir,17.3,127.0
 200.0,État correct - Reconditionné,8.0,256.0,Dell,autre,14.1,
-,Occasion,32.0,512.0,Apple,autre,14.2,
 299.9,Occasion,8.0,128.0,Acer,noir,15.6,
 270.0,Occasion,8.0,,Lenovo,noir,14.0,210.0
 158.4,Occasion,8.0,128.0,Apple,gris,13.3,128.0
@@ -2532,7 +2502,6 @@ Prix,Condition,RAM,Stockage,Marque,Couleur,Taille écran,PPI
 140.0,Occasion,8.0,128.0,Microsoft,autre,10.0,
 560.0,Très bon état - Reconditionné,64.0,64.0,Asus,autre,14.0,
 1527.94,Ouvert (jamais utilisé),16.0,512.0,Dell,gris,,
-,Occasion,,,Lenovo,noir,14.0,
 369.9,Occasion,12.0,480.0,Acer,noir,17.3,
 259.0,Occasion,2.0,80.0,Panasonic,autre,15.4,98.0
 210.0,Occasion,8.0,256.0,HP,gris,15.0,104.0
@@ -2554,7 +2523,6 @@ Prix,Condition,RAM,Stockage,Marque,Couleur,Taille écran,PPI
 318.52,Occasion,8.0,256.0,Panasonic,gris,,91.0
 490.0,Occasion,16.0,256.0,Apple,gris,13.3,227.0
 649.99,Occasion,16.0,1024.0,Lenovo,noir,14.0,157.0
-,Occasion,,,Apple,gris,13.0,
 171.42,Occasion,8.0,256.0,Lenovo,noir,14.0,157.0
 1056.96,Occasion,8.0,,Sony,rouge,,
 364.62,Occasion,8.0,240.0,Dell,autre,15.0,
@@ -2668,11 +2636,9 @@ Prix,Condition,RAM,Stockage,Marque,Couleur,Taille écran,PPI
 199.0,Occasion,8.0,240.0,Lenovo,autre,14.1,
 150.0,Occasion,8.0,320.0,Lenovo,gris,15.6,100.0
 299.0,État correct - Reconditionné,8.0,256.0,HP,gris,13.0,
-,Occasion,4.0,500.0,Dell,noir,,
 300.0,Occasion,16.0,256.0,Dell,gris,15.6,141.0
 400.0,Occasion,16.0,1024.0,Apple,gris,13.3,
 130.0,Occasion,2.0,,Dell,rouge,13.3,118.0
-,Occasion,,,Apple,autre,,
 1400.0,Occasion,32.0,1024.0,Asus,noir,16.0,283.0
 1231.0,État correct - Reconditionné,8.0,512.0,Apple,autre,13.0,235.0
 928.03,Occasion,8.0,500.0,Dell,autre,17.0,
