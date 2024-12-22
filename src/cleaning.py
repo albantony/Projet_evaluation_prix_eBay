@@ -92,20 +92,20 @@ def convertir_condition(condition):
     Crée une classification des conditions des produits du meilleur au pire
     """
     if "Neuf" in condition:
-        return int(0)
+        return "Neuf"
     elif "Ouvert (jamais utilisé)" in condition:
-        return int(1)
+        return "Ouvert"
     elif 'Parfait état - Reconditionné' in condition: 
-        return int(2)
+        return "Parfait état"
     elif 'Très bon état - Reconditionné' in condition:
-        return int(3)
+        return "Très bon état"
     elif 'État correct - Reconditionné' in condition:
-        return int(4)
+        return "État correct"
     elif 'Occasion' in condition: 
-        return int(5)
+        return "Occasion"
 
 def clean_condition(df):
-    df['Code Condition'] = df['Condition'].apply(convertir_condition)
+    df['Condition'] = df['Condition'].apply(convertir_condition)
     return df
 
 def drop_columns(df, columns):
@@ -223,7 +223,7 @@ def main():
     df = calculate_ppi(df)
     df = format_date(df)
     df = clean_brand_column(df)
-    df = drop_columns(df, ['Largeur', 'Hauteur', 'ID', 'Résolution','Date de publication','Code Couleur','Code Condition'])
+    df = drop_columns(df, ['Largeur', 'Hauteur', 'ID', 'Résolution','Date de publication','Code Couleur'])
     #la colonne résolution est remplacée par la colonne PPI qui compile taille de l'écran et résolution
     print(df["Marque"].nunique())
     

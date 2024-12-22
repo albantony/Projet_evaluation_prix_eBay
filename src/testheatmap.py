@@ -1,7 +1,9 @@
 import pandas as pd
 import seaborn as sns
 import matplotlib.pyplot as plt
-from cleaning import df
+from utils import load_data
+
+df = load_data('data_cleaned.csv')
 
 # On regroupe par prix et condition
 prix_group = df.groupby(['Marque', 'Condition'])['Prix'].mean().reset_index()

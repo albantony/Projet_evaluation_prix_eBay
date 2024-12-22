@@ -7,26 +7,6 @@ import matplotlib.pyplot as plt
 
 df = load_data('data_semicleaned.csv')
 
-#On commence par des infos globales sur notre df
-
-"""
-df.describe()
-df.info()
-    Data columns (total 10 columns):
- #   Column          Non-Null Count  Dtype
----  ------          --------------  -----
- 0   Prix            2717 non-null   float64
- 1   Condition       2717 non-null   object
- 2   RAM             2711 non-null   float64
- 3   Stockage        2675 non-null   float64
- 4   Marque          2717 non-null   object
- 5   Couleur         2717 non-null   object
- 6   Taille écran    2672 non-null   float64
- 7   Code Couleur    2717 non-null   int64
- 8   Code Condition  2717 non-null   int64
- 9   PPI             1533 non-null   float64
-    """
-
 #boite à moustache, permet de voir la répartition des valeurs d'une colonne et d'identifier les valeurs aberrantes
 def generate_boxplot(df, column_name):
     plt.figure(figsize=(10, 6))
@@ -36,6 +16,10 @@ def generate_boxplot(df, column_name):
     plt.show()
 
 #generate_boxplot(df, 'Prix')
+#generate_boxplot(df, 'PPI')
+#generate_boxplot(df, 'RAM')
+#generate_boxplot(df, 'Stockage')
+#generate_boxplot(df, 'Taille écran')
 
 # Générer un boxplot pour voir la répartition de la colonne PPI
 #generate_boxplot(df, 'PPI')
@@ -53,5 +37,6 @@ df.loc[df['Taille écran'] > 20, 'Taille écran'] = np.nan  # On limite la taill
 # Sauvegarder le dataframe nettoyé dans un nouveau fichier CSV
 df.to_csv('data_cleaned.csv', index=False)
 
+#Infos générales sur le dataframe
 df.info()
 
