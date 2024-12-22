@@ -80,8 +80,8 @@ def format_date(df):
 def calculate_ppi(df):
     # Assurez-vous que les colonnes 'Largeur', 'Hauteur' et 'Taille écran' sont numériques
     df['Taille écran'] = df['Taille écran'].apply(extract_float_from_object)
-    # Remplir les valeurs manquantes avec une valeur par défaut ou supprimer les lignes avec des valeurs manquantes
-    df[['Largeur', 'Hauteur', 'Taille écran']] = df[['Largeur', 'Hauteur', 'Taille écran']].fillna(0)
+    # Remplir les valeurs manquantes avec NaN
+    df[['Largeur', 'Hauteur', 'Taille écran']] = df[['Largeur', 'Hauteur', 'Taille écran']].replace(0, np.nan)
     # Calculez le PPI uniquement pour les lignes où toutes les valeurs nécessaires sont présentes
     mask = df[['Largeur', 'Hauteur', 'Taille écran']].notnull().all(axis=1)
     df.loc[mask, 'PPI'] = np.round(np.sqrt(df.loc[mask, 'Largeur']**2 + df.loc[mask, 'Hauteur']**2) / df.loc[mask, 'Taille écran'])
@@ -111,6 +111,107 @@ def clean_condition(df):
 def drop_columns(df, columns):
     return df.drop(columns=columns)
 
+import pandas as pd
+import numpy as np
+
+def format_marque(marque):
+    if isinstance(marque, str):
+        marque = marque.lower()
+        if any(substring in marque for substring in ['carte graphique', 'nvidia']):
+            return np.nan
+        elif 'apple' in marque or 'macbook' in marque:
+            return 'Apple'
+        elif 'dell' in marque or 'del' in marque:
+            return 'Dell'
+        elif 'hp' in marque:
+            return 'HP'
+        elif 'lenovo' in marque:
+            return 'Lenovo'
+        elif 'asus' in marque:
+            return 'Asus'
+        elif 'acer' in marque:
+            return 'Acer'
+        elif 'samsung' in marque:
+            return 'Samsung'
+        elif 'sony' in marque:
+            return 'Sony'
+        elif 'toshiba' in marque:
+            return 'Toshiba'
+        elif 'huawei' in marque:
+            return 'Huawei'
+        elif 'msi' in marque:
+            return 'MSI'
+        elif 'panasonic' in marque:
+            return 'Panasonic'
+        elif 'microsoft' in marque:
+            return 'Microsoft'
+        elif 'lg' in marque:
+            return 'LG'
+        elif 'google' in marque:
+            return 'Google'
+        elif 'alienware' in marque:
+            return 'Alienware'
+        elif 'razer' in marque:
+            return 'Razer'
+        elif 'gigabyte' in marque:
+            return 'Gigabyte'
+        elif 'clevo' in marque:
+            return 'Clevo'
+        elif 'fujitsu' in marque:
+            return 'Fujitsu'
+        elif 'medion' in marque:
+            return 'Medion'
+        elif 'xmg' in marque:
+            return 'XMG'
+        elif 'chuwi' in marque:
+            return 'Chuwi'
+        elif 'jumper' in marque:
+            return 'Jumper'
+        elif 'teclast' in marque:
+            return 'Teclast'
+        elif 'voyo' in marque:
+            return 'Voyo'
+        elif 'bmax' in marque:
+            return 'BMAX'
+        elif 'one-netbook' in marque:
+            return 'One-Netbook'
+        elif 'gpd' in marque:
+            return 'GPD'
+        elif 'tuxedo' in marque:
+            return 'Tuxedo'
+        elif 'system76' in marque:
+            return 'System76'
+        elif 'purism' in marque:
+            return 'Purism'
+        elif 'pine64' in marque:
+            return 'Pine64'
+        elif 'minisforum' in marque:
+            return 'Minisforum'
+        elif 'azulle' in marque:
+            return 'Azulle'
+        elif 'beelink' in marque:
+            return 'Beelink'
+        elif 'meego' in marque:
+            return 'Meego'
+        elif 'vorke' in marque:
+            return 'Vorke'
+        elif 'trigkey' in marque:
+            return 'Trigkey'
+        elif 'acepc' in marque:
+            return 'ACEPC'
+        elif 'awow' in marque:
+            return 'AWOW'
+        elif 'niuniutab' in marque:
+            return 'Niuniutab'
+        else:
+            return np.nan
+    return np.nan
+
+def clean_brand_column(df):
+    df['Marque'] = df['Marque'].apply(format_marque)
+    df = df.dropna(subset=['Marque'])
+    return df
+
 
 def main():
     df = load_data('data3.csv')
@@ -121,13 +222,13 @@ def main():
     df = clean_condition(df)
     df = calculate_ppi(df)
     df = format_date(df)
-    df = drop_columns(df, ['Largeur', 'Hauteur', 'ID', 'Résolution','Date de publication'])
+    df = clean_brand_column(df)
+    df = drop_columns(df, ['Largeur', 'Hauteur', 'ID', 'Résolution','Date de publication','Code Couleur','Code Condition'])
     #la colonne résolution est remplacée par la colonne PPI qui compile taille de l'écran et résolution
-    column_counts = df["Condition"].value_counts()
-    #print(column_counts)
+    print(df["Marque"].nunique())
     
     #génération d'un nouveau csv pour les données nettoyées
-    df.to_csv('data_cleaned.csv', index=False)
+    df.to_csv('data_semicleaned.csv', index=False)
 
 if __name__ == "__main__":
     main()
