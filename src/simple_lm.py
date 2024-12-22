@@ -27,6 +27,10 @@ def generer_graphe_prix_taille_ecran(df, marque):
 
 
 def simple_regression_prix_colonne_marque(df, colonne, marque):
+    """
+    Régression linéaire simple entre le prix et une colonne spécifiée pour une marque donnée.
+    Si on ne spécifie pas la marque, l'effet sera trop fortement biaisé par les différences de prix entre les marques.
+    """
     # Filtrer le DataFrame pour la marque spécifiée
     df_marque = df[df['Marque'] == marque]
     
@@ -63,4 +67,4 @@ def simple_regression_prix_colonne_marque(df, colonne, marque):
     plt.show()
     
 #generer_graphe_prix_taille_ecran(df, 'Apple')
-simple_regression_prix_colonne_marque(df, 'Taille écran', 'Apple')
+simple_regression_prix_colonne_marque(df, 'PPI', 'Asus')

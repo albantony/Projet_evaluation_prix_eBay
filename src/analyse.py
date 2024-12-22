@@ -2,11 +2,36 @@ import matplotlib.pyplot as plt
 import pandas as pd
 import seaborn as sns
 from utils import load_data
+from aberrant import boxplot
 
 df = load_data('data_cleaned.csv')
 
-#plot price
+# 1) Histogramme de la distribution des prix - graphe simple
+def plot_distribution(df, column):
+    plt.figure(figsize=(10, 6))
+    sns.histplot(df[column], bins=30, color='skyblue', kde=False, alpha=0.7)
+    plt.title(f"Distribution de {column}", fontsize=16)
+    plt.xlabel(column, fontsize=14)
+    plt.ylabel("Nombre", fontsize=14)
+    plt.grid(axis='x', linestyle='--', alpha=0.7)
+    plt.show()
 
+#plot_distribution(df, 'Prix')
+"""
+on observe une distribution quasi normale des prix, la plupart des ordinateurs sont entre 50 et 1000€
+Cela est notamment dû au fait que la plupart des ordinateurs sont d'occasion.
+"""
+#plot_distribution(df, 'PPI')
+#plot_distribution(df, 'RAM')
+#plot_distribution(df, 'Stockage')
+#plot_distribution(df, 'Taille écran')
+
+#boxplot
+#boxplot(df, 'PPI')
+#on peut générer des boxplots pour chaque colonne pour voir la répartition => trouver les colonnes pertinentes
+
+
+#2) plot price
 def plot_price(df):
     # Supprimer les lignes avec des valeurs NaN dans 'Prix' ou 'Densité pixels'
     df_clean = df.dropna(subset=['Prix', 'PPI'])
@@ -26,7 +51,7 @@ def plot_price(df):
 
 #plot_price(df)
 
-#Histogramme condition
+#3) Histogramme condition
 
 def etat(df):
     conditions_counts = df['Condition'].value_counts()
@@ -44,7 +69,7 @@ def etat(df):
 #etat(df)
 #La plupart des ordinateurs sont d'occasion, cette colonne nous apporte peu d'informations mais peut rester interessante
 
-#Pie chart marques 
+#4) Pie chart marques 
 
 def brand(df):
     brand_counts = df['Marque'].value_counts()
@@ -61,7 +86,7 @@ def brand(df):
 
 #brand(df)
 
-#Prix moyen par condition 
+#5) Prix moyen par condition 
 
 def avgprice_condition(df, marque=None):
     if marque:
@@ -107,4 +132,38 @@ def avgprice_brand(df):
 
     plt.show()
 
-avgprice_brand(df)
+#avgprice_brand(df)
+#On voit que les prix des ordinateurs portables Apple sont les plus élevés, ce qui est cohérent avec la réputation de la marque
+#Exclure les macbooks pourraient nous aider à identifier certains effets d'autres facteurs que la marque sur les prix
+
+
+def covariance_matrix(df, col1, col2):
+    covariance = df[[col1, col2]].cov()
+    plt.figure(figsize=(6, 4))
+    sns.heatmap(covariance, annot=True, cmap='coolwarm', fmt='.2f')
+    plt.title(f"Matrice de covariance entre {col1} et {col2}", fontsize=16)
+    plt.show()
+
+#covariance_matrix(df, 'Taille écran', 'PPI')
+#j'avoue que j'ai du mal à l'interpréter, je ne sais pas si c'est pertinent
+df['Date de publication'] = pd.to_datetime(df['Date de publication'], errors='coerce')
+
+
+#6) Prix moyen par mois
+def avg_price_per_month(df):
+    df['Mois'] = df['Date de publication'].dt.month
+    avg_price_per_month = df.groupby('Mois')['Prix'].mean()
+
+    plt.figure(figsize=(10, 6))
+    sns.lineplot(x=avg_price_per_month.index, y=avg_price_per_month.values, marker='o', color='skyblue')
+    plt.title("Prix moyen des ordinateurs portables par mois", fontsize=16)
+    plt.xlabel("Mois", fontsize=14)
+    plt.ylabel("Prix moyen (€)", fontsize=14)
+    plt.xticks(range(1, 13), ['Jan', 'Fév', 'Mar', 'Avr', 'Mai', 'Juin', 'Juil', 'Août', 'Sep', 'Oct', 'Nov', 'Déc'], fontsize=12)
+    plt.grid(axis='y', linestyle='--', alpha=0.7)
+    plt.show()
+
+#avg_price_per_month(df)
+#On observe une augmentation du prix moyen en décembre, c'est à dire sur les dernières offres
+#on pourrait expliquer cela par le fait que ce ne sont que les mauvaises offres qui restent et les vendeurs baissent leurs prix au fur et à mesure
+
