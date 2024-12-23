@@ -1,5 +1,6 @@
 import matplotlib.pyplot as plt
 import pandas as pd
+import numpy as np
 import seaborn as sns
 from utils import load_data
 from aberrant import boxplot
@@ -7,21 +8,19 @@ from aberrant import boxplot
 df = load_data('data_cleaned.csv')
 
 # 1) Histogramme de la distribution des prix - graphe simple
-def plot_distribution(df, column):
+def plot_log_distribution(df, column):
     plt.figure(figsize=(10, 6))
-    sns.histplot(df[column], bins=30, color='skyblue', kde=False, alpha=0.7)
-    plt.title(f"Distribution de {column}", fontsize=16)
-    plt.xlabel(column, fontsize=14)
+    sns.histplot(df[column].apply(lambda x: np.log(x + 1)), bins=30, color='skyblue', kde=False, alpha=0.7)
+    plt.title(f"Distribution logarithmique de {column}", fontsize=16)
+    plt.xlabel(f"Logarithme de {column}", fontsize=14)
     plt.ylabel("Nombre", fontsize=14)
     plt.grid(axis='x', linestyle='--', alpha=0.7)
     plt.show()
 
-#plot_distribution(df, 'Prix')
-"""
-on observe une distribution quasi normale des prix, la plupart des ordinateurs sont entre 50 et 1000€
-Cela est notamment dû au fait que la plupart des ordinateurs sont d'occasion.
-"""
-#plot_distribution(df, 'PPI')
+#plot_log_distribution(df, 'Prix')
+#La log transformation permet d'observer une distribution normale des prix
+
+#plot_log_distribution(df, 'PPI')
 #plot_distribution(df, 'RAM')
 #plot_distribution(df, 'Stockage')
 #plot_distribution(df, 'Taille écran')
@@ -67,7 +66,7 @@ def etat(df):
     plt.show()
 
 #etat(df)
-#La plupart des ordinateurs sont d'occasion, cette colonne nous apporte peu d'informations mais peut rester interessante
+#La plupart des ordinateurs sont d'occasion
 
 #4) Pie chart marques 
 

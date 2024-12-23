@@ -67,4 +67,4 @@ def simple_regression_prix_colonne_marque(df, colonne, marque):
     plt.show()
     
 #generer_graphe_prix_taille_ecran(df, 'Apple')
-simple_regression_prix_colonne_marque(df, 'PPI', 'Asus')
+simple_regression_prix_colonne_marque(df, 'Taille écran', 'Apple')
