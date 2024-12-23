@@ -34,14 +34,19 @@ def extract_item_info(IDitem):
         "sold": sold_count
     }
 
-#Modification de la table 
+#Modification de la table pour ajouter le coefficient  
+L_coeff=[]
+
 for index, row in df.iterrows():
     IDitem = row["ID"].split('|')[1] 
     watched=extract_item_info(IDitem)["watched"]
     watchlist=extract_item_info(IDitem)["watchlist"]
     sold=extract_item_info(IDitem)["sold"]
     coeff=round((watched+2*watchlist+3*sold)/6,2)
-    df.at[index, "Coefficient"] = coeff
+    L_coeff.append(coeff)
+
+df["Coefficent"]=L_coeff
+df.to_csv('data.csv', index=False)
 
 #Dictionnaire qui contient le classement pondéré de tout les sites
 Classements = {}
