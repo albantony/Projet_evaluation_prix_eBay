@@ -188,6 +188,7 @@ def Classements_TestAchats(url):
 
 #Obtention du classement final 
 dict= [
+
     Classements_GeekWise(url_sites["GeekWise"]),
     Classements_LaptopSpirit(url_sites["LaptopSpirit"]),
     Classements_LeParisien(url_sites["LeParisien"]),
@@ -196,6 +197,19 @@ dict= [
     Classements_TestAchats(url_sites["Test-Achats"])
 ]
 
+total_sum = {}
+count = {}
+    
+# Parcourir chaque dictionnaire dans la liste
+for d in dict:
+    for key, value in d.items():
+        # Ajouter la valeur au total de la clé et incrémenter le compteur
+        total_sum[key] = total_sum.get(key, 0) + value
+        count[key] = count.get(key, 0) + 1
+        weighted_avg = {key: int(total_sum[key] / count[key]) for key in total_sum}
+
+df['Rang'] = df['Marque'].map(weighted_avg)
+df.to_csv('data_cleaned.csv', index=False)
 
 
 
