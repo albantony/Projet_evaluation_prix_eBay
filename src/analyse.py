@@ -166,3 +166,6 @@ def avg_price_per_month(df):
 #On observe une augmentation du prix moyen en décembre, c'est à dire sur les dernières offres
 #on pourrait expliquer cela par le fait que ce ne sont que les mauvaises offres qui restent et les vendeurs baissent leurs prix au fur et à mesure
 
+corr_matrix = df.corr()
+sns.heatmap(corr_matrix, annot=True, cmap='coolwarm')
+plt.show()
