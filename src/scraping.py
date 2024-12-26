@@ -36,18 +36,18 @@ def extract_item_info(IDitem):
     }
 
 #Modification de la table pour ajouter le coefficient  
-# L_coeff=[]
+L_coeff=[]
 
-# for index, row in df.iterrows():
-#     IDitem = row["ID"].split('|')[1] 
-#     watched=extract_item_info(IDitem)["watched"]
-#     watchlist=extract_item_info(IDitem)["watchlist"]
-#     sold=extract_item_info(IDitem)["sold"]
-#     coeff=round((watched+2*watchlist+3*sold)/6,2)
-#     L_coeff.append(coeff)
+for index, row in df.iterrows():
+    IDitem = row["ID"].split('|')[1] 
+    watched=extract_item_info(IDitem)["watched"]
+    watchlist=extract_item_info(IDitem)["watchlist"]
+    sold=extract_item_info(IDitem)["sold"]
+    coeff=round((watched+2*watchlist+3*sold)/6,2)
+    L_coeff.append(coeff)
 
-# df["Coefficent"]=L_coeff
-# df.to_csv('data.csv', index=False)
+df["Coefficent"]=L_coeff
+df.to_csv('data_cleaned.csv', index=False)
 
 #Dictionnaire qui contient le classement pondéré de tout les sites
 Classements = {}
@@ -198,21 +198,21 @@ dict= [
     Classements_TestAchats(url_sites["Test-Achats"])
 ]
 
-total_sum = {}
-count = {}
+# total_sum = {}
+# count = {}
 
-# Parcourir chaque dictionnaire dans la liste
-for d in dict:
-    for key, value in d.items():
-        # Ajouter la valeur au total de la clé et incrémenter le compteur
-        total_sum[key] = total_sum.get(key, 0) + value
-        count[key] = count.get(key, 0) + 1
+# # Parcourir chaque dictionnaire dans la liste
+# for d in dict:
+#     for key, value in d.items():
+#         # Ajouter la valeur au total de la clé et incrémenter le compteur
+#         total_sum[key] = total_sum.get(key, 0) + value
+#         count[key] = count.get(key, 0) + 1
 
-# Calculer les moyennes pondérées et les convertir en entiers
-weighted_avg = {key: (total_sum[key] // count[key]) for key in total_sum}
+# # Calculer les moyennes pondérées et les convertir en entiers
+# weighted_avg = {key: (total_sum[key] // count[key]) for key in total_sum}
 
-df3['Rang'] = df['Marque'].map(weighted_avg)
-df3.to_csv('data3.csv', index=False)
+# df3['Rang'] = df['Marque'].map(weighted_avg)
+# df3.to_csv('data3.csv', index=False)
 
 
 
