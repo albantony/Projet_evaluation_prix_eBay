@@ -198,7 +198,7 @@ dict= [
     Classements_TestAchats(url_sites["Test-Achats"])
 ]
 
-def rang()
+def rang():
     total_sum = {}
     count = {}
 
