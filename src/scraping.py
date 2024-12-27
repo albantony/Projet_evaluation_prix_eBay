@@ -1,53 +1,74 @@
-import requests
-from bs4 import BeautifulSoup
+import aiohttp
+import asyncio
 import pandas as pd
+from bs4 import BeautifulSoup
 import re
+import requests
 
 df = pd.read_csv('data_cleaned.csv')
 df3 = pd.read_csv('data3.csv')
 
-#Mesure de l'intérêt des consommateurs
-def extract_item_info(IDitem):
+# Fonction asynchrone pour extraire les informations
+async def fetch_item_info(session, IDitem):
     url = f"https://www.ebay.com/itm/{IDitem}"
-    request_text = requests.get(url).content
-    page = BeautifulSoup(request_text, "html.parser")
-    html_content = str(page.findAll("span", class_="ux-textspans"))
+    async with session.get(url) as response:
+        request_text = await response.text()
+        page = BeautifulSoup(request_text, "html.parser")
+        html_content = str(page.findAll("span", class_="ux-textspans"))
 
-    # Expression régulière pour extraire les informations pertinentes
-    watched_pattern = r"(\d+)\s*watched\s*in\s*the\s*last\s*24\s*hours"
-    watchlist_pattern = r"(\d+)\s*have\s*added\s*this\s*to\s*their\s*watchlist"
-    sold_pattern = r"(\d+)\s*has\s*already\s*sold"
-    
-    # Recherche des informations avec les expressions régulières
-    watched_match = re.search(watched_pattern, html_content)
-    watchlist_match = re.search(watchlist_pattern, html_content)
-    sold_match = re.search(sold_pattern, html_content)
-    
-    # Extraire les résultats trouvés
-    watched_count = int(watched_match.group(1)) if watched_match else 0
-    watchlist_count = int(watchlist_match.group(1)) if watchlist_match else 0
-    sold_count = int(sold_match.group(1)) if sold_match else 0
-    
-    # Retourner un dictionnaire avec les résultats
-    return {
-        "watched": watched_count,
-        "watchlist": watchlist_count,
-        "sold": sold_count
-    }
+        # Expression régulière pour extraire les informations pertinentes
+        watched_pattern = r"(\d+)\s*watched\s*in\s*the\s*last\s*24\s*hours"
+        watchlist_pattern = r"(\d+)\s*have\s*added\s*this\s*to\s*their\s*watchlist"
+        sold_pattern = r"(\d+)\s*has\s*already\s*sold"
 
-#Modification de la table pour ajouter le coefficient  
-L_coeff=[]
+        # Recherche des informations avec les expressions régulières
+        watched_match = re.search(watched_pattern, html_content)
+        watchlist_match = re.search(watchlist_pattern, html_content)
+        sold_match = re.search(sold_pattern, html_content)
 
-for index, row in df.head(50).iterrows():
-    IDitem = row["ID"].split('|')[1] 
-    watched=extract_item_info(IDitem)["watched"]
-    watchlist=extract_item_info(IDitem)["watchlist"]
-    sold=extract_item_info(IDitem)["sold"]
-    coeff=round((watched+2*watchlist+3*sold)/6,2)
-    L_coeff.append(coeff)
+        # Extraire les résultats trouvés
+        watched_count = int(watched_match.group(1)) if watched_match else 0
+        watchlist_count = int(watchlist_match.group(1)) if watchlist_match else 0
+        sold_count = int(sold_match.group(1)) if sold_match else 0
 
-df[:49,"Coefficent"]=L_coeff
-df.to_csv('data_cleaned.csv', index=False)
+        return {
+            "watched": watched_count,
+            "watchlist": watchlist_count,
+            "sold": sold_count,
+        }
+
+# Fonction pour traiter un lot de lignes
+async def process_batch(df_batch):
+    L_coeff = []
+    async with aiohttp.ClientSession() as session:
+        tasks = []
+        for _, row in df_batch.iterrows():
+            IDitem = row["ID"].split('|')[1]
+            tasks.append(fetch_item_info(session, IDitem))
+        results = await asyncio.gather(*tasks)
+
+        # Calcul des coefficients
+        for result in results:
+            watched = result["watched"]
+            watchlist = result["watchlist"]
+            sold = result["sold"]
+            coeff = round((watched + 2 * watchlist + 3 * sold) / 6, 2)
+            L_coeff.append(coeff)
+    return L_coeff
+
+# Fonction principale pour traiter tout le dataframe
+def process_dataframe(df, batch_size=100):
+    df["Coefficient"] = 0.0  # Ajouter une colonne vide
+    for i in range(0, len(df), batch_size):
+        print(f"Processing batch {i // batch_size + 1}...")
+        df_batch = df.iloc[i:i+batch_size]
+        L_coeff = asyncio.run(process_batch(df_batch))
+        df.loc[i:i+batch_size-1, "Coefficient"] = L_coeff
+    df.to_csv('data_cleaned.csv', index=False)
+
+# Exemple d'utilisation
+df = pd.read_csv('data_cleaned.csv')  # Remplacez par votre fichier CSV
+process_dataframe(df)
 
 #Dictionnaire qui contient le classement pondéré de tout les sites
 Classements = {}
