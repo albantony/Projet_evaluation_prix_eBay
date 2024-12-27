@@ -5,8 +5,7 @@ from bs4 import BeautifulSoup
 import re
 import requests
 
-df = pd.read_csv('data_cleaned.csv')
-df3 = pd.read_csv('data3.csv')
+df_test = pd.read_csv('data3.csv')
 
 # Fonction asynchrone pour extraire les informations
 async def fetch_item_info(session, IDitem):
@@ -62,18 +61,18 @@ async def process_batch(df_batch):
     return L_coeff
 
 # Fonction principale pour traiter tout le dataframe
-def process_dataframe(df, batch_size=100):
+def get_coefficient(df, batch_size=100):
     df["Coefficient"] = 0.0  # Ajouter une colonne vide
     for i in range(0, len(df), batch_size):
         print(f"Processing batch {i // batch_size + 1}...")
         df_batch = df.iloc[i:i+batch_size]
         L_coeff = asyncio.run(process_batch(df_batch))
         df.loc[i:i+batch_size-1, "Coefficient"] = L_coeff
-    df.to_csv('data_cleaned.csv', index=False)
+    df.to_csv('data3.csv', index=False)
 
 #Dictionnaire qui contient le classement pondéré de tout les sites
 Classements = {}
-marques_uniques = df['Marque'].dropna().unique()
+marques_uniques = df_test['Marque'].dropna().unique()
 marques_liste = marques_uniques.tolist()
 for element in marques_liste:
     Classements[element] = 0  
@@ -220,7 +219,7 @@ dict= [
     Classements_TestAchats(url_sites["Test-Achats"])
 ]
 
-def rang():
+def test(df):
     total_sum = {}
     count = {}
 
@@ -233,6 +232,7 @@ def rang():
 
     # Calculer les moyennes pondérées et les convertir en entiers
     weighted_avg = {key: (total_sum[key] // count[key]) for key in total_sum}
+ 
 
 
 

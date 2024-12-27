@@ -6,3 +6,4 @@ seaborn
 numpy
 aiohttp
 scikit-learn
+nest_asyncio
