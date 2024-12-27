@@ -223,10 +223,9 @@ def main():
     df = calculate_ppi(df)
     df = format_date(df)
     df = clean_brand_column(df)
-    df = drop_columns(df, ['Largeur', 'Hauteur', 'Résolution','Code Couleur'])
+    df = drop_columns(df, ['Largeur', 'Hauteur', 'Résolution', 'Code Couleur'])
     df['Date de publication'] = pd.to_datetime(df['Date de publication'], errors='coerce')
     #la colonne résolution est remplacée par la colonne PPI qui compile taille de l'écran et résolution
-    print(df['Rang'].unique())
     #génération d'un nouveau csv pour les données nettoyées
     df.to_csv('data_semicleaned.csv', index=False)
 
