@@ -1,16 +1,14 @@
-import pandas as pd
+"""
+Repertoire contenant certaines fonctions de nettoyage des données, 
+notamment des fonctions longues mais simple par souci de lisibilité
+"""
+
 import numpy as np
-from utils import extract_float_from_object, load_data, extract_storage
-import seaborn as sns
-import matplotlib.pyplot as plt
-
-
-def clean_giga_columns(df):
-    df['RAM'] = df['RAM'].apply(extract_storage)
-    df['Stockage'] = df['Stockage'].apply(extract_storage)
-    return df
 
 def normalize_color(color):
+    """
+    Normalise les noms de couleurs en minuscules et les simplifie.
+    """
     if isinstance(color, str):
         color = color.lower()
         if 'gris' in color or 'silver' in color or 'argent' in color or 'argenté' in color or 'grey' in color and 'graphite' in color:
@@ -35,58 +33,6 @@ def normalize_color(color):
             return 'violet'
     return "autre"
 
-def code_couleur(color):
-    if color == "noir":
-        return int(0)
-    if color == "blanc":
-        return int(1)
-    if color == "gris":
-        return int(2)
-    if color == "bleu":
-        return int(3)
-    if color == "rouge":    
-        return int(4)
-    if color == "vert":
-        return int(5)
-    if color == "jaune":
-        return int(6)
-    if color == "rose":   
-        return int(7)
-    if color == "marron":
-        return int(8)  
-    if color == "violet":   
-        return int(9)   
-    if color == "autre":
-        return int(10)
-
-def clean_color_column(df):
-    df['Couleur'] = df['Couleur'].apply(normalize_color)
-    df['Code Couleur'] = df['Couleur'].apply(code_couleur)
-    return df
-
-def extract_resolution(df):
-    df[['Largeur', 'Hauteur']] = df['Résolution'].str.extract(r'(\d+)[\s]*[xX][\s]*(\d+)', expand=True)
-    df[['Largeur', 'Hauteur']] = df[['Largeur', 'Hauteur']].apply(pd.to_numeric, errors='coerce')
-    return df
-
-def extract_taille_ecran(df):
-    df['Taille écran'] = df['Taille écran'].apply(extract_float_from_object)
-    return df
-
-def format_date(df):
-    df['Date de publication'] = pd.to_datetime(df['Date de publication'], errors='coerce')
-    return df
-
-def calculate_ppi(df):
-    # Assurez-vous que les colonnes 'Largeur', 'Hauteur' et 'Taille écran' sont numériques
-    df['Taille écran'] = df['Taille écran'].apply(extract_float_from_object)
-    # Remplir les valeurs manquantes avec NaN
-    df[['Largeur', 'Hauteur', 'Taille écran']] = df[['Largeur', 'Hauteur', 'Taille écran']].replace(0, np.nan)
-    # Calculez le PPI uniquement pour les lignes où toutes les valeurs nécessaires sont présentes
-    mask = df[['Largeur', 'Hauteur', 'Taille écran']].notnull().all(axis=1)
-    df.loc[mask, 'PPI'] = np.round(np.sqrt(df.loc[mask, 'Largeur']**2 + df.loc[mask, 'Hauteur']**2) / df.loc[mask, 'Taille écran'])
-    return df
-
 def convertir_condition(condition):
     """ 
     Crée une classification des conditions des produits du meilleur au pire
@@ -104,17 +50,11 @@ def convertir_condition(condition):
     elif 'Occasion' in condition: 
         return "Occasion"
 
-def clean_condition(df):
-    df['Condition'] = df['Condition'].apply(convertir_condition)
-    return df
-
-def drop_columns(df, columns):
-    return df.drop(columns=columns)
-
-import pandas as pd
-import numpy as np
 
 def format_marque(marque):
+    """
+    Normalise les noms de marques en minuscules et les simplifie.
+    """
     if isinstance(marque, str):
         marque = marque.lower()
         if any(substring in marque for substring in ['carte graphique', 'nvidia']):
@@ -206,28 +146,3 @@ def format_marque(marque):
         else:
             return np.nan
     return np.nan
-
-def clean_brand_column(df):
-    df['Marque'] = df['Marque'].apply(format_marque)
-    df = df.dropna(subset=['Marque'])
-    return df
-
-
-def main():
-    df = load_data('data3.csv')
-    df = clean_giga_columns(df)
-    df = clean_color_column(df)
-    df = extract_resolution(df)
-    df = extract_taille_ecran(df)
-    df = clean_condition(df)
-    df = calculate_ppi(df)
-    df = format_date(df)
-    df = clean_brand_column(df)
-    df = drop_columns(df, ['Largeur', 'Hauteur', 'Résolution', 'Code Couleur'])
-    df['Date de publication'] = pd.to_datetime(df['Date de publication'], errors='coerce')
-    #la colonne résolution est remplacée par la colonne PPI qui compile taille de l'écran et résolution
-    #génération d'un nouveau csv pour les données nettoyées
-    df.to_csv('data_semicleaned.csv', index=False)
-
-if __name__ == "__main__":
-    main()
