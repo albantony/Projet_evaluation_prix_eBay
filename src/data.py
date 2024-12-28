@@ -3,7 +3,7 @@ from collect import access_token
 import pandas as pd
 import time
 
-# Charger les données existantes
+# On récupère d'abord les données existantes du fichier csv
 try:
     df_exist = pd.read_csv("data3.csv")
     existing_ids = set(df_exist["ID"])  # Extraire les IDs existants
@@ -27,13 +27,13 @@ OFFSET = 0 # On initialise un compteur offset pour relancer la requête si nous 
 
 NBCALL = 0
 
-MAXCALL = 4500
+MAXCALL = 100
 
 EBAY_API_URL = "https://api.ebay.com/buy/browse/v1/item_summary/search"
 
 while ITEMS_VALIDES < NUM_ITEMS and NBCALL < MAXCALL :
     params = {
-    "category_ids": "175672", # Recherche pour ordinateurs portables/netbooks
+    "category_ids": "175672", # Catégorie des ordinateurs portables selon la documentation eBay developers
     "offset" : OFFSET,
     "limit": 100,  
     "filter": "listingType: FIXED_PRICE" #On veut seulement les achats immédiats (pas d'enchères)
@@ -48,7 +48,7 @@ while ITEMS_VALIDES < NUM_ITEMS and NBCALL < MAXCALL :
 
 # Recherche
     response = requests.get(EBAY_API_URL, headers=HEADERS, params=params)
-    NBCALL += 1
+    NBCALL += 1 # car appel à l'API
 
 # Verif réponse
     if response.status_code == 200:
@@ -57,7 +57,8 @@ while ITEMS_VALIDES < NUM_ITEMS and NBCALL < MAXCALL :
     
     # Tri des données
         for item in items_data:
-            if NBCALL >= MAXCALL or ITEMS_VALIDES >= NUM_ITEMS:
+            if NBCALL >= MAXCALL or ITEMS_VALIDES >= NUM_ITEMS: 
+            # Le programme s'arrête si le nombre d'appels ou le nombre d'items dépasse une limite fixé au début
                 break 
 
 
@@ -66,14 +67,14 @@ while ITEMS_VALIDES < NUM_ITEMS and NBCALL < MAXCALL :
             if item_id in existing_ids:
                 continue 
             
-            # On ajoute l'ID à la liste des ID connus 
+            # On ajoute l'ID à la liste des ID connus pour ne pas avoir de doublons
             existing_ids.add(item_id)
                 
         # URL API pour avoir les détails d'un item
             item_detail_url = f"https://api.ebay.com/buy/browse/v1/item/{item_id}"
         
             item_response = requests.get(item_detail_url, headers=HEADERS)
-            NBCALL +=1
+            NBCALL +=1 # car appel à l'API
         
             if item_response.status_code == 200:
                 item_details = item_response.json()
@@ -100,7 +101,7 @@ while ITEMS_VALIDES < NUM_ITEMS and NBCALL < MAXCALL :
                 if condition and "pièces" in condition.lower():
                     continue  # Passer au prochain item
             
-            # Extraire les infos précises du produit
+            # Les infos précises des produits se situent dans la partie localizedaspects de l'API
                 localized_aspects = item_details.get("localizedAspects", [])
                 date = item_details.get("itemCreationDate")
             
@@ -108,10 +109,10 @@ while ITEMS_VALIDES < NUM_ITEMS and NBCALL < MAXCALL :
                     name = aspect.get("name", "").lower()
                     value = aspect.get("value", "")
                 
-                # Info sur la RAM
+                # RAM
                     if "ram" in name:
                         ram = value
-                # Info sur capacité de stockage
+                # Stockage
                     elif "capacité" in name:
                         capacité = value
                 # Marque
@@ -142,14 +143,14 @@ while ITEMS_VALIDES < NUM_ITEMS and NBCALL < MAXCALL :
                 "Date de publication": date
                 })
                     ITEMS_VALIDES += 1
-                    
-            time.sleep(0.2)
+
+            time.sleep(0.2) # Peut permettre d'accélérer le processus 
         
     else:
         print(f"Erreur lors de la requête de recherche : {response.status_code}")
         print(response.json())
 
-    OFFSET += 100
+    OFFSET += 100 # On avait mis une limite de 100 pour faire une pause dans les appels à l'API
 
 # Conversion data frame 
 
@@ -157,11 +158,12 @@ df_new = pd.DataFrame(data)
 
 if not df_new.empty:
     try:
-        df_combined = pd.concat([df_exist, df_new]).drop_duplicates(subset="ID", keep="first")
+        df_combined = pd.concat([df_exist, df_new]).drop_duplicates(subset="ID", keep="first") 
+        # On combine l'ancien df avec le nouveau
     except NameError:
         df_combined = df_new
 
     df_combined.to_csv("data3.csv", index=False)
-    print(f"Fichier mis à jour avec {len(df_combined)} articles uniques.")
+    print(f"Le nouveau fichier contient {len(df_combined)} articles.")
 else:
     print("Aucun nouvel article à ajouter.")
