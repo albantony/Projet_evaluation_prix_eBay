@@ -68,7 +68,6 @@ def get_coefficient(df, batch_size=100):
         df_batch = df.iloc[i:i+batch_size]
         L_coeff = asyncio.run(process_batch(df_batch))
         df.loc[i:i+batch_size-1, "Coefficient"] = L_coeff
-    df.to_csv('data3.csv', index=False)
 
 #Dictionnaire qui contient le classement pondéré de tout les sites
 Classements = {}
@@ -234,7 +233,6 @@ def get_rang(df):
 
     # Ajouter les résultats au DataFrame
     df['Rang'] = df['Marque'].map(weighted_avg)
-    df.to_csv('data3.csv', index=False)
     return df
  
 
