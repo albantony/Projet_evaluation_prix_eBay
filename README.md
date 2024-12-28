@@ -3,9 +3,11 @@
 
 ## **1. Objectif du projet**
 
-L'objectif de notre projet est de fournir une analyse des prix des ordinateurs portables sur la plateforme eBay afin de comprendre les mécanismes de fixation des prix en fonction des caractéristiques des produits. Étant donné qu’eBay est une plateforme où les vendeurs fixent eux-mêmes les prix, nous souhaitions explorer si ces prix reflètent effectivement les caractéristiques décrites dans les annonces. En effet, lorsque un utilisateur navigue sur le site la première information qu'il aperçoit est souvent le prix du produit ; dès lors cela soulève la question suivante : dans quelle mesure peut-on utiliser ce prix pour déduire des informations sur la qualité et les caractéristiques du produit ?
+L'objectif de notre projet est de fournir une analyse des prix des ordinateurs portables sur la plateforme eBay afin de comprendre les mécanismes de fixation des prix en fonction des caractéristiques des produits. Étant donné qu’eBay est une plateforme où les vendeurs fixent eux-mêmes les prix, nous souhaitions explorer si ces prix reflètent effectivement les caractéristiques décrites dans les annonces. 
 
-Nous avons choisi de nous concentrer sur une catégorie précise : les ordinateurs portables du marché français. Ainsi, les produits analysés présentent des spécificités communes et les prix sont soumis aux mêmes conditions économiques et géopolitiques. 
+En effet, lorsque un utilisateur navigue sur le site la première information qu'il aperçoit est souvent le prix du produit ; dès lors cela soulève la question suivante : dans quelle mesure peut-on utiliser ce prix pour déduire des informations sur la qualité et les caractéristiques du produit ?
+
+Nous avons choisi de nous concentrer sur une catégorie précise : les ordinateurs portables du marché français. Ainsi, les produits analysés présentent des spécificités communes et les prix sont soumis aux mêmes conditions économiques et géopolitiques.
 
 ## **2. Source des données**
 
