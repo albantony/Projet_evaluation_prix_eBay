@@ -35,6 +35,6 @@ Afin de rajouter des données il est toutefois possible de faire appel à l'API 
 
 ## **3. Présentation du rendu**
 
-Notre rapport final se situe dans le fichier `notebook.ipynb`. À l'intérieur de ce fichier vous trouverez tous les éléments (fonctions, graphiques, analyses...) qui nous ont permis de parvenir à une conclusion concernant la fixation des prix des ordinateurs portables sur la plateforme eBay. 
+Notre rapport final se situe dans le fichier `main.ipynb`. À l'intérieur de ce fichier vous trouverez tous les éléments (fonctions, graphiques, analyses...) qui nous ont permis de parvenir à une conclusion concernant la fixation des prix des ordinateurs portables sur la plateforme eBay. 
 Dans le dossier `src`se trouvent les fichiers annexes appelés dans le notebook final. 
 Nous avons également regroupé dans un fichier `requirements.txt`les modules utiles tout au long du projet que nous importons au début du notebook. 

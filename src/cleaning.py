@@ -1,6 +1,6 @@
 """
-Repertoire contenant certaines fonctions de nettoyage des données, 
-notamment des fonctions longues mais simple par souci de lisibilité
+Repertoire contenant certaines fonctions de nettoyage des données: 
+Des fonctions longues mais simples non integrées au notebook par souci de lisibilité
 """
 
 import numpy as np
