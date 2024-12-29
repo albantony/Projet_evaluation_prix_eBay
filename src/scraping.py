@@ -66,7 +66,7 @@ def get_coefficient(df1, batch_size=100, output_file="output.csv"):
     if "Coefficient" not in df1.columns:
         df1["Coefficient"] = None  #on initialise à None pour reconnaitre les lignes ou le coef est manquant
 
-    #on ne traite que les lignes ou le coef est manquant
+    #on ne traite que certaines lignes
     new_items_df = df1[df1["Coefficient"].isna()]
     for i in range(0, len(new_items_df), batch_size):
         print(f"Processing batch {i // batch_size + 1}...")
@@ -75,6 +75,7 @@ def get_coefficient(df1, batch_size=100, output_file="output.csv"):
         df1.loc[df_batch.index, "Coefficient"] = L_coeff
 
     #on initilialise à 0.0 les coef pour ceux qui n'en ont pas
+    df1["Coefficient"] = pd.to_numeric(df1["Coefficient"], errors="coerce") #conversion format numérique
     df1["Coefficient"] = df1["Coefficient"].fillna(0.0)
 
     #On renvoie un csv pour mieux manipuler dans le notebook et assurer la reproductibilité
@@ -82,5 +83,4 @@ def get_coefficient(df1, batch_size=100, output_file="output.csv"):
     print(f"Fichier CSV généré : {output_file}")
 
 get_coefficient(df1,100,'final_data.csv') #On sépare en paquet de 100 pour aller plus vite
-
 
