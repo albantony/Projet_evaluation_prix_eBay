@@ -15,14 +15,14 @@ Nous nous sommes appuyés pour ce projet sur plusieurs types de données :
 - **Les données de l'API eBay :** La majeure partie des données que nous utilisons sont issues de l'API eBay qui nous a permis de récolter les différentes annonces du site ainsi que des informations sur ces produits. Le recours à l'API était très long et limité à 5000 appels par jour ce qui nous a poussé à effectuer des appels quotidiens et à stocker les données au format CSV (`data3.csv`) afin de bénéficier d'une quantité suffisante de données. 
 Afin de rajouter des données il est toutefois possible de faire appel à l'API et compléter notre fichier CSV à l'aide du fichier `data.py` en suivant au préalable la procédure d'authentification suivante : (Nous avons réduit le nombre d'appels à 100 pour rendre l'attente moins longue) 
 
-### **Comment se connecter pour accéder à l'API d'Ebay**
+##### **Comment se connecter pour accéder à l'API d'Ebay**
 L'API eBay nécessite une authentification pour chaque utilisateur dont vous trouverez la procédure ci-dessous : 
 1. Créez un compte developer en suivant ce lien : https://developer.ebay.com/signin?tab=register
 2. Après environ 24h vous pourrez trouver vos identifiants dans la partie **Application Keysets** 
 3. Les identifiants qui nous intéressent se trouvent dans la partie Production ; il faut faire une demande pour y avoir accès. 
 La partie création de compte est ensuite terminée. Il faut maintenant rentrer les identifiants dans notre code. 
 
-### **Etapes à suivre pour faire fonctionner notre code**
+##### **Etapes à suivre pour faire fonctionner notre code**
 1. Créez un fichier `.env` à la racine du projet (ajoutez le dans le .gitignore pour ne pas push vos identifiants)
 2. Ajoutez les lignes suivantes en remplaçant par vos identifiants personnels :
    APP_ID=your_app_id
@@ -37,7 +37,3 @@ La partie création de compte est ensuite terminée. Il faut maintenant rentrer 
 Notre rapport final se situe dans le fichier `notebook.ipynb`. À l'intérieur de ce fichier vous trouverez tous les éléments (fonctions, graphiques, analyses...) qui nous ont permis de parvenir à une conclusion concernant la fixation des prix des ordinateurs portables sur la plateforme eBay. 
 Dans le dossier `src`se trouvent les fichiers annexes appelés dans le notebook final. 
 Nous avons également regroupé dans un fichier `requirements.txt`les modules utiles tout au long du projet que nous importons au début du notebook. 
-
-## **4. Conclusion**
-
-

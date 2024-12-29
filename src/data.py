@@ -3,6 +3,9 @@ from collect import access_token
 import pandas as pd
 import time
 
+""" Pour récupérer les données déjà existantes dans data3.csv 
+pensez à bien diriger le chemin d'accès vers le fichier data3 dans le terminal à l'aide de la commande cd"""
+
 # On récupère d'abord les données existantes du fichier csv
 try:
     df_exist = pd.read_csv("data3.csv")
